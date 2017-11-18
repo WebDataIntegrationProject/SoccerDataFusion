@@ -58,7 +58,8 @@ public class App
 		new ClubXMLReader().loadFromXML(new File("data/input/transfermarket.xml"), "/clubs/club", transfermarket);
 		transfermarket.printDataSetDensityReport();
 
-		// Maintain Provenance
+		// Maintain Provenance 
+		//TODO: Adjust Ratings
 		// Scores (e.g. from rating)
 		dbpedia.setScore(1.0);
 		euro2016.setScore(2.0);
