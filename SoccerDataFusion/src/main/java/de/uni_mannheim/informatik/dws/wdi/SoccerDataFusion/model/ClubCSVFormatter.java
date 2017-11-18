@@ -19,14 +19,14 @@ import de.uni_mannheim.informatik.dws.winter.model.io.CSVDataSetFormatter;
  * @author Oliver Lehmberg (oli@dwslab.de)
  *
  */
-public class MovieCSVFormatter extends CSVDataSetFormatter<Club, Attribute> {
+public class ClubCSVFormatter extends CSVDataSetFormatter<Club, Attribute> {
 
 	/* (non-Javadoc)
 	 * @see de.uni_mannheim.informatik.wdi.model.io.CSVDataSetFormatter#getHeader(de.uni_mannheim.informatik.wdi.model.DataSet)
 	 */
 	@Override
 	public String[] getHeader(DataSet<Club, Attribute> dataset) {
-		return new String[] { "id", "title", "studio", "genre", "budget", "gross", "director", "date" };
+		return new String[] { "id", "name", "country", "nameOfStadium", "cityOfStadium", "stadiumCapacity", "league"};
 	}
 
 	/* (non-Javadoc)
@@ -36,13 +36,12 @@ public class MovieCSVFormatter extends CSVDataSetFormatter<Club, Attribute> {
 	public String[] format(Club record, DataSet<Club, Attribute> dataset) {
 		return new String[] {
 				record.getIdentifier(),
-				record.getTitle(),
-				record.getStudio(),
-				record.getGenre(),
-				Double.toString(record.getBudget()),
-				Double.toString(record.getGross()),
-				record.getDirector(),
-				record.getDate()==null ? "" : record.getDate().toString() 
+				record.getName(),
+				record.getCountry(),
+				record.getNameOfStadium(),
+				record.getCityOfStadium(),
+				Double.toString(record.getStadiumCapacity()),
+				record.getLeague()
 		};
 	}
 

@@ -88,12 +88,12 @@ public class App
 		// define the fusion strategy
 		DataFusionStrategy<Club, Attribute> strategy = new DataFusionStrategy<>(new FusibleClubFactory());
 		// add attribute fusers
-		strategy.addAttributeFuser(Club.NAME, new TitleFuserShortestString(),new NameEvaluationRule());
-		strategy.addAttributeFuser(Club.COUNTRY,new DirectorFuserLongestString(), new CountryEvaluationRule());
-		strategy.addAttributeFuser(Club.NAMEOFSTADIUM, new DateFuserVoting(),new NameOfStadiumEvaluationRule());
-		strategy.addAttributeFuser(Club.CITYOFSTADIUM,new ActorsFuserUnion(),new CityOfStadiumEvaluationRule());
-		strategy.addAttributeFuser(Club.LEAGUE,new ActorsFuserUnion(),new LeagueEvaluationRule());
-		strategy.addAttributeFuser(Club.PLAYERS,new ActorsFuserUnion(),new PlayersEvaluationRule());
+		strategy.addAttributeFuser(Club.NAME, new NameFuserShortestString(),new NameEvaluationRule());
+		strategy.addAttributeFuser(Club.COUNTRY,new CountryFuserLongestString(), new CountryEvaluationRule());
+		strategy.addAttributeFuser(Club.NAMEOFSTADIUM, new NameOfStadiumFuserVoting(),new NameOfStadiumEvaluationRule());
+		strategy.addAttributeFuser(Club.CITYOFSTADIUM,new CityOfStadiumFuserUnion(),new CityOfStadiumEvaluationRule());
+		strategy.addAttributeFuser(Club.LEAGUE,new LeagueFuserVoting(),new LeagueEvaluationRule());
+		strategy.addAttributeFuser(Club.PLAYERS,new PlayersFuserUnion(),new PlayersEvaluationRule());
 	
 		// create the fusion engine
 		DataFusionEngine<Club, Attribute> engine = new DataFusionEngine<>(strategy);

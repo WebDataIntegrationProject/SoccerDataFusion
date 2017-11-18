@@ -22,34 +22,40 @@ import de.uni_mannheim.informatik.dws.winter.model.io.XMLFormatter;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class MovieXMLFormatter extends XMLFormatter<Club> {
+public class ClubXMLFormatter extends XMLFormatter<Club> {
 
-	ActorXMLFormatter actorFormatter = new ActorXMLFormatter();
+	PlayerXMLFormatter playerFormatter = new PlayerXMLFormatter();
 
 	@Override
 	public Element createRootElement(Document doc) {
-		return doc.createElement("movies");
+		return doc.createElement("clubs");
 	}
 
 	@Override
 	public Element createElementFromRecord(Club record, Document doc) {
-		Element movie = doc.createElement("movie");
+		Element club = doc.createElement("club");
 
-		movie.appendChild(createTextElement("id", record.getIdentifier(), doc));
+		club.appendChild(createTextElement("id", record.getIdentifier(), doc));
 
-		movie.appendChild(createTextElementWithProvenance("title",
-				record.getTitle(),
-				record.getMergedAttributeProvenance(Club.TITLE), doc));
-		movie.appendChild(createTextElementWithProvenance("director",
-				record.getDirector(),
-				record.getMergedAttributeProvenance(Club.DIRECTOR), doc));
-		movie.appendChild(createTextElementWithProvenance("date", record
-				.getDate().toString(), record
-				.getMergedAttributeProvenance(Club.DATE), doc));
+		club.appendChild(createTextElementWithProvenance("name",
+				record.getName(),
+				record.getMergedAttributeProvenance(Club.NAME), doc));
+		club.appendChild(createTextElementWithProvenance("country",
+				record.getCountry(),
+				record.getMergedAttributeProvenance(Club.COUNTRY), doc));
+		club.appendChild(createTextElementWithProvenance("nameOfStadium", 
+				record.getNameOfStadium(), 
+				record.getMergedAttributeProvenance(Club.NAMEOFSTADIUM), doc));
+		club.appendChild(createTextElementWithProvenance("cityOfStadium",
+				record.getCityOfStadium(),
+				record.getMergedAttributeProvenance(Club.CITYOFSTADIUM), doc));
+		club.appendChild(createTextElementWithProvenance("league",
+				record.getLeague(),
+				record.getMergedAttributeProvenance(Club.LEAGUE), doc));
+		
+		club.appendChild(createPlayersElement(record, doc));
 
-		movie.appendChild(createActorsElement(record, doc));
-
-		return movie;
+		return club;
 	}
 
 	protected Element createTextElementWithProvenance(String name,
@@ -59,17 +65,17 @@ public class MovieXMLFormatter extends XMLFormatter<Club> {
 		return elem;
 	}
 
-	protected Element createActorsElement(Club record, Document doc) {
-		Element actorRoot = actorFormatter.createRootElement(doc);
-		actorRoot.setAttribute("provenance",
-				record.getMergedAttributeProvenance(Club.ACTORS));
+	protected Element createPlayersElement(Club record, Document doc) {
+		Element playerRoot = playerFormatter.createRootElement(doc);
+		playerRoot.setAttribute("provenance",
+				record.getMergedAttributeProvenance(Club.PLAYERS));
 
-		for (Player a : record.getActors()) {
-			actorRoot.appendChild(actorFormatter
+		for (Player a : record.getPlayers()) {
+			playerRoot.appendChild(playerFormatter
 					.createElementFromRecord(a, doc));
 		}
 
-		return actorRoot;
+		return playerRoot;
 	}
 
 }

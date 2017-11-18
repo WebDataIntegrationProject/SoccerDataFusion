@@ -10,7 +10,7 @@ import de.uni_mannheim.informatik.dws.winter.model.FusibleFactory;
 import de.uni_mannheim.informatik.dws.winter.model.RecordGroup;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 
-public class FusibleMovieFactory implements FusibleFactory<Club, Attribute> {
+public class FusibleClubFactory implements FusibleFactory<Club, Attribute> {
 
 	@Override
 	public Club createInstanceForFusion(RecordGroup<Club, Attribute> cluster) {

@@ -22,20 +22,33 @@ import de.uni_mannheim.informatik.dws.winter.model.io.XMLFormatter;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class ActorXMLFormatter extends XMLFormatter<Player> {
+public class PlayerXMLFormatter extends XMLFormatter<Player> {
 
 	@Override
 	public Element createRootElement(Document doc) {
-		return doc.createElement("actors");
+		return doc.createElement("players");
 	}
 
 	@Override
 	public Element createElementFromRecord(Player record, Document doc) {
-		Element actor = doc.createElement("actor");
+		Element player = doc.createElement("player");
 
-		actor.appendChild(createTextElement("name", record.getName(), doc));
-
-		return actor;
+		player.appendChild(createTextElement("fullName", record.getFullName(), doc));
+		player.appendChild(createTextElement("birthDate", record.getBirthDate().toString(), doc));
+		player.appendChild(createTextElement("birthplace", record.getBirthplace(), doc));
+		player.appendChild(createTextElement("nationality", record.getNationality(), doc));
+		player.appendChild(createTextElement("height", record.getHeight().toString(), doc));
+		player.appendChild(createTextElement("weight", record.getWeight().toString(), doc));
+		player.appendChild(createTextElement("shirtNumberOfClub", record.getShirtNumberOfClub(), doc));
+		player.appendChild(createTextElement("shirtNumberOfNationalTeam", record.getShirtNumberOfNationalTeam(), doc));
+		player.appendChild(createTextElement("position", record.getPosition(), doc));
+		player.appendChild(createTextElement("preferredFoot", record.getPreferredFoot(), doc));
+		player.appendChild(createTextElement("caps", record.getCaps().toString(), doc));
+		player.appendChild(createTextElement("isInNationalTeam", record.getIsInNationalTeam().toString(), doc));
+		player.appendChild(createTextElement("clubMembershipValidAsOf", record.getClubMembershipValidAsOf().toString(), doc));
+		player.appendChild(createTextElement("clubName", record.getClubName(), doc));
+		
+		return player;
 	}
 
 }
