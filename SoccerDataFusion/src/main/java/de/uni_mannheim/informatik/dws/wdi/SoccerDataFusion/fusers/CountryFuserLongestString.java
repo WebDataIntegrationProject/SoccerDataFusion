@@ -11,12 +11,9 @@
  */
 package de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers;
 
-import java.util.List;
-
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Club;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Player;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
-import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.list.Union;
+import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.string.LongestString;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.FusedValue;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
@@ -25,32 +22,34 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
 /**
- * {@link AttributeValueFuser} for the actors of {@link Club}s. 
+ * {@link AttributeValueFuser} for the name of {@link Club}s.
  * 
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class ActorsFuserUnion extends AttributeValueFuser<List<Player>, Club, Attribute> {
-	
-	public ActorsFuserUnion() {
-		super(new Union<Player, Club, Attribute>());
+public class CountryFuserLongestString extends
+		AttributeValueFuser<String, Club, Attribute> {
+
+	public CountryFuserLongestString() {
+		super(new LongestString<Club, Attribute>());
 	}
-	
+
 	@Override
 	public boolean hasValue(Club record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.hasValue(Club.ACTORS);
+		return record.hasValue(Club.COUNTRY);
 	}
-	
+
 	@Override
-	protected List<Player> getValue(Club record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.getActors();
+	protected String getValue(Club record, Correspondence<Attribute, Matchable> correspondence) {
+		return record.getName();
 	}
 
 	@Override
 	public void fuse(RecordGroup<Club, Attribute> group, Club fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
-		FusedValue<List<Player>, Club, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
-		fusedRecord.setActors(fused.getValue());
-		fusedRecord.setAttributeProvenance(Club.ACTORS, fused.getOriginalIds());
+		FusedValue<String, Club, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
+		fusedRecord.setCountry(fused.getValue());
+		fusedRecord.setAttributeProvenance(Club.COUNTRY,
+				fused.getOriginalIds());
 	}
 
 }

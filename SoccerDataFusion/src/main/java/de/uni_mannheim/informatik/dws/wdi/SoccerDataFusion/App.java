@@ -16,15 +16,22 @@ import de.uni_mannheim.informatik.dws.winter.model.FusibleDataSet;
 import de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet;
 import de.uni_mannheim.informatik.dws.winter.model.RecordGroupFactory;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.ActorsFuserUnion;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.DateFuserVoting;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.DirectorFuserLongestString;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.TitleFuserShortestString;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.CityOfStadiumEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.CountryEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.LeagueEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.NameEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.NameOfStadiumEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.PlayersEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.CityOfStadiumFuserVoting;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.CountryFuserLongestString;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.LeagueFuserMostRecent;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.NameFuserLongestString;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.NameOfStadiumFuserLongestString;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.PlayersFuserUnion;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Club;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.ClubXMLFormatter;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.ClubXMLReader;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.FusibleClubFactory;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Player;
 
 public class App 
 {
@@ -67,13 +74,14 @@ public class App
 		        .parseDefaulting(ChronoField.SECOND_OF_MINUTE, 0)
 		        .toFormatter(Locale.ENGLISH);
 		
+		//TODO: Set right time!!
 		dbpedia.setDate(LocalDateTime.parse("2012-01-01", formatter));
 		euro2016.setDate(LocalDateTime.parse("2010-01-01", formatter));
 		jokecamp.setDate(LocalDateTime.parse("2008-01-01", formatter));
 		kaggle.setDate(LocalDateTime.parse("2010-01-01", formatter));
 		transfermarket.setDate(LocalDateTime.parse("2008-01-01", formatter));
 
-		// load correspondences
+		// load correspondences TODO!!! -> insert right links
 		CorrespondenceSet<Club, Attribute> correspondences = new CorrespondenceSet<>();
 		correspondences.loadCorrespondences(new File("data/correspondences/academy_awards_2_actors_correspondences.csv"), dbpedia, kaggle);
 		correspondences.loadCorrespondences(new File("data/correspondences/actors_2_golden_globes_correspondences.csv"), jokecamp, kaggle);
@@ -88,11 +96,11 @@ public class App
 		// define the fusion strategy
 		DataFusionStrategy<Club, Attribute> strategy = new DataFusionStrategy<>(new FusibleClubFactory());
 		// add attribute fusers
-		strategy.addAttributeFuser(Club.NAME, new NameFuserShortestString(),new NameEvaluationRule());
+		strategy.addAttributeFuser(Club.NAME, new NameFuserLongestString(),new NameEvaluationRule());
 		strategy.addAttributeFuser(Club.COUNTRY,new CountryFuserLongestString(), new CountryEvaluationRule());
-		strategy.addAttributeFuser(Club.NAMEOFSTADIUM, new NameOfStadiumFuserVoting(),new NameOfStadiumEvaluationRule());
-		strategy.addAttributeFuser(Club.CITYOFSTADIUM,new CityOfStadiumFuserUnion(),new CityOfStadiumEvaluationRule());
-		strategy.addAttributeFuser(Club.LEAGUE,new LeagueFuserVoting(),new LeagueEvaluationRule());
+		strategy.addAttributeFuser(Club.NAMEOFSTADIUM, new NameOfStadiumFuserLongestString(),new NameOfStadiumEvaluationRule());
+		strategy.addAttributeFuser(Club.CITYOFSTADIUM,new CityOfStadiumFuserVoting(),new CityOfStadiumEvaluationRule());
+		strategy.addAttributeFuser(Club.LEAGUE,new LeagueFuserMostRecent(),new LeagueEvaluationRule());
 		strategy.addAttributeFuser(Club.PLAYERS,new PlayersFuserUnion(),new PlayersEvaluationRule());
 	
 		// create the fusion engine

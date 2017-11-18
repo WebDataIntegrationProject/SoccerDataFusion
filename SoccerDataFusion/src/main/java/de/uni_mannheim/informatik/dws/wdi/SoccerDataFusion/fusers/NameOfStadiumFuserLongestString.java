@@ -22,33 +22,33 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
 /**
- * {@link AttributeValueFuser} for the director of {@link Club}s.
+ * {@link AttributeValueFuser} for the name of {@link Club}s.
  * 
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class DirectorFuserLongestString extends
+public class NameOfStadiumFuserLongestString extends
 		AttributeValueFuser<String, Club, Attribute> {
 
-	public DirectorFuserLongestString() {
+	public NameOfStadiumFuserLongestString() {
 		super(new LongestString<Club, Attribute>());
 	}
 
 	@Override
 	public boolean hasValue(Club record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.hasValue(Club.DIRECTOR);
+		return record.hasValue(Club.NAMEOFSTADIUM);
 	}
 
 	@Override
 	protected String getValue(Club record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.getDirector();
+		return record.getName();
 	}
 
 	@Override
 	public void fuse(RecordGroup<Club, Attribute> group, Club fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
 		FusedValue<String, Club, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
-		fusedRecord.setDirector(fused.getValue());
-		fusedRecord.setAttributeProvenance(Club.DIRECTOR,
+		fusedRecord.setNameOfStadium(fused.getValue());
+		fusedRecord.setAttributeProvenance(Club.NAMEOFSTADIUM,
 				fused.getOriginalIds());
 	}
 
