@@ -84,12 +84,12 @@ public class App
 
 		// load correspondences TODO!!! -> insert right links
 		CorrespondenceSet<Club, Attribute> correspondences = new CorrespondenceSet<>();
-		correspondences.loadCorrespondences(new File("data/correspondences/academy_awards_2_actors_correspondences.csv"), dbpedia, kaggle);
-		correspondences.loadCorrespondences(new File("data/correspondences/actors_2_golden_globes_correspondences.csv"), jokecamp, kaggle);
-		correspondences.loadCorrespondences(new File("data/correspondences/academy_awards_2_actors_correspondences.csv"), transfermarket, kaggle);
-		correspondences.loadCorrespondences(new File("data/correspondences/actors_2_golden_globes_correspondences.csv"), jokecamp, dbpedia);
-		correspondences.loadCorrespondences(new File("data/correspondences/academy_awards_2_actors_correspondences.csv"),dbpedia, euro2016);
-		correspondences.loadCorrespondences(new File("data/correspondences/actors_2_golden_globes_correspondences.csv"), transfermarket, jokecamp);
+		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_kaggle_clubs_correspondences.csv"), dbpedia, kaggle);
+		correspondences.loadCorrespondences(new File("data/correspondences/jokecamp_kaggle_clubs_correspondences.csv"), jokecamp, kaggle);
+		correspondences.loadCorrespondences(new File("data/correspondences/transfermarket_kaggle_clubs_correspondences.csv"), transfermarket, kaggle);
+		correspondences.loadCorrespondences(new File("data/correspondences/jokecamp_dbpedia_clubs_correspondences.csv"), jokecamp, dbpedia);
+		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_euro2016_clubs_correspondences.csv"),dbpedia, euro2016);
+		correspondences.loadCorrespondences(new File("data/correspondences/transfermarket_jokecamp_clubs_correspondences.csv"), transfermarket, jokecamp);
 
 		// write group size distribution
 		correspondences.printGroupSizeDistribution();
