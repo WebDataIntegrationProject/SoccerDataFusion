@@ -33,7 +33,7 @@ import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.ClubXMLFormatte
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.ClubXMLReader;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.FusibleClubFactory;
 
-public class App 
+public class ClubApp 
 {
     public static void main( String[] args ) throws Exception
     {
@@ -114,11 +114,11 @@ public class App
 		FusibleDataSet<Club, Attribute> fusedDataSet = engine.run(correspondences, null);
 
 		// write the result
-		new ClubXMLFormatter().writeXML(new File("data/output/fused.xml"), fusedDataSet);
+		new ClubXMLFormatter().writeXML(new File("data/output/clubs_fused.xml"), fusedDataSet);
 
 		// load the gold standard
 		DataSet<Club, Attribute> goldStandard = new FusibleHashedDataSet<>();
-		new ClubXMLReader().loadFromXML(new File("data/goldstandard/fused.xml"), "/clubs/club", goldStandard);
+		new ClubXMLReader().loadFromXML(new File("data/goldstandard/clubs_fused.xml"), "/clubs/club", goldStandard);
 
 		// evaluate
 		DataFusionEvaluator<Club, Attribute> evaluator = new DataFusionEvaluator<>(
