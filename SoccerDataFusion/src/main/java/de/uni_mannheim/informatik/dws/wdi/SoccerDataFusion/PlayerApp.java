@@ -20,19 +20,30 @@ import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.BirthdateE
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.BirthplaceEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.CityOfStadiumEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.CountryEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.HeightEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.LeagueEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.ClubNameEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.NameOfStadiumEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.NationalityEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.PlayerNameEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.PlayersEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.ShirtNumberNationalTeamEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.ShirtNumberOfClubEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.WeightEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.BirthDateFuserVoting;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.BirthplaceFuserVoting;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.CityOfStadiumFuserVoting;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.CountryFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.LeagueFuserMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.ClubNameFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.NameOfStadiumFuserLongestString;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.NationalityFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.PlayerNameFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.PlayersFuserUnion;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.PositionFuserMostRecent;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.ShirtNumberOfClubFuserMostRecent;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.ShirtNumberOfNationalTeamFuserMostRecent;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.WeightFuserMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Club;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.ClubXMLFormatter;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.ClubXMLReader;
@@ -108,18 +119,18 @@ public class PlayerApp
 		// add attribute fusers
 		strategy.addAttributeFuser(Player.FULLNAME, new PlayerNameFuserLongestString(),new PlayerNameEvaluationRule());
 		strategy.addAttributeFuser(Player.BIRTHPLACE,new BirthplaceFuserVoting(), new BirthplaceEvaluationRule());
-		strategy.addAttributeFuser(Player.BIRTHDATE, new BirthdateFuser(),new BirthdateEvaluationRule());
-		strategy.addAttributeFuser(Player.NATIONALITY,new NationalityFuser(),new NationalityEvaluationRule());
-		strategy.addAttributeFuser(Player.HEIGHT,new HeightFuser(),new HeightRule());
+		strategy.addAttributeFuser(Player.BIRTHDATE, new BirthDateFuserVoting(),new BirthdateEvaluationRule());
+		strategy.addAttributeFuser(Player.NATIONALITY,new NationalityFuserLongestString(),new NationalityEvaluationRule());
+		strategy.addAttributeFuser(Player.HEIGHT,new HeightFuserFavourSource(),new HeightEvaluationRule());
 		strategy.addAttributeFuser(Player.WEIGHT,new WeightFuserMostRecent(),new WeightEvaluationRule());
-		strategy.addAttributeFuser(Player.SHIRTNUMBEROFCLUB,new ShirtNumberOfClubFuser(),new ShirtNumberOfClubEvaluationRule());
-		strategy.addAttributeFuser(Player.SHIRTNUMBEROFNATIONALTEAM,new ShirtNumberNationalTeamFuser(),new ShirtNumberOfNationalTeamEvaluationRule());
-		strategy.addAttributeFuser(Player.POSITION,new PositionFuser(),new PositionEvaluationRule());
-		strategy.addAttributeFuser(Player.PREFERREDFOOT,new PreferredFootFuser(),new PreferredFootEvaluationRule());
+		strategy.addAttributeFuser(Player.SHIRTNUMBEROFCLUB,new ShirtNumberOfClubFuserMostRecent(),new ShirtNumberOfClubEvaluationRule());
+		strategy.addAttributeFuser(Player.SHIRTNUMBEROFNATIONALTEAM,new ShirtNumberOfNationalTeamFuserMostRecent(),new ShirtNumberNationalTeamEvaluationRule());
+		strategy.addAttributeFuser(Player.POSITION,new PositionFuserMostRecent(),new PositionEvaluationRule());
+		strategy.addAttributeFuser(Player.PREFERREDFOOT,new PreferredFootFuserVoting(),new PreferredFootEvaluationRule());
 		strategy.addAttributeFuser(Player.CAPS,new CapsFuserHigherNumber(),new CapsEvaluationRule());
-		strategy.addAttributeFuser(Player.ISINNATIONALTEAM,new IsInNationalTeamFuser(),new IsInNationalTeamEvaluationRule());
+		strategy.addAttributeFuser(Player.ISINNATIONALTEAM,new IsInNationalTeamFuserMostRecent(),new IsInNationalTeamEvaluationRule());
 		strategy.addAttributeFuser(Player.CLUBMEMBERSHIPVALIDASOF,new ClubMembershipFuserMostRecent(),new ClubMemberShipAsValidOfEvaluationRule());
-		strategy.addAttributeFuser(Player.CLUBNAME,new PlayerClubNameFuserLongestString(),new PlayerClubNameEvaluationRule());
+		//strategy.addAttributeFuser(Player.CLUBNAME,new PlayerClubNameFuserLongestString(),new PlayerClubNameEvaluationRule());
 		
 		// create the fusion engine
 		DataFusionEngine<Player, Attribute> engine = new DataFusionEngine<>(strategy);
