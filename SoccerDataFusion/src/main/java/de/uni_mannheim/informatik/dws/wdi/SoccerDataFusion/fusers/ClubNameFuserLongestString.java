@@ -27,10 +27,10 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class NameFuserLongestString extends
+public class ClubNameFuserLongestString extends
 		AttributeValueFuser<String, Club, Attribute> {
 
-	public NameFuserLongestString() {
+	public ClubNameFuserLongestString() {
 		super(new LongestString<Club, Attribute>());
 	}
 

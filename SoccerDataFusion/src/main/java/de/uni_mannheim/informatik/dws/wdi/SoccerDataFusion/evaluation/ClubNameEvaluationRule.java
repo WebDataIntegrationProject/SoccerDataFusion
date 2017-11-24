@@ -27,7 +27,7 @@ import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccard
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class NameEvaluationRule extends EvaluationRule<Club, Attribute> {
+public class ClubNameEvaluationRule extends EvaluationRule<Club, Attribute> {
 
 	SimilarityMeasure<String> sim = new TokenizingJaccardSimilarity();
 
