@@ -19,17 +19,11 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.BirthdateEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.BirthplaceEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.CapsEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.CityOfStadiumEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.ClubMembershipAsValidOfEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.CountryEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.HeightEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.IsInNationalTeamEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.LeagueEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.ClubNameEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.NameOfStadiumEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.NationalityEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.PlayerNameEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.PlayersEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.PositionEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.PreferredFootEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.ShirtNumberNationalTeamEvaluationRule;
@@ -37,22 +31,17 @@ import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.ShirtNumbe
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.WeightEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.BirthDateFuserVoting;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.BirthplaceFuserVoting;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.CityOfStadiumFuserVoting;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.CountryFuserLongestString;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.LeagueFuserMostRecent;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.ClubNameFuserLongestString;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.NameOfStadiumFuserLongestString;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.CapsFuserMostRecent;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.ClubMembershipValidAsOfFuserMostRecent;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.HeightFuserVoting;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.IsInNationalTeamFuserMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.NationalityFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.PlayerNameFuserLongestString;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.PlayersFuserUnion;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.PositionFuserMostRecent;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.PreferredFootFuserVoting;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.ShirtNumberOfClubFuserMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.ShirtNumberOfNationalTeamFuserMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.WeightFuserMostRecent;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Club;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.ClubXMLFormatter;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.ClubXMLReader;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.FusibleClubFactory;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.FusiblePlayerFactory;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Player;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.PlayerXMLFormatter;
@@ -109,12 +98,12 @@ public class PlayerApp
 
 		// load correspondences TODO!!! -> insert right links
 		CorrespondenceSet<Player, Attribute> correspondences = new CorrespondenceSet<>();
-		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_kaggle_players_correspondences.csv"), dbpedia, kaggle);
-		correspondences.loadCorrespondences(new File("data/correspondences/jokecamp_kaggle_players_correspondences.csv"), jokecamp, kaggle);
-		correspondences.loadCorrespondences(new File("data/correspondences/transfermarket_kaggle_players_correspondences.csv"), transfermarket, kaggle);
-		correspondences.loadCorrespondences(new File("data/correspondences/jokecamp_dbpedia_players_correspondences.csv"), jokecamp, dbpedia);
-		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_euro2016_players_correspondences.csv"),dbpedia, euro2016);
-		correspondences.loadCorrespondences(new File("data/correspondences/transfermarket_jokecamp_players_correspondences.csv"), transfermarket, jokecamp);
+		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_kaggle_correspondences_players.csv"), dbpedia, kaggle);
+		//correspondences.loadCorrespondences(new File("data/correspondences/jokecamp_kaggle_players_correspondences.csv"), jokecamp, kaggle);
+		//correspondences.loadCorrespondences(new File("data/correspondences/transfermarket_kaggle_players_correspondences.csv"), transfermarket, kaggle);
+		correspondences.loadCorrespondences(new File("data/correspondences/jokecamp_dbpedia_correspondences_players.csv"), jokecamp, dbpedia);
+		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_euro2016_correspondences_players.csv"),dbpedia, euro2016);
+		correspondences.loadCorrespondences(new File("data/correspondences/transfermarket_jokecamp_correspondences_players.csv"), transfermarket, jokecamp);
 
 		// write group size distribution
 		correspondences.printGroupSizeDistribution();
@@ -126,15 +115,15 @@ public class PlayerApp
 		strategy.addAttributeFuser(Player.BIRTHPLACE,new BirthplaceFuserVoting(), new BirthplaceEvaluationRule());
 		strategy.addAttributeFuser(Player.BIRTHDATE, new BirthDateFuserVoting(),new BirthdateEvaluationRule());
 		strategy.addAttributeFuser(Player.NATIONALITY,new NationalityFuserLongestString(),new NationalityEvaluationRule());
-		strategy.addAttributeFuser(Player.HEIGHT,new HeightFuserFavourSource(),new HeightEvaluationRule());
+		strategy.addAttributeFuser(Player.HEIGHT,new HeightFuserVoting(),new HeightEvaluationRule());
 		strategy.addAttributeFuser(Player.WEIGHT,new WeightFuserMostRecent(),new WeightEvaluationRule());
 		strategy.addAttributeFuser(Player.SHIRTNUMBEROFCLUB,new ShirtNumberOfClubFuserMostRecent(),new ShirtNumberOfClubEvaluationRule());
 		strategy.addAttributeFuser(Player.SHIRTNUMBEROFNATIONALTEAM,new ShirtNumberOfNationalTeamFuserMostRecent(),new ShirtNumberNationalTeamEvaluationRule());
 		strategy.addAttributeFuser(Player.POSITION,new PositionFuserMostRecent(),new PositionEvaluationRule());
 		strategy.addAttributeFuser(Player.PREFERREDFOOT,new PreferredFootFuserVoting(),new PreferredFootEvaluationRule());
-		strategy.addAttributeFuser(Player.CAPS,new CapsFuserHigherNumber(),new CapsEvaluationRule());
+		strategy.addAttributeFuser(Player.CAPS,new CapsFuserMostRecent(),new CapsEvaluationRule());
 		strategy.addAttributeFuser(Player.ISINNATIONALTEAM,new IsInNationalTeamFuserMostRecent(),new IsInNationalTeamEvaluationRule());
-		strategy.addAttributeFuser(Player.CLUBMEMBERSHIPVALIDASOF,new ClubMembershipFuserMostRecent(),new ClubMembershipAsValidOfEvaluationRule());
+		strategy.addAttributeFuser(Player.CLUBMEMBERSHIPVALIDASOF,new ClubMembershipValidAsOfFuserMostRecent(),new ClubMembershipAsValidOfEvaluationRule());
 		//strategy.addAttributeFuser(Player.CLUBNAME,new PlayerClubNameFuserLongestString(),new PlayerClubNameEvaluationRule());
 		
 		// create the fusion engine

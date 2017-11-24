@@ -13,43 +13,40 @@ package de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers;
 
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Player;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
-import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.string.LongestString;
+import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.Voting;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.FusedValue;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.RecordGroup;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
-
 /**
- * {@link AttributeValueFuser} for the name of {@link Player}s.
+ * {@link AttributeValueFuser} for the city of stadium of {@link Player}s. 
  * 
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class PlayerNameFuserLongestString extends
-		AttributeValueFuser<String, Player, Attribute> {
+public class HeightFuserVoting extends AttributeValueFuser<String, Player, Attribute> {
 
-	public PlayerNameFuserLongestString() {
-		super(new LongestString<Player, Attribute>());
+	public HeightFuserVoting() {
+		super(new Voting<String, Player, Attribute>());
 	}
-
+	
 	@Override
 	public boolean hasValue(Player record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.hasValue(Player.FULLNAME);
+		return record.hasValue(Player.HEIGHT);
 	}
-
+	
 	@Override
 	protected String getValue(Player record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.getFullName();
+		return record.getHeight().toString();
 	}
 
 	@Override
 	public void fuse(RecordGroup<Player, Attribute> group, Player fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
 		FusedValue<String, Player, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
-		fusedRecord.setFullName(fused.getValue());
-		fusedRecord.setAttributeProvenance(Player.FULLNAME,
-				fused.getOriginalIds());
+		fusedRecord.setHeight(Integer.parseInt(fused.getValue()));
+		fusedRecord.setAttributeProvenance(Player.HEIGHT, fused.getOriginalIds());
 	}
 
 }

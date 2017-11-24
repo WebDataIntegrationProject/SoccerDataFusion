@@ -13,7 +13,7 @@ package de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers;
 
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Player;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
-import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.string.LongestString;
+import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.meta.MostRecent;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.FusedValue;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
@@ -22,34 +22,35 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
 /**
- * {@link AttributeValueFuser} for the name of {@link Player}s.
+ * {@link AttributeValueFuser} for the actors of {@link Player}s.
  * 
+ * @author Robert Meusel (robert@dwslab.de)
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class PlayerNameFuserLongestString extends
+public class CapsFuserMostRecent extends
 		AttributeValueFuser<String, Player, Attribute> {
 
-	public PlayerNameFuserLongestString() {
-		super(new LongestString<Player, Attribute>());
+	public CapsFuserMostRecent() {
+		super(new MostRecent<String, Player, Attribute>());
 	}
 
 	@Override
 	public boolean hasValue(Player record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.hasValue(Player.FULLNAME);
+		return record.hasValue(Player.CAPS);
 	}
 
 	@Override
 	protected String getValue(Player record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.getFullName();
+		return record.getCaps().toString();
 	}
 
 	@Override
 	public void fuse(RecordGroup<Player, Attribute> group, Player fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
 		FusedValue<String, Player, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
-		fusedRecord.setFullName(fused.getValue());
-		fusedRecord.setAttributeProvenance(Player.FULLNAME,
-				fused.getOriginalIds());
+		fusedRecord.setCaps(Integer.parseInt(fused.getValue()));
+		fusedRecord
+				.setAttributeProvenance(Player.CAPS, fused.getOriginalIds());
 	}
 
 }
