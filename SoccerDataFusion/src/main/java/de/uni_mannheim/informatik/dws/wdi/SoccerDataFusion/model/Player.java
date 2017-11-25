@@ -70,15 +70,10 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 	private Integer caps;
 	private Boolean isInNationalTeam;
 	private LocalDateTime clubMembershipValidAsOf;
-	private String clubName;
 
 	public Player(String identifier, String provenance) {
 		super(identifier, provenance);
 	}
-	
-	public String getClubName() {return clubName; }
-
-	public void setClubName(String clubName) { this.clubName = clubName; }
 
 	public String getFullName() {
 		return fullName;
@@ -266,7 +261,6 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 	public static final Attribute CAPS = new Attribute("Caps");
 	public static final Attribute ISINNATIONALTEAM = new Attribute("IsInNationalTeam");
 	public static final Attribute CLUBMEMBERSHIPVALIDASOF = new Attribute("ClubMembershipValidAsOf");
-	public static final Attribute CLUBNAME = new Attribute("ClubName");
 	
 	/* (non-Javadoc)
 	 * @see de.uni_mannheim.informatik.wdi.model.Record#hasValue(java.lang.Object)
@@ -299,8 +293,6 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 			return isInNationalTeam!=null;
 		else if(attribute==CLUBMEMBERSHIPVALIDASOF)
 			return clubMembershipValidAsOf!=null;
-		else if(attribute==CLUBNAME)
-			return clubName!=null;
 		return false;
 	}
 

@@ -128,7 +128,6 @@ public class PlayerApp
 		strategy.addAttributeFuser(Player.CAPS,new CapsFuserMostRecent(),new CapsEvaluationRule());
 		strategy.addAttributeFuser(Player.ISINNATIONALTEAM,new IsInNationalTeamFuserMostRecent(),new IsInNationalTeamEvaluationRule());
 		strategy.addAttributeFuser(Player.CLUBMEMBERSHIPVALIDASOF,new ClubMembershipValidAsOfFuserMostRecent(),new ClubMembershipAsValidOfEvaluationRule());
-		//strategy.addAttributeFuser(Player.CLUBNAME,new PlayerClubNameFuserLongestString(),new PlayerClubNameEvaluationRule());
 		
 		// create the fusion engine
 		DataFusionEngine<Player, Attribute> engine = new DataFusionEngine<>(strategy);

@@ -52,7 +52,6 @@ public class PlayerXMLReader extends XMLMatchableReader<Player, Attribute> {
 	    dataset.addAttribute(Player.CAPS);
 	    dataset.addAttribute(Player.ISINNATIONALTEAM);
 	    dataset.addAttribute(Player.CLUBMEMBERSHIPVALIDASOF);
-	    dataset.addAttribute(Player.CLUBNAME);
 	}
 	
 	@Override
@@ -70,7 +69,6 @@ public class PlayerXMLReader extends XMLMatchableReader<Player, Attribute> {
 		player.setShirtNumberOfNationalTeam(getValueFromChildElement(node, "shirtNumberOfNationalTeam"));
 		player.setPosition(getValueFromChildElement(node, "position"));
 		player.setPreferredFoot(getValueFromChildElement(node, "preferredFoot"));
-		player.setClubName(getValueFromChildElement(node.getParentNode().getParentNode(), "name"));
 		
 		// convert string to integer
 		try {

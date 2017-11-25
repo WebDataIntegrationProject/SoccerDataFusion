@@ -70,7 +70,6 @@ public class PlayerXMLFormatter extends XMLFormatter<Player> {
 			player.appendChild(createTextElement("isInNationalTeam", null, doc));
 		}
 		player.appendChild(createTextElement("clubMembershipValidAsOf", record.getClubMembershipValidAsOf().toLocalDate().toString(), doc));
-		player.appendChild(createTextElement("clubName", record.getClubName(), doc));
 		
 		return player;
 	}
