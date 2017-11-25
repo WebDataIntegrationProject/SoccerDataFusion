@@ -52,13 +52,13 @@ public class PlayerApp
     public static void main( String[] args ) throws Exception
     {
 		// Load the Data into FusibleDataSet
-		FusibleDataSet<Player, Attribute> dbpedia = new FusibleHashedDataSet<>();
-		new PlayerXMLReader().loadFromXML(new File("data/input/dbpedia.xml"), "/clubs/club/players/player", dbpedia);
-		dbpedia.printDataSetDensityReport();
-
-		FusibleDataSet<Player, Attribute> euro2016 = new FusibleHashedDataSet<>();
-		new PlayerXMLReader().loadFromXML(new File("data/input/euro2016.xml"), "/clubs/club/players/player", euro2016);
-		euro2016.printDataSetDensityReport();
+//		FusibleDataSet<Player, Attribute> dbpedia = new FusibleHashedDataSet<>();
+//		new PlayerXMLReader().loadFromXML(new File("data/input/dbpedia.xml"), "/clubs/club/players/player", dbpedia);
+//		dbpedia.printDataSetDensityReport();
+//
+//		FusibleDataSet<Player, Attribute> euro2016 = new FusibleHashedDataSet<>();
+//		new PlayerXMLReader().loadFromXML(new File("data/input/euro2016.xml"), "/clubs/club/players/player", euro2016);
+//		euro2016.printDataSetDensityReport();
 
 		FusibleDataSet<Player, Attribute> jokecamp = new FusibleHashedDataSet<>();
 		new PlayerXMLReader().loadFromXML(new File("data/input/jokecamp-others.xml"), "/clubs/club/players/player", jokecamp);
@@ -68,18 +68,18 @@ public class PlayerApp
 		new PlayerXMLReader().loadFromXML(new File("data/input/kaggle.xml"), "/clubs/club/players/player", kaggle);
 		kaggle.printDataSetDensityReport();
 		
-		FusibleDataSet<Player, Attribute> transfermarket = new FusibleHashedDataSet<>();
-		new PlayerXMLReader().loadFromXML(new File("data/input/transfermarket.xml"), "/clubs/club/players/player", transfermarket);
-		transfermarket.printDataSetDensityReport();
+//		FusibleDataSet<Player, Attribute> transfermarket = new FusibleHashedDataSet<>();
+//		new PlayerXMLReader().loadFromXML(new File("data/input/transfermarket.xml"), "/clubs/club/players/player", transfermarket);
+//		transfermarket.printDataSetDensityReport();
 
 		// Maintain Provenance 
 		//TODO: Adjust Ratings
 		// Scores (e.g. from rating)
-		dbpedia.setScore(1.0);
-		euro2016.setScore(2.0);
+//		dbpedia.setScore(1.0);
+//		euro2016.setScore(2.0);
 		jokecamp.setScore(3.0);
 		kaggle.setScore(2.0);
-		transfermarket.setScore(3.0);
+//		transfermarket.setScore(3.0);
 
 		// Date (e.g. last update)
 		DateTimeFormatter formatter = new DateTimeFormatterBuilder()
@@ -89,21 +89,25 @@ public class PlayerApp
 		        .parseDefaulting(ChronoField.SECOND_OF_MINUTE, 0)
 		        .toFormatter(Locale.ENGLISH);
 		
+		
 		//TODO: Set right time!!
-		dbpedia.setDate(LocalDateTime.parse("2012-01-01", formatter));
-		euro2016.setDate(LocalDateTime.parse("2010-01-01", formatter));
+//		dbpedia.setDate(LocalDateTime.parse("2012-01-01", formatter));
+//		euro2016.setDate(LocalDateTime.parse("2010-01-01", formatter));
 		jokecamp.setDate(LocalDateTime.parse("2008-01-01", formatter));
 		kaggle.setDate(LocalDateTime.parse("2010-01-01", formatter));
-		transfermarket.setDate(LocalDateTime.parse("2008-01-01", formatter));
+//		transfermarket.setDate(LocalDateTime.parse("2008-01-01", formatter));
 
 		// load correspondences TODO!!! -> insert right links
 		CorrespondenceSet<Player, Attribute> correspondences = new CorrespondenceSet<>();
-		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_kaggle_correspondences_players.csv"), dbpedia, kaggle);
-		//correspondences.loadCorrespondences(new File("data/correspondences/jokecamp_kaggle_players_correspondences.csv"), jokecamp, kaggle);
-		//correspondences.loadCorrespondences(new File("data/correspondences/transfermarket_kaggle_players_correspondences.csv"), transfermarket, kaggle);
-		correspondences.loadCorrespondences(new File("data/correspondences/jokecamp_dbpedia_correspondences_players.csv"), jokecamp, dbpedia);
-		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_euro2016_correspondences_players.csv"),dbpedia, euro2016);
-		correspondences.loadCorrespondences(new File("data/correspondences/transfermarket_jokecamp_correspondences_players.csv"), transfermarket, jokecamp);
+		// Dummy correspondense
+		correspondences.loadCorrespondences(new File("data/correspondences/dummy-jokecamp_2_kaggle_correspondences_players.csv"), jokecamp, kaggle);
+
+//		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_kaggle_correspondences_players.csv"), dbpedia, kaggle);
+//		correspondences.loadCorrespondences(new File("data/correspondences/jokecamp_kaggle_players_correspondences.csv"), jokecamp, kaggle);
+//		correspondences.loadCorrespondences(new File("data/correspondences/transfermarket_kaggle_players_correspondences.csv"), transfermarket, kaggle);
+//		correspondences.loadCorrespondences(new File("data/correspondences/jokecamp_dbpedia_correspondences_players.csv"), jokecamp, dbpedia);
+//		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_euro2016_correspondences_players.csv"),dbpedia, euro2016);
+//		correspondences.loadCorrespondences(new File("data/correspondences/transfermarket_jokecamp_correspondences_players.csv"), transfermarket, jokecamp);
 
 		// write group size distribution
 		correspondences.printGroupSizeDistribution();
@@ -139,15 +143,15 @@ public class PlayerApp
 		new PlayerXMLFormatter().writeXML(new File("data/output/players_fused.xml"), fusedDataSet);
 
 		// load the gold standard
-		DataSet<Player, Attribute> goldStandard = new FusibleHashedDataSet<>();
-		new PlayerXMLReader().loadFromXML(new File("data/goldstandard/players_fused.xml"), "/players/player", goldStandard);
+//		DataSet<Player, Attribute> goldStandard = new FusibleHashedDataSet<>();
+//		new PlayerXMLReader().loadFromXML(new File("data/goldstandard/players_fused.xml"), "/players/player", goldStandard);
 
 		// evaluate
-		DataFusionEvaluator<Player, Attribute> evaluator = new DataFusionEvaluator<>(
-				strategy, new RecordGroupFactory<Player, Attribute>());
-		evaluator.setVerbose(true);
-		double accuracy = evaluator.evaluate(fusedDataSet, goldStandard, null);
+//		DataFusionEvaluator<Player, Attribute> evaluator = new DataFusionEvaluator<>(
+//				strategy, new RecordGroupFactory<Player, Attribute>());
+//		evaluator.setVerbose(true);
+//		double accuracy = evaluator.evaluate(fusedDataSet, goldStandard, null);
 
-		System.out.println(String.format("Accuracy: %.2f", accuracy));
+//		System.out.println(String.format("Accuracy: %.2f", accuracy));
     }
 }

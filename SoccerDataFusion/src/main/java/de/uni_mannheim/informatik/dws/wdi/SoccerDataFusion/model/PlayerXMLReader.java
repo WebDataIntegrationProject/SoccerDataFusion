@@ -19,6 +19,7 @@ import java.util.Locale;
 
 import org.w3c.dom.Node;
 
+import de.uni_mannheim.informatik.dws.winter.model.DataSet;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader;
 
@@ -30,6 +31,30 @@ import de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader;
  */
 public class PlayerXMLReader extends XMLMatchableReader<Player, Attribute> {
 
+	/* (non-Javadoc)
+	 * @see de.uni_mannheim.informatik.wdi.model.io.XMLMatchableReader#initialiseDataset(de.uni_mannheim.informatik.wdi.model.DataSet)
+	 */
+	@Override
+	protected void initialiseDataset(DataSet<Player, Attribute> dataset) {
+		super.initialiseDataset(dataset);
+		
+		// the schema is defined in the Movie class and not interpreted from the file, so we have to set the attributes manually
+	    dataset.addAttribute(Player.FULLNAME);
+	    dataset.addAttribute(Player.BIRTHPLACE);
+	    dataset.addAttribute(Player.BIRTHDATE);
+	    dataset.addAttribute(Player.NATIONALITY);
+	    dataset.addAttribute(Player.HEIGHT);
+	    dataset.addAttribute(Player.WEIGHT);	
+	    dataset.addAttribute(Player.SHIRTNUMBEROFCLUB);
+	    dataset.addAttribute(Player.SHIRTNUMBEROFNATIONALTEAM);
+	    dataset.addAttribute(Player.POSITION);
+	    dataset.addAttribute(Player.PREFERREDFOOT);
+	    dataset.addAttribute(Player.CAPS);
+	    dataset.addAttribute(Player.ISINNATIONALTEAM);
+	    dataset.addAttribute(Player.CLUBMEMBERSHIPVALIDASOF);
+	    dataset.addAttribute(Player.CLUBNAME);
+	}
+	
 	@Override
 	public Player createModelFromElement(Node node, String provenanceInfo) {
 		String id = getValueFromChildElement(node, "id");

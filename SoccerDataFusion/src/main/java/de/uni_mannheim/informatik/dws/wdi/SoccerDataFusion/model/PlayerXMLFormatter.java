@@ -11,6 +11,8 @@
  */
 package de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model;
 
+import java.time.LocalDateTime;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
@@ -33,19 +35,41 @@ public class PlayerXMLFormatter extends XMLFormatter<Player> {
 	public Element createElementFromRecord(Player record, Document doc) {
 		Element player = doc.createElement("player");
 
+		player.appendChild(createTextElement("id", record.getIdentifier(), doc));
+
 		player.appendChild(createTextElement("fullName", record.getFullName(), doc));
-		player.appendChild(createTextElement("birthDate", record.getBirthDate().toString(), doc));
+		if (record.getBirthDate() != null) {
+			player.appendChild(createTextElement("birthDate", record.getBirthDate().toLocalDate().toString(), doc));
+		} else {
+			player.appendChild(createTextElement("birthDate", null, doc));
+		}
 		player.appendChild(createTextElement("birthplace", record.getBirthplace(), doc));
 		player.appendChild(createTextElement("nationality", record.getNationality(), doc));
-		player.appendChild(createTextElement("height", record.getHeight().toString(), doc));
-		player.appendChild(createTextElement("weight", record.getWeight().toString(), doc));
+		if (record.getHeight() != null) {
+			player.appendChild(createTextElement("height", record.getHeight().toString(), doc));
+		} else {
+			player.appendChild(createTextElement("height", null, doc));
+		}
+		if (record.getWeight() != null) {
+			player.appendChild(createTextElement("weight", record.getWeight().toString(), doc));
+		} else {
+			player.appendChild(createTextElement("weight", null, doc));
+		}
 		player.appendChild(createTextElement("shirtNumberOfClub", record.getShirtNumberOfClub(), doc));
 		player.appendChild(createTextElement("shirtNumberOfNationalTeam", record.getShirtNumberOfNationalTeam(), doc));
 		player.appendChild(createTextElement("position", record.getPosition(), doc));
 		player.appendChild(createTextElement("preferredFoot", record.getPreferredFoot(), doc));
-		player.appendChild(createTextElement("caps", record.getCaps().toString(), doc));
-		player.appendChild(createTextElement("isInNationalTeam", record.getIsInNationalTeam().toString(), doc));
-		player.appendChild(createTextElement("clubMembershipValidAsOf", record.getClubMembershipValidAsOf().toString(), doc));
+		if (record.getCaps() != null) {
+			player.appendChild(createTextElement("caps", record.getCaps().toString(), doc));
+		} else {
+			player.appendChild(createTextElement("caps", null, doc));
+		}
+		if (record.getIsInNationalTeam() != null) {
+			player.appendChild(createTextElement("isInNationalTeam", record.getIsInNationalTeam().toString(), doc));
+		} else {
+			player.appendChild(createTextElement("isInNationalTeam", null, doc));
+		}
+		player.appendChild(createTextElement("clubMembershipValidAsOf", record.getClubMembershipValidAsOf().toLocalDate().toString(), doc));
 		player.appendChild(createTextElement("clubName", record.getClubName(), doc));
 		
 		return player;

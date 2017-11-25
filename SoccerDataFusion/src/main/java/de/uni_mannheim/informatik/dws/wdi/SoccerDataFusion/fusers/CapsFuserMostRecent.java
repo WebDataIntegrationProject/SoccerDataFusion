@@ -48,7 +48,11 @@ public class CapsFuserMostRecent extends
 	@Override
 	public void fuse(RecordGroup<Player, Attribute> group, Player fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
 		FusedValue<String, Player, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
-		fusedRecord.setCaps(Integer.parseInt(fused.getValue()));
+		try {
+			fusedRecord.setCaps(Integer.parseInt(fused.getValue()));	
+		} catch(NumberFormatException e) {
+			fusedRecord.setCaps(null);
+		}
 		fusedRecord
 				.setAttributeProvenance(Player.CAPS, fused.getOriginalIds());
 	}
