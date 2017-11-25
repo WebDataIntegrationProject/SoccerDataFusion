@@ -24,6 +24,7 @@ import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.club.Count
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.club.LeagueEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.club.NameOfStadiumEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.club.PlayersEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.club.StadiumCapacityEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.CityOfStadiumFuserVoting;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.ClubNameFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.CountryFuserLongestString;
