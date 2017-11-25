@@ -30,6 +30,7 @@ import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.CountryFu
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.LeagueFuserMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.NameOfStadiumFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.PlayersFuserUnion;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.StadiumCapacityFuserVoting;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Club;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.ClubXMLFormatter;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.ClubXMLReader;
@@ -122,6 +123,7 @@ public class ClubApp
 		strategy.addAttributeFuser(Club.COUNTRY,new CountryFuserLongestString(), new CountryEvaluationRule());
 		strategy.addAttributeFuser(Club.NAMEOFSTADIUM, new NameOfStadiumFuserLongestString(),new NameOfStadiumEvaluationRule());
 		strategy.addAttributeFuser(Club.CITYOFSTADIUM,new CityOfStadiumFuserVoting(),new CityOfStadiumEvaluationRule());
+		strategy.addAttributeFuser(Club.STADIUMCAPACITY, new StadiumCapacityFuserVoting(), new StadiumCapacityEvaluationRule());
 		strategy.addAttributeFuser(Club.LEAGUE,new LeagueFuserMostRecent(),new LeagueEvaluationRule());
 		strategy.addAttributeFuser(Club.PLAYERS,new PlayersFuserUnion(fusedPlayersMap),new PlayersEvaluationRule());
 	
