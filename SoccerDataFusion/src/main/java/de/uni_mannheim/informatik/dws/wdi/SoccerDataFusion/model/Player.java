@@ -194,6 +194,12 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 		int result = 31 + ((fullName == null) ? 0 : fullName.hashCode());
 		return result;
 	}
+	
+	@Override
+	public String toString() {
+		return String.format("[Club: %s / %s / %s]", getIdentifier(), getFullName(),
+				getNationality(), getBirthDate());
+	}
 
 	/*
 	 * (non-Javadoc)

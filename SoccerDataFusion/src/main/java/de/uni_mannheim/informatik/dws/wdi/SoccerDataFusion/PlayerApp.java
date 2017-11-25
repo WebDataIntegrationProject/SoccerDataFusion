@@ -16,32 +16,32 @@ import de.uni_mannheim.informatik.dws.winter.model.FusibleDataSet;
 import de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet;
 import de.uni_mannheim.informatik.dws.winter.model.RecordGroupFactory;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.BirthdateEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.BirthplaceEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.CapsEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.ClubMembershipAsValidOfEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.HeightEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.IsInNationalTeamEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.NationalityEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.PlayerNameEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.PositionEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.PreferredFootEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.ShirtNumberNationalTeamEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.ShirtNumberOfClubEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.WeightEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.BirthDateFuserVoting;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.BirthplaceFuserVoting;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.CapsFuserMostRecent;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.ClubMembershipValidAsOfFuserMostRecent;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.HeightFuserVoting;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.IsInNationalTeamFuserMostRecent;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.NationalityFuserLongestString;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.PlayerNameFuserLongestString;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.PositionFuserMostRecent;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.PreferredFootFuserVoting;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.ShirtNumberOfClubFuserMostRecent;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.ShirtNumberOfNationalTeamFuserMostRecent;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.WeightFuserMostRecent;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.players.BirthdateEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.players.BirthplaceEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.players.CapsEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.players.ClubMembershipAsValidOfEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.players.HeightEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.players.IsInNationalTeamEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.players.NationalityEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.players.PlayerNameEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.players.PositionEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.players.PreferredFootEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.players.ShirtNumberNationalTeamEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.players.ShirtNumberOfClubEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.players.WeightEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.BirthDateFuserVoting;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.BirthplaceFuserVoting;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.CapsFuserMostRecent;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.ClubMembershipValidAsOfFuserMostRecent;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.HeightFuserVoting;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.IsInNationalTeamFuserMostRecent;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.NationalityFuserLongestString;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.PlayerNameFuserLongestString;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.PositionFuserMostRecent;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.PreferredFootFuserVoting;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.ShirtNumberOfClubFuserMostRecent;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.ShirtNumberOfNationalTeamFuserMostRecent;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.WeightFuserMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.FusiblePlayerFactory;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Player;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.PlayerXMLFormatter;
@@ -143,15 +143,15 @@ public class PlayerApp
 		new PlayerXMLFormatter().writeXML(new File("data/output/players_fused.xml"), fusedDataSet);
 
 		// load the gold standard
-//		DataSet<Player, Attribute> goldStandard = new FusibleHashedDataSet<>();
-//		new PlayerXMLReader().loadFromXML(new File("data/goldstandard/players_fused.xml"), "/players/player", goldStandard);
+		DataSet<Player, Attribute> goldStandard = new FusibleHashedDataSet<>();
+		new PlayerXMLReader().loadFromXML(new File("data/goldstandard/players_fused.xml"), "/players/player", goldStandard);
 
 		// evaluate
-//		DataFusionEvaluator<Player, Attribute> evaluator = new DataFusionEvaluator<>(
-//				strategy, new RecordGroupFactory<Player, Attribute>());
-//		evaluator.setVerbose(true);
-//		double accuracy = evaluator.evaluate(fusedDataSet, goldStandard, null);
+		DataFusionEvaluator<Player, Attribute> evaluator = new DataFusionEvaluator<>(
+				strategy, new RecordGroupFactory<Player, Attribute>());
+		evaluator.setVerbose(true);
+		double accuracy = evaluator.evaluate(fusedDataSet, goldStandard, null);
 
-//		System.out.println(String.format("Accuracy: %.2f", accuracy));
+		System.out.println(String.format("Accuracy: %.2f", accuracy));
     }
 }
