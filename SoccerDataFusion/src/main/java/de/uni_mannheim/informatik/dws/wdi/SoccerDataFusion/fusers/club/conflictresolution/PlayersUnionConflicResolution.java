@@ -1,4 +1,4 @@
-package de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.conflictResovlers;
+package de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.conflictresolution;
 
 import java.util.Collection;
 import java.util.HashMap;

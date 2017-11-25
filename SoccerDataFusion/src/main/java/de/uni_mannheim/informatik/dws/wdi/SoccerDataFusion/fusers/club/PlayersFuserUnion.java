@@ -14,7 +14,7 @@ package de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club;
 import java.util.HashMap;
 import java.util.List;
 
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.conflictResovlers.PlayersUnionConflicResolution;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.conflictresolution.PlayersUnionConflicResolution;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Club;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Player;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
