@@ -18,6 +18,13 @@ public class ClubXMLReader extends XMLMatchableReader<Club, Attribute>  {
 	protected void initialiseDataset(DataSet<Club, Attribute> dataset) {
 		super.initialiseDataset(dataset);
 		
+		// the schema is defined in the Movie class and not interpreted from the file, so we have to set the attributes manually
+		dataset.addAttribute(Club.NAME);
+		dataset.addAttribute(Club.COUNTRY);
+		dataset.addAttribute(Club.NAMEOFSTADIUM);
+		dataset.addAttribute(Club.CITYOFSTADIUM);
+		dataset.addAttribute(Club.LEAGUE);
+		dataset.addAttribute(Club.PLAYERS);
 	}
 	
 	@Override

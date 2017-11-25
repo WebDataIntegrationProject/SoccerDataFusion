@@ -169,7 +169,7 @@ public class Club extends AbstractRecord<Attribute> implements Serializable {
 			return getNameOfStadium() != null && !getNameOfStadium().isEmpty();
 		else if(attribute==CITYOFSTADIUM)
 			return getCityOfStadium() != null && !getCityOfStadium().isEmpty();
-		else if(attribute==NAMEOFSTADIUM)
+		else if(attribute==LEAGUE)
 			return getLeague() != null && !getLeague().isEmpty();
 		else if(attribute==PLAYERS)
 			return getPlayers() != null && getPlayers().size() > 0;
