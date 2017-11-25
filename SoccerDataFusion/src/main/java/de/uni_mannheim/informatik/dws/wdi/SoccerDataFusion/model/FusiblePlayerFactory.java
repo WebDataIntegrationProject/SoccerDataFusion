@@ -17,8 +17,8 @@ public class FusiblePlayerFactory implements FusibleFactory<Player, Attribute> {
 
 		List<String> ids = new LinkedList<>();
 
-		for (Player m : cluster.getRecords()) {
-			ids.add(m.getIdentifier());
+		for (Player p : cluster.getRecords()) {
+			ids.add(p.getIdentifier());
 		}
 
 		Collections.sort(ids);

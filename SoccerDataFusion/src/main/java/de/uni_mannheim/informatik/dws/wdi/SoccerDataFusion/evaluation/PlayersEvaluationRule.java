@@ -40,12 +40,12 @@ public class PlayersEvaluationRule extends EvaluationRule<Club, Attribute> {
 			// lists
 			// in your project, you should have actor ids which you use here
 			// (and in the identity resolution)
-			players1.add(player.getFullName());
+			players1.add(player.getIdentifier());
 		}
 
 		Set<String> players2 = new HashSet<>();
 		for (Player player : record2.getPlayers()) {
-			players2.add(player.getFullName());
+			players2.add(player.getIdentifier());
 		}
 
 		return players1.containsAll(players2) && players2.containsAll(players1);
