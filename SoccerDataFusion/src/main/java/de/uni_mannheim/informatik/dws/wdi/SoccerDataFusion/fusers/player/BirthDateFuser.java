@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Player;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
-import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.Voting;
+import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.meta.FavourSources;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.FusedValue;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
@@ -28,10 +28,10 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class BirthDateFuserVoting extends AttributeValueFuser<LocalDateTime, Player, Attribute> {
+public class BirthDateFuser extends AttributeValueFuser<LocalDateTime, Player, Attribute> {
 
-	public BirthDateFuserVoting() {
-		super(new Voting<LocalDateTime, Player, Attribute>());
+	public BirthDateFuser() {
+		super(new FavourSources<LocalDateTime, Player, Attribute>());
 	}
 	
 	@Override
