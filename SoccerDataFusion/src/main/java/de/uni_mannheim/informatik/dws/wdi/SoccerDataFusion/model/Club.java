@@ -155,6 +155,7 @@ public class Club extends AbstractRecord<Attribute> implements Serializable {
 	public static final Attribute COUNTRY = new Attribute("Country");
 	public static final Attribute NAMEOFSTADIUM = new Attribute("NameOfStadium");
 	public static final Attribute CITYOFSTADIUM = new Attribute("CityOfStadium");
+	public static final Attribute STADIUMCAPACITY = new Attribute("StadiumCapacity");
 	public static final Attribute LEAGUE = new Attribute("League");
 	public static final Attribute PLAYERS = new Attribute("Players");
 	
@@ -169,6 +170,8 @@ public class Club extends AbstractRecord<Attribute> implements Serializable {
 			return getNameOfStadium() != null && !getNameOfStadium().isEmpty();
 		else if(attribute==CITYOFSTADIUM)
 			return getCityOfStadium() != null && !getCityOfStadium().isEmpty();
+		else if(attribute==STADIUMCAPACITY)
+			return getStadiumCapacity() != null;
 		else if(attribute==LEAGUE)
 			return getLeague() != null && !getLeague().isEmpty();
 		else if(attribute==PLAYERS)

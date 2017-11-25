@@ -24,12 +24,14 @@ import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.LeagueEval
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.ClubNameEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.NameOfStadiumEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.PlayersEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.StadiumCapacityEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.CityOfStadiumFuserVoting;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.CountryFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.LeagueFuserMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.ClubNameFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.NameOfStadiumFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.PlayersFuserUnion;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.StadiumCapacityFuserVoting;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Club;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.ClubXMLFormatter;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.ClubXMLReader;
@@ -122,6 +124,7 @@ public class ClubApp
 		strategy.addAttributeFuser(Club.COUNTRY,new CountryFuserLongestString(), new CountryEvaluationRule());
 		strategy.addAttributeFuser(Club.NAMEOFSTADIUM, new NameOfStadiumFuserLongestString(),new NameOfStadiumEvaluationRule());
 		strategy.addAttributeFuser(Club.CITYOFSTADIUM,new CityOfStadiumFuserVoting(),new CityOfStadiumEvaluationRule());
+		strategy.addAttributeFuser(Club.STADIUMCAPACITY, new StadiumCapacityFuserVoting(), new StadiumCapacityEvaluationRule());
 		strategy.addAttributeFuser(Club.LEAGUE,new LeagueFuserMostRecent(),new LeagueEvaluationRule());
 		strategy.addAttributeFuser(Club.PLAYERS,new PlayersFuserUnion(fusedPlayersMap),new PlayersEvaluationRule());
 	
