@@ -16,4 +16,20 @@
     <isInNationalTeam provenance="">false</isInNationalTeam>
     <clubMembershipValidAsOf provenance="Kaggle_FC_Bayern_Munich3187_Thomas_Mueller2960">2007-02-22</clubMembershipValidAsOf>
   </player>
+  <player>
+    <id>JokeCampOthers_Borussia_Dortmund646_Sebastian_Kehl621+Kaggle_FC_Bayern_Munich3191_Mario_Goetze2964</id>
+    <fullName provenance="JokeCampOthers_Borussia_Dortmund646_Sebastian_Kehl621">Sebastian Kehl</fullName>
+    <birthDate provenance="Kaggle_FC_Bayern_Munich3191_Mario_Goetze2964">1992-06-03</birthDate>
+    <birthplace provenance=""/>
+    <nationality provenance=""/>
+    <height provenance="JokeCampOthers_Borussia_Dortmund646_Sebastian_Kehl621">187</height>
+    <weight provenance="Kaggle_FC_Bayern_Munich3191_Mario_Goetze2964">72</weight>
+    <shirtNumberOfClub provenance="JokeCampOthers_Borussia_Dortmund646_Sebastian_Kehl621">5</shirtNumberOfClub>
+    <shirtNumberOfNationalTeam provenance=""/>
+    <position provenance="JokeCampOthers_Borussia_Dortmund646_Sebastian_Kehl621">MF</position>
+    <preferredFoot provenance="Kaggle_FC_Bayern_Munich3191_Mario_Goetze2964">right</preferredFoot>
+    <caps/>
+    <isInNationalTeam provenance="">false</isInNationalTeam>
+    <clubMembershipValidAsOf provenance="Kaggle_FC_Bayern_Munich3191_Mario_Goetze2964">2015-09-21</clubMembershipValidAsOf>
+  </player>
 </players>

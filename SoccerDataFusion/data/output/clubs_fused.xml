@@ -1,6 +1,512 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <clubs>
   <club>
+    <id>JokeCampOthers_Borussia_Dortmund645+Kaggle_Borussia_Dortmund3490</id>
+    <name provenance="JokeCampOthers_Borussia_Dortmund645">Borussia Dortmund</name>
+    <country provenance=""/>
+    <nameOfStadium provenance="JokeCampOthers_Borussia_Dortmund645">Borussia Dortmund</nameOfStadium>
+    <cityOfStadium provenance=""/>
+    <league provenance="JokeCampOthers_Borussia_Dortmund645">Bundesliga</league>
+    <players provenance="JokeCampOthers_Borussia_Dortmund645+Kaggle_Borussia_Dortmund3490">
+      <player>
+        <id>JokeCampOthers_Borussia_Dortmund664_Matthias_Ginter639</id>
+        <fullName provenance="">Matthias Ginter</fullName>
+        <birthDate/>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">189</height>
+        <weight/>
+        <shirtNumberOfClub provenance="">28</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">DF</position>
+        <preferredFoot provenance=""/>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-11-30</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>JokeCampOthers_Borussia_Dortmund669_Mitsuru_Maruoka644</id>
+        <fullName provenance="">Mitsuru Maruoka</fullName>
+        <birthDate/>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">170</height>
+        <weight/>
+        <shirtNumberOfClub provenance="">31</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance=""/>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-09-27</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>JokeCampOthers_Borussia_Dortmund671_Jon_Gorenc-Stankovic646</id>
+        <fullName provenance="">Jon Gorenc-Stankovic</fullName>
+        <birthDate/>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">190</height>
+        <weight/>
+        <shirtNumberOfClub provenance="">47</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance=""/>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-11-30</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>JokeCampOthers_Borussia_Dortmund649_Nuri_Sahin624</id>
+        <fullName provenance="">Nuri Sahin</fullName>
+        <birthDate/>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">180</height>
+        <weight/>
+        <shirtNumberOfClub provenance="">18</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance=""/>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-11-30</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>JokeCampOthers_Borussia_Dortmund657_Mitch_Langerak632</id>
+        <fullName provenance="">Mitch Langerak</fullName>
+        <birthDate/>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">193</height>
+        <weight/>
+        <shirtNumberOfClub provenance="">22</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance=""/>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-11-30</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>JokeCampOthers_Borussia_Dortmund661_Pierre-Emerick_Aubameyang636</id>
+        <fullName provenance="">Pierre-Emerick Aubameyang</fullName>
+        <birthDate/>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">187</height>
+        <weight/>
+        <shirtNumberOfClub provenance="">17</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">FW</position>
+        <preferredFoot provenance=""/>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-11-30</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>Kaggle_Borussia_Dortmund3492_Adrian_Ramos3238</id>
+        <fullName provenance="">Adrian Ramos</fullName>
+        <birthDate provenance="">1986-01-22</birthDate>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">185</height>
+        <weight provenance="">74</weight>
+        <shirtNumberOfClub provenance=""/>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance="">right</preferredFoot>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-03-21</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>JokeCampOthers_Borussia_Dortmund653_Adrián_Ramos628</id>
+        <fullName provenance="">Adrián Ramos</fullName>
+        <birthDate/>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">185</height>
+        <weight/>
+        <shirtNumberOfClub provenance="">20</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance=""/>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-11-30</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>JokeCampOthers_Borussia_Dortmund660_Marcel_Schmelzer635</id>
+        <fullName provenance="">Marcel Schmelzer</fullName>
+        <birthDate/>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">180</height>
+        <weight/>
+        <shirtNumberOfClub provenance="">29</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance=""/>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-11-30</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>JokeCampOthers_Borussia_Dortmund668_Marian_Sarr643</id>
+        <fullName provenance="">Marian Sarr</fullName>
+        <birthDate/>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">188</height>
+        <weight/>
+        <shirtNumberOfClub provenance="">24</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance=""/>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-09-20</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>JokeCampOthers_Borussia_Dortmund659_Shinji_Kagawa634</id>
+        <fullName provenance="">Shinji Kagawa</fullName>
+        <birthDate/>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">175</height>
+        <weight/>
+        <shirtNumberOfClub provenance="">7</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">MF</position>
+        <preferredFoot provenance=""/>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-11-30</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>JokeCampOthers_Borussia_Dortmund654_Neven_Subotic629</id>
+        <fullName provenance="">Neven Subotic</fullName>
+        <birthDate/>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">191</height>
+        <weight/>
+        <shirtNumberOfClub provenance="">4</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">DF</position>
+        <preferredFoot provenance=""/>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-11-30</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>Kaggle_Borussia_Dortmund3498_Felix_Passlack3244</id>
+        <fullName provenance="">Felix Passlack</fullName>
+        <birthDate provenance="">1998-05-29</birthDate>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">170</height>
+        <weight provenance="">73</weight>
+        <shirtNumberOfClub provenance=""/>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance="">right</preferredFoot>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-05-02</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>JokeCampOthers_Borussia_Dortmund658_Marco_Reus633</id>
+        <fullName provenance="">Marco Reus</fullName>
+        <birthDate/>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">180</height>
+        <weight/>
+        <shirtNumberOfClub provenance="">11</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">MF</position>
+        <preferredFoot provenance=""/>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-11-22</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>Kaggle_Borussia_Dortmund3499_Christian_Pulisic3245</id>
+        <fullName provenance="">Christian Pulisic</fullName>
+        <birthDate provenance="">1998-09-18</birthDate>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">172</height>
+        <weight provenance="">68</weight>
+        <shirtNumberOfClub provenance=""/>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance="">right</preferredFoot>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2015-10-09</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>JokeCampOthers_Borussia_Dortmund650_Mats_Hummels625</id>
+        <fullName provenance="">Mats Hummels</fullName>
+        <birthDate/>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">191</height>
+        <weight/>
+        <shirtNumberOfClub provenance="">15</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">DF</position>
+        <preferredFoot provenance=""/>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-11-01</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>JokeCampOthers_Borussia_Dortmund665_Joseph-Claude_Gyau640</id>
+        <fullName provenance="">Joseph-Claude Gyau</fullName>
+        <birthDate/>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">175</height>
+        <weight/>
+        <shirtNumberOfClub provenance="">38</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance=""/>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-10-04</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>JokeCampOthers_Borussia_Dortmund667_Milos_Jojic642</id>
+        <fullName provenance="">Milos Jojic</fullName>
+        <birthDate/>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">177</height>
+        <weight/>
+        <shirtNumberOfClub provenance="">14</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance=""/>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-11-30</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>Kaggle_Borussia_Dortmund3491_Tamas_Hajnal3237</id>
+        <fullName provenance="">Tamas Hajnal</fullName>
+        <birthDate provenance="">1981-03-15</birthDate>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">167</height>
+        <weight provenance="">67</weight>
+        <shirtNumberOfClub provenance=""/>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance="">right</preferredFoot>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-09-18</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>JokeCampOthers_Borussia_Dortmund662_Ciro_Immobile637</id>
+        <fullName provenance="">Ciro Immobile</fullName>
+        <birthDate/>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">181</height>
+        <weight/>
+        <shirtNumberOfClub provenance="">9</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance=""/>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-11-22</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>JokeCampOthers_Borussia_Dortmund652_Sven_Bender627</id>
+        <fullName provenance="">Sven Bender</fullName>
+        <birthDate/>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">186</height>
+        <weight/>
+        <shirtNumberOfClub provenance="">6</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">MF</position>
+        <preferredFoot provenance=""/>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-11-30</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>JokeCampOthers_Borussia_Dortmund656_Kevin_Großkreutz631</id>
+        <fullName provenance="">Kevin Großkreutz</fullName>
+        <birthDate/>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">186</height>
+        <weight/>
+        <shirtNumberOfClub provenance="">19</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">MF</position>
+        <preferredFoot provenance=""/>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-11-30</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>JokeCampOthers_Borussia_Dortmund647_Roman_Weidenfeller622</id>
+        <fullName provenance="">Roman Weidenfeller</fullName>
+        <birthDate/>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">190</height>
+        <weight/>
+        <shirtNumberOfClub provenance="">1</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">GK</position>
+        <preferredFoot provenance=""/>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-11-30</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>Kaggle_Borussia_Dortmund3493_Henrik_Mkhitaryan3239</id>
+        <fullName provenance="">Henrik Mkhitaryan</fullName>
+        <birthDate provenance="">1989-01-21</birthDate>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">177</height>
+        <weight provenance="">74</weight>
+        <shirtNumberOfClub provenance=""/>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance="">right</preferredFoot>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2015-09-21</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>JokeCampOthers_Borussia_Dortmund670_Khaled_Narey645</id>
+        <fullName provenance="">Khaled Narey</fullName>
+        <birthDate/>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">180</height>
+        <weight/>
+        <shirtNumberOfClub provenance="">30</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance=""/>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-08-29</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>Kaggle_Borussia_Dortmund3497_Marvin_Ducksch3243</id>
+        <fullName provenance="">Marvin Ducksch</fullName>
+        <birthDate provenance="">1994-03-07</birthDate>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">187</height>
+        <weight provenance="">74</weight>
+        <shirtNumberOfClub provenance=""/>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance="">left</preferredFoot>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2010-08-30</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>JokeCampOthers_Borussia_Dortmund648_Lukasz_Piszczek623</id>
+        <fullName provenance="">Lukasz Piszczek</fullName>
+        <birthDate/>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">184</height>
+        <weight/>
+        <shirtNumberOfClub provenance="">26</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">DF</position>
+        <preferredFoot provenance=""/>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-11-30</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>JokeCampOthers_Borussia_Dortmund666_Erik_Durm641</id>
+        <fullName provenance="">Erik Durm</fullName>
+        <birthDate/>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">183</height>
+        <weight/>
+        <shirtNumberOfClub provenance="">37</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">DF</position>
+        <preferredFoot provenance=""/>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-11-30</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>JokeCampOthers_Borussia_Dortmund655_Henrikh_Mkhitaryan630</id>
+        <fullName provenance="">Henrikh Mkhitaryan</fullName>
+        <birthDate/>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">177</height>
+        <weight/>
+        <shirtNumberOfClub provenance="">10</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">MF</position>
+        <preferredFoot provenance=""/>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-11-30</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>JokeCampOthers_Borussia_Dortmund663_Ilkay_Gündogan638</id>
+        <fullName provenance="">Ilkay Gündogan</fullName>
+        <birthDate/>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">180</height>
+        <weight/>
+        <shirtNumberOfClub provenance="">8</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance=""/>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-11-30</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>JokeCampOthers_Borussia_Dortmund651_Sokratis626</id>
+        <fullName provenance="">Sokratis</fullName>
+        <birthDate/>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">186</height>
+        <weight/>
+        <shirtNumberOfClub provenance="">25</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">DF</position>
+        <preferredFoot provenance=""/>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2014-11-09</clubMembershipValidAsOf>
+      </player>
+    </players>
+  </club>
+  <club>
     <id>JokeCampOthers_Bayern510+Kaggle_FC_Bayern_Munich3184</id>
     <name provenance="Kaggle_FC_Bayern_Munich3184">FC Bayern Munich</name>
     <country provenance=""/>
@@ -10,462 +516,435 @@
     <players provenance="JokeCampOthers_Bayern510+Kaggle_FC_Bayern_Munich3184">
       <player>
         <id>JokeCampOthers_Bayern527_David_Alaba507</id>
-        <fullName>David Alaba</fullName>
+        <fullName provenance="">David Alaba</fullName>
         <birthDate/>
-        <birthplace/>
-        <nationality/>
-        <height>180</height>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">180</height>
         <weight/>
-        <shirtNumberOfClub>27</shirtNumberOfClub>
-        <shirtNumberOfNationalTeam/>
-        <position>DF</position>
-        <preferredFoot/>
+        <shirtNumberOfClub provenance="">27</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">DF</position>
+        <preferredFoot provenance=""/>
         <caps/>
         <isInNationalTeam/>
-        <clubMembershipValidAsOf>2014-11-01</clubMembershipValidAsOf>
-        <clubName>Bayern</clubName>
+        <clubMembershipValidAsOf provenance="">2014-11-01</clubMembershipValidAsOf>
       </player>
       <player>
         <id>JokeCampOthers_Bayern511_Claudio_Pizarro491</id>
-        <fullName>Claudio Pizarro</fullName>
+        <fullName provenance="">Claudio Pizarro</fullName>
         <birthDate/>
-        <birthplace/>
-        <nationality/>
-        <height>184</height>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">184</height>
         <weight/>
-        <shirtNumberOfClub>14</shirtNumberOfClub>
-        <shirtNumberOfNationalTeam/>
-        <position/>
-        <preferredFoot/>
+        <shirtNumberOfClub provenance="">14</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance=""/>
         <caps/>
         <isInNationalTeam/>
-        <clubMembershipValidAsOf>2014-11-01</clubMembershipValidAsOf>
-        <clubName>Bayern</clubName>
+        <clubMembershipValidAsOf provenance="">2014-11-01</clubMembershipValidAsOf>
       </player>
       <player>
         <id>JokeCampOthers_Bayern525_Holger_Badstuber505</id>
-        <fullName>Holger Badstuber</fullName>
+        <fullName provenance="">Holger Badstuber</fullName>
         <birthDate/>
-        <birthplace/>
-        <nationality/>
-        <height>190</height>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">190</height>
         <weight/>
-        <shirtNumberOfClub>28</shirtNumberOfClub>
-        <shirtNumberOfNationalTeam/>
-        <position>DF</position>
-        <preferredFoot/>
+        <shirtNumberOfClub provenance="">28</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">DF</position>
+        <preferredFoot provenance=""/>
         <caps/>
         <isInNationalTeam/>
-        <clubMembershipValidAsOf>2014-09-13</clubMembershipValidAsOf>
-        <clubName>Bayern</clubName>
+        <clubMembershipValidAsOf provenance="">2014-09-13</clubMembershipValidAsOf>
       </player>
       <player>
         <id>JokeCampOthers_Bayern519_Tom_Starke499</id>
-        <fullName>Tom Starke</fullName>
+        <fullName provenance="">Tom Starke</fullName>
         <birthDate/>
-        <birthplace/>
-        <nationality/>
-        <height>194</height>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">194</height>
         <weight/>
-        <shirtNumberOfClub>22</shirtNumberOfClub>
-        <shirtNumberOfNationalTeam/>
-        <position/>
-        <preferredFoot/>
+        <shirtNumberOfClub provenance="">22</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance=""/>
         <caps/>
         <isInNationalTeam/>
-        <clubMembershipValidAsOf>2014-10-18</clubMembershipValidAsOf>
-        <clubName>Bayern</clubName>
-      </player>
-      <player>
-        <id>Kaggle_FC_Bayern_Munich3191_Mario_Goetze2964</id>
-        <fullName>Mario Goetze</fullName>
-        <birthDate>1992-06-03</birthDate>
-        <birthplace/>
-        <nationality/>
-        <height>175</height>
-        <weight>72</weight>
-        <shirtNumberOfClub/>
-        <shirtNumberOfNationalTeam/>
-        <position/>
-        <preferredFoot>right</preferredFoot>
-        <caps/>
-        <isInNationalTeam/>
-        <clubMembershipValidAsOf>2015-09-21</clubMembershipValidAsOf>
-        <clubName>FC Bayern Munich</clubName>
+        <clubMembershipValidAsOf provenance="">2014-10-18</clubMembershipValidAsOf>
       </player>
       <player>
         <id>JokeCampOthers_Bayern512_José_Reina492</id>
-        <fullName>José Reina</fullName>
+        <fullName provenance="">José Reina</fullName>
         <birthDate/>
-        <birthplace/>
-        <nationality/>
-        <height>188</height>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">188</height>
         <weight/>
-        <shirtNumberOfClub>23</shirtNumberOfClub>
-        <shirtNumberOfNationalTeam/>
-        <position/>
-        <preferredFoot/>
+        <shirtNumberOfClub provenance="">23</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance=""/>
         <caps/>
         <isInNationalTeam/>
-        <clubMembershipValidAsOf>2014-10-04</clubMembershipValidAsOf>
-        <clubName>Bayern</clubName>
+        <clubMembershipValidAsOf provenance="">2014-10-04</clubMembershipValidAsOf>
       </player>
       <player>
         <id>JokeCampOthers_Bayern516_Philipp_Lahm496</id>
-        <fullName>Philipp Lahm</fullName>
+        <fullName provenance="">Philipp Lahm</fullName>
         <birthDate/>
-        <birthplace/>
-        <nationality/>
-        <height>170</height>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">170</height>
         <weight/>
-        <shirtNumberOfClub>21</shirtNumberOfClub>
-        <shirtNumberOfNationalTeam/>
-        <position>MF</position>
-        <preferredFoot/>
+        <shirtNumberOfClub provenance="">21</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">MF</position>
+        <preferredFoot provenance=""/>
         <caps/>
         <isInNationalTeam/>
-        <clubMembershipValidAsOf>2014-11-08</clubMembershipValidAsOf>
-        <clubName>Bayern</clubName>
+        <clubMembershipValidAsOf provenance="">2014-11-08</clubMembershipValidAsOf>
+      </player>
+      <player>
+        <id>JokeCampOthers_Borussia_Dortmund646_Sebastian_Kehl621+Kaggle_FC_Bayern_Munich3191_Mario_Goetze2964</id>
+        <fullName provenance="">Sebastian Kehl</fullName>
+        <birthDate provenance="">1992-06-03</birthDate>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">187</height>
+        <weight provenance="">72</weight>
+        <shirtNumberOfClub provenance="">5</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">MF</position>
+        <preferredFoot provenance="">right</preferredFoot>
+        <caps/>
+        <isInNationalTeam/>
+        <clubMembershipValidAsOf provenance="">2015-09-21</clubMembershipValidAsOf>
       </player>
       <player>
         <id>JokeCampOthers_Bayern514_Bastian_Schweinsteiger494</id>
-        <fullName>Bastian Schweinsteiger</fullName>
+        <fullName provenance="">Bastian Schweinsteiger</fullName>
         <birthDate/>
-        <birthplace/>
-        <nationality/>
-        <height>183</height>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">183</height>
         <weight/>
-        <shirtNumberOfClub>31</shirtNumberOfClub>
-        <shirtNumberOfNationalTeam/>
-        <position/>
-        <preferredFoot/>
+        <shirtNumberOfClub provenance="">31</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance=""/>
         <caps/>
         <isInNationalTeam/>
-        <clubMembershipValidAsOf>2014-11-29</clubMembershipValidAsOf>
-        <clubName>Bayern</clubName>
+        <clubMembershipValidAsOf provenance="">2014-11-29</clubMembershipValidAsOf>
       </player>
       <player>
         <id>JokeCampOthers_Bayern531_Pierre-Emile_Höjbjerg511</id>
-        <fullName>Pierre-Emile Höjbjerg</fullName>
+        <fullName provenance="">Pierre-Emile Höjbjerg</fullName>
         <birthDate/>
-        <birthplace/>
-        <nationality/>
-        <height>185</height>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">185</height>
         <weight/>
-        <shirtNumberOfClub>19</shirtNumberOfClub>
-        <shirtNumberOfNationalTeam/>
-        <position/>
-        <preferredFoot/>
+        <shirtNumberOfClub provenance="">19</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance=""/>
         <caps/>
         <isInNationalTeam/>
-        <clubMembershipValidAsOf>2014-11-29</clubMembershipValidAsOf>
-        <clubName>Bayern</clubName>
+        <clubMembershipValidAsOf provenance="">2014-11-29</clubMembershipValidAsOf>
       </player>
       <player>
         <id>JokeCampOthers_Bayern523_Robert_Lewandowski503</id>
-        <fullName>Robert Lewandowski</fullName>
+        <fullName provenance="">Robert Lewandowski</fullName>
         <birthDate/>
-        <birthplace/>
-        <nationality/>
-        <height>185</height>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">185</height>
         <weight/>
-        <shirtNumberOfClub>9</shirtNumberOfClub>
-        <shirtNumberOfNationalTeam/>
-        <position>FW</position>
-        <preferredFoot/>
+        <shirtNumberOfClub provenance="">9</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">FW</position>
+        <preferredFoot provenance=""/>
         <caps/>
         <isInNationalTeam/>
-        <clubMembershipValidAsOf>2014-11-29</clubMembershipValidAsOf>
-        <clubName>Bayern</clubName>
+        <clubMembershipValidAsOf provenance="">2014-11-29</clubMembershipValidAsOf>
       </player>
       <player>
         <id>Kaggle_FC_Bayern_Munich3188_Douglas_Costa2961</id>
-        <fullName>Douglas Costa</fullName>
-        <birthDate>1990-09-14</birthDate>
-        <birthplace/>
-        <nationality/>
-        <height>172</height>
-        <weight>64</weight>
-        <shirtNumberOfClub/>
-        <shirtNumberOfNationalTeam/>
-        <position/>
-        <preferredFoot>right</preferredFoot>
+        <fullName provenance="">Douglas Costa</fullName>
+        <birthDate provenance="">1990-09-14</birthDate>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">172</height>
+        <weight provenance="">64</weight>
+        <shirtNumberOfClub provenance=""/>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance="">right</preferredFoot>
         <caps/>
         <isInNationalTeam/>
-        <clubMembershipValidAsOf>2013-02-15</clubMembershipValidAsOf>
-        <clubName>FC Bayern Munich</clubName>
+        <clubMembershipValidAsOf provenance="">2013-02-15</clubMembershipValidAsOf>
       </player>
       <player>
         <id>JokeCampOthers_Bayern528_Sebastian_Rode508</id>
-        <fullName>Sebastian Rode</fullName>
+        <fullName provenance="">Sebastian Rode</fullName>
         <birthDate/>
-        <birthplace/>
-        <nationality/>
-        <height>179</height>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">179</height>
         <weight/>
-        <shirtNumberOfClub>20</shirtNumberOfClub>
-        <shirtNumberOfNationalTeam/>
-        <position/>
-        <preferredFoot/>
+        <shirtNumberOfClub provenance="">20</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance=""/>
         <caps/>
         <isInNationalTeam/>
-        <clubMembershipValidAsOf>2014-11-29</clubMembershipValidAsOf>
-        <clubName>Bayern</clubName>
+        <clubMembershipValidAsOf provenance="">2014-11-29</clubMembershipValidAsOf>
       </player>
       <player>
         <id>JokeCampOthers_Bayern515_Xabi_Alonso495</id>
-        <fullName>Xabi Alonso</fullName>
+        <fullName provenance="">Xabi Alonso</fullName>
         <birthDate/>
-        <birthplace/>
-        <nationality/>
-        <height>183</height>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">183</height>
         <weight/>
-        <shirtNumberOfClub>3</shirtNumberOfClub>
-        <shirtNumberOfNationalTeam/>
-        <position>MF</position>
-        <preferredFoot/>
+        <shirtNumberOfClub provenance="">3</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">MF</position>
+        <preferredFoot provenance=""/>
         <caps/>
         <isInNationalTeam/>
-        <clubMembershipValidAsOf>2014-11-29</clubMembershipValidAsOf>
-        <clubName>Bayern</clubName>
+        <clubMembershipValidAsOf provenance="">2014-11-29</clubMembershipValidAsOf>
       </player>
       <player>
         <id>JokeCampOthers_Bayern522_Jerome_Boateng502</id>
-        <fullName>Jerome Boateng</fullName>
+        <fullName provenance="">Jerome Boateng</fullName>
         <birthDate/>
-        <birthplace/>
-        <nationality/>
-        <height>192</height>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">192</height>
         <weight/>
-        <shirtNumberOfClub>17</shirtNumberOfClub>
-        <shirtNumberOfNationalTeam/>
-        <position>DF</position>
-        <preferredFoot/>
+        <shirtNumberOfClub provenance="">17</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">DF</position>
+        <preferredFoot provenance=""/>
         <caps/>
         <isInNationalTeam/>
-        <clubMembershipValidAsOf>2014-11-29</clubMembershipValidAsOf>
-        <clubName>Bayern</clubName>
+        <clubMembershipValidAsOf provenance="">2014-11-29</clubMembershipValidAsOf>
       </player>
       <player>
         <id>JokeCampOthers_Bayern533_Leopold_Zingerle513</id>
-        <fullName>Leopold Zingerle</fullName>
+        <fullName provenance="">Leopold Zingerle</fullName>
         <birthDate/>
-        <birthplace/>
-        <nationality/>
-        <height>188</height>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">188</height>
         <weight/>
-        <shirtNumberOfClub>29</shirtNumberOfClub>
-        <shirtNumberOfNationalTeam/>
-        <position/>
-        <preferredFoot/>
+        <shirtNumberOfClub provenance="">29</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance=""/>
         <caps/>
         <isInNationalTeam/>
-        <clubMembershipValidAsOf>2014-11-29</clubMembershipValidAsOf>
-        <clubName>Bayern</clubName>
+        <clubMembershipValidAsOf provenance="">2014-11-29</clubMembershipValidAsOf>
       </player>
       <player>
         <id>JokeCampOthers_Bayern521_Rafinha501</id>
-        <fullName>Rafinha</fullName>
+        <fullName provenance="">Rafinha</fullName>
         <birthDate/>
-        <birthplace/>
-        <nationality/>
-        <height>172</height>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">172</height>
         <weight/>
-        <shirtNumberOfClub>13</shirtNumberOfClub>
-        <shirtNumberOfNationalTeam/>
-        <position>DF</position>
-        <preferredFoot/>
+        <shirtNumberOfClub provenance="">13</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">DF</position>
+        <preferredFoot provenance=""/>
         <caps/>
         <isInNationalTeam/>
-        <clubMembershipValidAsOf>2014-11-29</clubMembershipValidAsOf>
-        <clubName>Bayern</clubName>
+        <clubMembershipValidAsOf provenance="">2014-11-29</clubMembershipValidAsOf>
       </player>
       <player>
         <id>JokeCampOthers_Bayern530_Mario_Götze510</id>
-        <fullName>Mario Götze</fullName>
+        <fullName provenance="">Mario Götze</fullName>
         <birthDate/>
-        <birthplace/>
-        <nationality/>
-        <height>176</height>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">176</height>
         <weight/>
-        <shirtNumberOfClub>19</shirtNumberOfClub>
-        <shirtNumberOfNationalTeam/>
-        <position>MF</position>
-        <preferredFoot/>
+        <shirtNumberOfClub provenance="">19</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">MF</position>
+        <preferredFoot provenance=""/>
         <caps/>
         <isInNationalTeam/>
-        <clubMembershipValidAsOf>2014-11-29</clubMembershipValidAsOf>
-        <clubName>Bayern</clubName>
+        <clubMembershipValidAsOf provenance="">2014-11-29</clubMembershipValidAsOf>
       </player>
       <player>
         <id>JokeCampOthers_Bayern518_Franck_Ribéry498+JokeCampOthers_Bayern526_Thomas_Müller506+Kaggle_FC_Bayern_Munich3185_Franck_Ribery2958+Kaggle_FC_Bayern_Munich3187_Thomas_Mueller2960</id>
-        <fullName>Thomas Mueller</fullName>
-        <birthDate>1989-09-13</birthDate>
-        <birthplace/>
-        <nationality/>
-        <height>170</height>
-        <weight>74</weight>
-        <shirtNumberOfClub>25</shirtNumberOfClub>
-        <shirtNumberOfNationalTeam/>
-        <position>FW</position>
-        <preferredFoot>right</preferredFoot>
+        <fullName provenance="">Thomas Mueller</fullName>
+        <birthDate provenance="">1989-09-13</birthDate>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">170</height>
+        <weight provenance="">72</weight>
+        <shirtNumberOfClub provenance="">25</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">FW</position>
+        <preferredFoot provenance="">right</preferredFoot>
         <caps/>
         <isInNationalTeam/>
-        <clubMembershipValidAsOf>2007-02-22</clubMembershipValidAsOf>
-        <clubName/>
+        <clubMembershipValidAsOf provenance="">2007-02-22</clubMembershipValidAsOf>
       </player>
       <player>
         <id>JokeCampOthers_Bayern535_Lucas-Julian_Scholl515</id>
-        <fullName>Lucas-Julian Scholl</fullName>
+        <fullName provenance="">Lucas-Julian Scholl</fullName>
         <birthDate/>
-        <birthplace/>
-        <nationality/>
-        <height>180</height>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">180</height>
         <weight/>
-        <shirtNumberOfClub>15</shirtNumberOfClub>
-        <shirtNumberOfNationalTeam/>
-        <position/>
-        <preferredFoot/>
+        <shirtNumberOfClub provenance="">15</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance=""/>
         <caps/>
         <isInNationalTeam/>
-        <clubMembershipValidAsOf>2014-08-22</clubMembershipValidAsOf>
-        <clubName>Bayern</clubName>
+        <clubMembershipValidAsOf provenance="">2014-08-22</clubMembershipValidAsOf>
       </player>
       <player>
         <id>JokeCampOthers_Bayern517_Dante497</id>
-        <fullName>Dante</fullName>
+        <fullName provenance="">Dante</fullName>
         <birthDate/>
-        <birthplace/>
-        <nationality/>
-        <height>188</height>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">188</height>
         <weight/>
-        <shirtNumberOfClub>4</shirtNumberOfClub>
-        <shirtNumberOfNationalTeam/>
-        <position>DF</position>
-        <preferredFoot/>
+        <shirtNumberOfClub provenance="">4</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">DF</position>
+        <preferredFoot provenance=""/>
         <caps/>
         <isInNationalTeam/>
-        <clubMembershipValidAsOf>2014-11-29</clubMembershipValidAsOf>
-        <clubName>Bayern</clubName>
+        <clubMembershipValidAsOf provenance="">2014-11-29</clubMembershipValidAsOf>
       </player>
       <player>
         <id>JokeCampOthers_Bayern534_Gianluca_Gaudino514</id>
-        <fullName>Gianluca Gaudino</fullName>
+        <fullName provenance="">Gianluca Gaudino</fullName>
         <birthDate/>
-        <birthplace/>
-        <nationality/>
-        <height>175</height>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">175</height>
         <weight/>
-        <shirtNumberOfClub>16</shirtNumberOfClub>
-        <shirtNumberOfNationalTeam/>
-        <position/>
-        <preferredFoot/>
+        <shirtNumberOfClub provenance="">16</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance=""/>
         <caps/>
         <isInNationalTeam/>
-        <clubMembershipValidAsOf>2014-11-29</clubMembershipValidAsOf>
-        <clubName>Bayern</clubName>
+        <clubMembershipValidAsOf provenance="">2014-11-29</clubMembershipValidAsOf>
       </player>
       <player>
         <id>JokeCampOthers_Bayern524_Medhi_Benatia504</id>
-        <fullName>Medhi Benatia</fullName>
+        <fullName provenance="">Medhi Benatia</fullName>
         <birthDate/>
-        <birthplace/>
-        <nationality/>
-        <height>191</height>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">191</height>
         <weight/>
-        <shirtNumberOfClub>5</shirtNumberOfClub>
-        <shirtNumberOfNationalTeam/>
-        <position/>
-        <preferredFoot/>
+        <shirtNumberOfClub provenance="">5</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance=""/>
         <caps/>
         <isInNationalTeam/>
-        <clubMembershipValidAsOf>2014-11-29</clubMembershipValidAsOf>
-        <clubName>Bayern</clubName>
+        <clubMembershipValidAsOf provenance="">2014-11-29</clubMembershipValidAsOf>
       </player>
       <player>
         <id>Kaggle_FC_Bayern_Munich3189_Thiago_Alcantara2962</id>
-        <fullName>Thiago Alcantara</fullName>
-        <birthDate>1991-04-11</birthDate>
-        <birthplace/>
-        <nationality/>
-        <height>175</height>
-        <weight>69</weight>
-        <shirtNumberOfClub/>
-        <shirtNumberOfNationalTeam/>
-        <position/>
-        <preferredFoot>left</preferredFoot>
+        <fullName provenance="">Thiago Alcantara</fullName>
+        <birthDate provenance="">1991-04-11</birthDate>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">175</height>
+        <weight provenance="">69</weight>
+        <shirtNumberOfClub provenance=""/>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance="">left</preferredFoot>
         <caps/>
         <isInNationalTeam/>
-        <clubMembershipValidAsOf>2014-07-18</clubMembershipValidAsOf>
-        <clubName>FC Bayern Munich</clubName>
+        <clubMembershipValidAsOf provenance="">2014-07-18</clubMembershipValidAsOf>
       </player>
       <player>
         <id>JokeCampOthers_Bayern520_Manuel_Neuer500</id>
-        <fullName>Manuel Neuer</fullName>
+        <fullName provenance="">Manuel Neuer</fullName>
         <birthDate/>
-        <birthplace/>
-        <nationality/>
-        <height>193</height>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">193</height>
         <weight/>
-        <shirtNumberOfClub>1</shirtNumberOfClub>
-        <shirtNumberOfNationalTeam/>
-        <position>GK</position>
-        <preferredFoot/>
+        <shirtNumberOfClub provenance="">1</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">GK</position>
+        <preferredFoot provenance=""/>
         <caps/>
         <isInNationalTeam/>
-        <clubMembershipValidAsOf>2014-11-29</clubMembershipValidAsOf>
-        <clubName>Bayern</clubName>
+        <clubMembershipValidAsOf provenance="">2014-11-29</clubMembershipValidAsOf>
       </player>
       <player>
         <id>JokeCampOthers_Bayern513_Arjen_Robben493</id>
-        <fullName>Arjen Robben</fullName>
+        <fullName provenance="">Arjen Robben</fullName>
         <birthDate/>
-        <birthplace/>
-        <nationality/>
-        <height>180</height>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">180</height>
         <weight/>
-        <shirtNumberOfClub>10</shirtNumberOfClub>
-        <shirtNumberOfNationalTeam/>
-        <position>MF</position>
-        <preferredFoot/>
+        <shirtNumberOfClub provenance="">10</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">MF</position>
+        <preferredFoot provenance=""/>
         <caps/>
         <isInNationalTeam/>
-        <clubMembershipValidAsOf>2014-11-29</clubMembershipValidAsOf>
-        <clubName>Bayern</clubName>
+        <clubMembershipValidAsOf provenance="">2014-11-29</clubMembershipValidAsOf>
       </player>
       <player>
         <id>JokeCampOthers_Bayern529_Xherdan_Shaqiri509</id>
-        <fullName>Xherdan Shaqiri</fullName>
+        <fullName provenance="">Xherdan Shaqiri</fullName>
         <birthDate/>
-        <birthplace/>
-        <nationality/>
-        <height>169</height>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">169</height>
         <weight/>
-        <shirtNumberOfClub>91</shirtNumberOfClub>
-        <shirtNumberOfNationalTeam/>
-        <position/>
-        <preferredFoot/>
+        <shirtNumberOfClub provenance="">91</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance=""/>
+        <preferredFoot provenance=""/>
         <caps/>
         <isInNationalTeam/>
-        <clubMembershipValidAsOf>2014-11-29</clubMembershipValidAsOf>
-        <clubName>Bayern</clubName>
+        <clubMembershipValidAsOf provenance="">2014-11-29</clubMembershipValidAsOf>
       </player>
       <player>
         <id>JokeCampOthers_Bayern532_Juan_Bernat512</id>
-        <fullName>Juan Bernat</fullName>
+        <fullName provenance="">Juan Bernat</fullName>
         <birthDate/>
-        <birthplace/>
-        <nationality/>
-        <height>170</height>
+        <birthplace provenance=""/>
+        <nationality provenance=""/>
+        <height provenance="">170</height>
         <weight/>
-        <shirtNumberOfClub>18</shirtNumberOfClub>
-        <shirtNumberOfNationalTeam/>
-        <position>DF</position>
-        <preferredFoot/>
+        <shirtNumberOfClub provenance="">18</shirtNumberOfClub>
+        <shirtNumberOfNationalTeam provenance=""/>
+        <position provenance="">DF</position>
+        <preferredFoot provenance=""/>
         <caps/>
         <isInNationalTeam/>
-        <clubMembershipValidAsOf>2014-11-29</clubMembershipValidAsOf>
-        <clubName>Bayern</clubName>
+        <clubMembershipValidAsOf provenance="">2014-11-29</clubMembershipValidAsOf>
       </player>
     </players>
   </club>
