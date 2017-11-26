@@ -37,41 +37,78 @@ public class PlayerXMLFormatter extends XMLFormatter<Player> {
 
 		player.appendChild(createTextElement("id", record.getIdentifier(), doc));
 
-		player.appendChild(createTextElement("fullName", record.getFullName(), doc));
+		player.appendChild(createTextElementWithProvenance("fullName",
+				record.getFullName(),
+				record.getMergedAttributeProvenance(Player.FULLNAME), doc));
 		if (record.getBirthDate() != null) {
-			player.appendChild(createTextElement("birthDate", record.getBirthDate().toLocalDate().toString(), doc));
+			player.appendChild(createTextElementWithProvenance("birthDate",
+					record.getBirthDate().toLocalDate().toString(),
+					record.getMergedAttributeProvenance(Player.BIRTHDATE), doc));
 		} else {
 			player.appendChild(createTextElement("birthDate", null, doc));
 		}
-		player.appendChild(createTextElement("birthplace", record.getBirthplace(), doc));
-		player.appendChild(createTextElement("nationality", record.getNationality(), doc));
+		player.appendChild(createTextElementWithProvenance("birthplace",
+				record.getBirthplace(),
+				record.getMergedAttributeProvenance(Player.BIRTHPLACE), doc));
+		player.appendChild(createTextElementWithProvenance("nationality",
+				record.getNationality(),
+				record.getMergedAttributeProvenance(Player.NATIONALITY), doc));
 		if (record.getHeight() != null) {
-			player.appendChild(createTextElement("height", record.getHeight().toString(), doc));
+			player.appendChild(createTextElementWithProvenance("height",
+					record.getHeight().toString(),
+					record.getMergedAttributeProvenance(Player.HEIGHT), doc));
 		} else {
 			player.appendChild(createTextElement("height", null, doc));
 		}
 		if (record.getWeight() != null) {
-			player.appendChild(createTextElement("weight", record.getWeight().toString(), doc));
+			player.appendChild(createTextElementWithProvenance("weight",
+					record.getWeight().toString(),
+					record.getMergedAttributeProvenance(Player.WEIGHT), doc));
 		} else {
 			player.appendChild(createTextElement("weight", null, doc));
 		}
-		player.appendChild(createTextElement("shirtNumberOfClub", record.getShirtNumberOfClub(), doc));
-		player.appendChild(createTextElement("shirtNumberOfNationalTeam", record.getShirtNumberOfNationalTeam(), doc));
-		player.appendChild(createTextElement("position", record.getPosition(), doc));
-		player.appendChild(createTextElement("preferredFoot", record.getPreferredFoot(), doc));
+		player.appendChild(createTextElementWithProvenance("shirtNumberOfClub",
+				record.getShirtNumberOfClub(),
+				record.getMergedAttributeProvenance(Player.SHIRTNUMBEROFCLUB), doc));
+		player.appendChild(createTextElementWithProvenance("shirtNumberOfNationalTeam",
+				record.getShirtNumberOfNationalTeam(),
+				record.getMergedAttributeProvenance(Player.SHIRTNUMBEROFNATIONALTEAM), doc));
+		player.appendChild(createTextElementWithProvenance("position",
+				record.getPosition(),
+				record.getMergedAttributeProvenance(Player.POSITION), doc));
+		player.appendChild(createTextElementWithProvenance("preferredFoot",
+				record.getPreferredFoot(),
+				record.getMergedAttributeProvenance(Player.PREFERREDFOOT), doc));
 		if (record.getCaps() != null) {
-			player.appendChild(createTextElement("caps", record.getCaps().toString(), doc));
+			player.appendChild(createTextElementWithProvenance("caps",
+					record.getCaps().toString(),
+					record.getMergedAttributeProvenance(Player.CAPS), doc));
 		} else {
 			player.appendChild(createTextElement("caps", null, doc));
 		}
 		if (record.getIsInNationalTeam() != null) {
-			player.appendChild(createTextElement("isInNationalTeam", record.getIsInNationalTeam().toString(), doc));
+			player.appendChild(createTextElementWithProvenance("isInNationalTeam",
+					record.getIsInNationalTeam().toString(),
+					record.getMergedAttributeProvenance(Player.ISINNATIONALTEAM), doc));
 		} else {
 			player.appendChild(createTextElement("isInNationalTeam", null, doc));
 		}
-		player.appendChild(createTextElement("clubMembershipValidAsOf", record.getClubMembershipValidAsOf().toLocalDate().toString(), doc));
+		if (record.getClubMembershipValidAsOf() != null) {
+			player.appendChild(createTextElementWithProvenance("clubMembershipValidAsOf",
+					record.getClubMembershipValidAsOf().toLocalDate().toString(),
+					record.getMergedAttributeProvenance(Player.CLUBMEMBERSHIPVALIDASOF), doc));
+		} else {
+			player.appendChild(createTextElement("clubMembershipValidAsOf", null, doc));
+		}
 		
 		return player;
+	}
+
+	protected Element createTextElementWithProvenance(String name,
+			String value, String provenance, Document doc) {
+		Element elem = createTextElement(name, value, doc);
+		elem.setAttribute("provenance", provenance);
+		return elem;
 	}
 
 }

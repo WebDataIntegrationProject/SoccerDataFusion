@@ -2,19 +2,18 @@
 <players>
   <player>
     <id>JokeCampOthers_Bayern518_Franck_Ribéry498+JokeCampOthers_Bayern526_Thomas_Müller506+Kaggle_FC_Bayern_Munich3185_Franck_Ribery2958+Kaggle_FC_Bayern_Munich3187_Thomas_Mueller2960</id>
-    <fullName>Thomas Mueller</fullName>
-    <birthDate>1989-09-13</birthDate>
-    <birthplace/>
-    <nationality/>
-    <height>170</height>
-    <weight>74</weight>
-    <shirtNumberOfClub>25</shirtNumberOfClub>
-    <shirtNumberOfNationalTeam/>
-    <position>FW</position>
-    <preferredFoot>right</preferredFoot>
+    <fullName provenance="Kaggle_FC_Bayern_Munich3187_Thomas_Mueller2960">Thomas Mueller</fullName>
+    <birthDate provenance="Kaggle_FC_Bayern_Munich3187_Thomas_Mueller2960">1989-09-13</birthDate>
+    <birthplace provenance=""/>
+    <nationality provenance=""/>
+    <height provenance="JokeCampOthers_Bayern518_Franck_Ribéry498+Kaggle_FC_Bayern_Munich3185_Franck_Ribery2958">170</height>
+    <weight provenance="Kaggle_FC_Bayern_Munich3185_Franck_Ribery2958">72</weight>
+    <shirtNumberOfClub provenance="JokeCampOthers_Bayern526_Thomas_Müller506">25</shirtNumberOfClub>
+    <shirtNumberOfNationalTeam provenance=""/>
+    <position provenance="JokeCampOthers_Bayern526_Thomas_Müller506">FW</position>
+    <preferredFoot provenance="Kaggle_FC_Bayern_Munich3187_Thomas_Mueller2960+Kaggle_FC_Bayern_Munich3185_Franck_Ribery2958">right</preferredFoot>
     <caps/>
-    <isInNationalTeam>false</isInNationalTeam>
-    <clubMembershipValidAsOf>2007-02-22</clubMembershipValidAsOf>
-    <clubName/>
+    <isInNationalTeam provenance="">false</isInNationalTeam>
+    <clubMembershipValidAsOf provenance="Kaggle_FC_Bayern_Munich3187_Thomas_Mueller2960">2007-02-22</clubMembershipValidAsOf>
   </player>
 </players>
