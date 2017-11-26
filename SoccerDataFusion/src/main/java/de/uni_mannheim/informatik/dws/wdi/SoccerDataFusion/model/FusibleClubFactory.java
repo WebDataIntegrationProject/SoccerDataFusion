@@ -17,8 +17,8 @@ public class FusibleClubFactory implements FusibleFactory<Club, Attribute> {
 
 		List<String> ids = new LinkedList<>();
 
-		for (Club m : cluster.getRecords()) {
-			ids.add(m.getIdentifier());
+		for (Club c : cluster.getRecords()) {
+			ids.add(c.getIdentifier());
 		}
 
 		Collections.sort(ids);
