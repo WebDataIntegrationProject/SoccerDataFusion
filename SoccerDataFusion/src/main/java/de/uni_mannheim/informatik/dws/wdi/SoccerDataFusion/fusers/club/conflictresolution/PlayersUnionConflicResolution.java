@@ -36,8 +36,10 @@ public class PlayersUnionConflicResolution<ValueType, RecordType extends Matchab
 				Player fusedPlayer = this.fusedPlayersMap.get(player.getIdentifier());
 				if (fusedPlayer == null) {
 					fusedPlayers.add(player);
-				} else {
+				} else if (fusedPlayer.getClubMembershipValidAsOf().equals(player.getClubMembershipValidAsOf())) {
 					fusedPlayers.add(fusedPlayer);
+				} else {
+					// Do nothing (ensures that players are unique according to the correspondenses 
 				}
 			}
 			union.addAll((List<ValueType>) fusedPlayers);
