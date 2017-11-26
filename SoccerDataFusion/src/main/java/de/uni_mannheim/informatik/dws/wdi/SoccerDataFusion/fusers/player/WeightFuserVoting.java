@@ -13,6 +13,7 @@ package de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player;
 
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Player;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
+import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.Voting;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.meta.MostRecent;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.FusedValue;
@@ -22,35 +23,33 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
 /**
- * {@link AttributeValueFuser} for the nationalities of {@link Player}s.
+ * {@link AttributeValueFuser} for the actors of {@link Player}s.
  * 
- * @author Robert Meusel (robert@dwslab.de)
- * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class NationalityFuserLongestString extends
+public class WeightFuserVoting extends
 		AttributeValueFuser<String, Player, Attribute> {
 
-	public NationalityFuserLongestString() {
-		super(new MostRecent<String, Player, Attribute>());
+	public WeightFuserVoting() {
+		super(new Voting<String, Player, Attribute>());
 	}
 
 	@Override
 	public boolean hasValue(Player record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.hasValue(Player.NATIONALITY);
+		return record.hasValue(Player.WEIGHT);
 	}
 
 	@Override
 	protected String getValue(Player record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.getNationality();
+		return record.getWeight().toString();
 	}
 
 	@Override
 	public void fuse(RecordGroup<Player, Attribute> group, Player fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
 		FusedValue<String, Player, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
-		fusedRecord.setNationality(fused.getValue());
+		fusedRecord.setWeight(Integer.parseInt(fused.getValue()));
 		fusedRecord
-				.setAttributeProvenance(Player.NATIONALITY, fused.getOriginalIds());
+				.setAttributeProvenance(Player.WEIGHT, fused.getOriginalIds());
 	}
 
 }

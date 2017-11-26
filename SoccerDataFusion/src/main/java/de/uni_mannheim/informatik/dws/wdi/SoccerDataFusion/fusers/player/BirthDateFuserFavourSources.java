@@ -11,44 +11,44 @@
  */
 package de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player;
 
+import java.time.LocalDateTime;
+
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Player;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
-import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.meta.MostRecent;
+import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.meta.FavourSources;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.FusedValue;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.RecordGroup;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
-
 /**
- * {@link AttributeValueFuser} for the actors of {@link Player}s.
+ * {@link AttributeValueFuser} for the birth date of {@link Player}s. 
  * 
+ * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class WeightFuserMostRecent extends
-		AttributeValueFuser<String, Player, Attribute> {
+public class BirthDateFuserFavourSources extends AttributeValueFuser<LocalDateTime, Player, Attribute> {
 
-	public WeightFuserMostRecent() {
-		super(new MostRecent<String, Player, Attribute>());
+	public BirthDateFuserFavourSources() {
+		super(new FavourSources<LocalDateTime, Player, Attribute>());
 	}
-
+	
 	@Override
 	public boolean hasValue(Player record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.hasValue(Player.WEIGHT);
+		return record.hasValue(Player.BIRTHDATE);
 	}
-
+	
 	@Override
-	protected String getValue(Player record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.getWeight().toString();
+	protected LocalDateTime getValue(Player record, Correspondence<Attribute, Matchable> correspondence) {
+		return record.getBirthDate();
 	}
 
 	@Override
 	public void fuse(RecordGroup<Player, Attribute> group, Player fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
-		FusedValue<String, Player, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
-		fusedRecord.setWeight(Integer.parseInt(fused.getValue()));
-		fusedRecord
-				.setAttributeProvenance(Player.WEIGHT, fused.getOriginalIds());
+		FusedValue<LocalDateTime, Player, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
+		fusedRecord.setBirthday(fused.getValue());
+		fusedRecord.setAttributeProvenance(Player.BIRTHDATE, fused.getOriginalIds());
 	}
 
 }
