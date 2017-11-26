@@ -45,7 +45,11 @@ public class StadiumCapacityFuserVoting extends AttributeValueFuser<String, Club
 	@Override
 	public void fuse(RecordGroup<Club, Attribute> group, Club fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
 		FusedValue<String, Club, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
-		fusedRecord.setStadiumCapacity(Integer.parseInt(fused.getValue()));
+		try {
+			fusedRecord.setStadiumCapacity(Integer.parseInt(fused.getValue()));
+		} catch(NumberFormatException e) {
+			fusedRecord.setStadiumCapacity(null);
+		}
 		fusedRecord.setAttributeProvenance(Club.STADIUMCAPACITY, fused.getOriginalIds());
 	}
 
