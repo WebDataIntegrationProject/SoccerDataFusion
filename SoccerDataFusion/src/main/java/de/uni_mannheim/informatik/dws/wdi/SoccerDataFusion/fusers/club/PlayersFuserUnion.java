@@ -14,7 +14,7 @@ package de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club;
 import java.util.HashMap;
 import java.util.List;
 
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.conflictresolution.PlayersUnionConflicResolution;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.conflictresolution.PlayersUnion;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Club;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Player;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
@@ -36,7 +36,7 @@ public class PlayersFuserUnion extends AttributeValueFuser<List<Player>, Club, A
 	
 	
 	public PlayersFuserUnion(HashMap<String, Player> fusedPlayersMap) {
-		super(new PlayersUnionConflicResolution<Player, Club, Attribute>(fusedPlayersMap));
+		super(new PlayersUnion<Player, Club, Attribute>(fusedPlayersMap));
 	}
 	
 	@Override

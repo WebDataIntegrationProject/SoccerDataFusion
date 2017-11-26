@@ -13,6 +13,7 @@ package de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club;
 
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Club;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
+import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.meta.FavourSources;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.string.LongestString;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.FusedValue;
@@ -27,11 +28,11 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class CountryFuserLongestString extends
+public class CountryFuserFavourSources extends
 		AttributeValueFuser<String, Club, Attribute> {
 
-	public CountryFuserLongestString() {
-		super(new LongestString<Club, Attribute>());
+	public CountryFuserFavourSources() {
+		super(new FavourSources<String, Club, Attribute>());
 	}
 
 	@Override

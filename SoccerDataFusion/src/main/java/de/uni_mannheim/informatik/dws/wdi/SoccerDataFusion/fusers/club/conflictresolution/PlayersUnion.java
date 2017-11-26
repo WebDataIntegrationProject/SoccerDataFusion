@@ -13,12 +13,12 @@ import de.uni_mannheim.informatik.dws.winter.model.FusibleValue;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Player;
 
-public class PlayersUnionConflicResolution<ValueType, RecordType extends Matchable & Fusible<SchemaElementType>, SchemaElementType extends Matchable>
+public class PlayersUnion<ValueType, RecordType extends Matchable & Fusible<SchemaElementType>, SchemaElementType extends Matchable>
 		extends ConflictResolutionFunction<List<ValueType>, RecordType, SchemaElementType> {
 	
 	private HashMap<String, Player> fusedPlayersMap;
 	
-	public PlayersUnionConflicResolution(HashMap<String, Player> fusedPlayersMap) {
+	public PlayersUnion(HashMap<String, Player> fusedPlayersMap) {
 		super();
 		this.fusedPlayersMap = fusedPlayersMap;
 	}
