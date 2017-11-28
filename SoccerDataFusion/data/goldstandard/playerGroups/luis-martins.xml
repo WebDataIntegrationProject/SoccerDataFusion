@@ -1,0 +1,34 @@
+<players>
+  <player>
+    <id>DBPedia_CA_Osasuna19758_Luís_Martins16774</id>
+    <fullName>Luís Martins</fullName>
+    <height>176</height>
+    <position>DF</position>
+    <clubMembershipValidAsOf>2015-01-01</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>JokeCampOthers_Granada4043_Luís_Martins3894</id>
+    <fullName>Luís Martins</fullName>
+    <height>176</height>
+    <shirtNumberOfClub>3</shirtNumberOfClub>
+    <clubMembershipValidAsOf>2014-09-27</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>Kaggle_Gil_Vicente_FC1320_Luis_Martins1230</id>
+    <fullName>Luis Martins</fullName>
+    <birthDate>1992-06-10</birthDate>
+    <height>177</height>
+    <weight>67</weight>
+    <preferredFoot>right</preferredFoot>
+    <clubMembershipValidAsOf>2012-02-22</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>Transfermarkt_CA_Osasuna211999_Luís_Martins198334</id>
+    <fullName>Luís Martins</fullName>
+    <birthDate>1992-06-10</birthDate>
+    <nationality>PRT</nationality>
+    <height>177</height>
+    <position>DF</position>
+    <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
+  </player>
+</players>

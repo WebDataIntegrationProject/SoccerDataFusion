@@ -1,0 +1,37 @@
+<players>
+  <player>
+    <id>DBPedia_Udinese_Calcio38328_Cyril_Théréau32248</id>
+    <fullName>Cyril Théréau</fullName>
+    <birthplace>Privas</birthplace>
+    <nationality>FRA</nationality>
+    <height>189</height>
+    <position>FW</position>
+    <clubMembershipValidAsOf>2014-01-01</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>JokeCampOthers_Udinese1330_Cyril_Théréau1280</id>
+    <fullName>Cyril Théréau</fullName>
+    <height>189</height>
+    <shirtNumberOfClub>77</shirtNumberOfClub>
+    <position>FW</position>
+    <clubMembershipValidAsOf>2014-11-30</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>Kaggle_Udinese3011_Cyril_Thereau2801</id>
+    <fullName>Cyril Thereau</fullName>
+    <birthDate>1983-04-24</birthDate>
+    <height>187</height>
+    <weight>78</weight>
+    <preferredFoot>left</preferredFoot>
+    <clubMembershipValidAsOf>2012-08-31</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>Transfermarkt_Udinese_Calcio129079_Cyril_Théréau122093</id>
+    <fullName>Cyril Théréau</fullName>
+    <birthDate>1983-04-24</birthDate>
+    <nationality>FRA</nationality>
+    <height>189</height>
+    <position>FW</position>
+    <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
+  </player>
+</players>

@@ -1,35 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <players>
   <player>
-    <id>DBPedia_R.W.S._Bruxelles32170_Mohamed_Tchité27107+Kaggle_Sint-Truidense_VV410_Mohammed_Tchite383</id>
-    <fullName>Mohamed Tchité</fullName>
-    <birthDate>1984-01-31</birthDate>
-    <birthplace>Bujumbura</birthplace>
-    <nationality>BDI</nationality>
-    <height>177</height>
-    <weight>69</weight>
-    <shirtNumberOfClub/>
-    <shirtNumberOfNationalTeam/>
+    <id>DBPedia_Udinese_Calcio38328_Cyril_Théréau32248+JokeCampOthers_Udinese1330_Cyril_Théréau1280+Kaggle_Udinese3011_Cyril_Thereau2801+Transfermarkt_Udinese_Calcio129079_Cyril_Théréau122093</id>
+    <fullName>Cyril Théréau</fullName>
+    <birthDate>1983-04-24</birthDate>
+    <birthplace>Privas</birthplace>
+    <nationality>FRA</nationality>
+    <height>189</height>
+    <weight>78</weight>
+    <shirtNumberOfClub>77</shirtNumberOfClub>
     <position>FW</position>
-    <preferredFoot>right</preferredFoot>
-    <caps/>
-    <isInNationalTeam/>
-    <clubMembershipValidAsOf>2016-01-01</clubMembershipValidAsOf>
+    <preferredFoot>left</preferredFoot>
+    <isInNationalTeam>false</isInNationalTeam>
+    <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
   </player>
   <player>
-    <id>Kaggle_Elche_CF3347_Ferran_Corominas3105+DBPedia_RCD_Mallorca15622_Ferran_Corominas13233</id>
-    <fullName>Ferran Corominas</fullName>
-    <birthDate>1983-01-05</birthDate>
-    <birthplace>Vilobí d'Onyar</birthplace>
-    <nationality>ESP</nationality>
-    <height>187</height>
-    <weight>69</weight>
-    <shirtNumberOfClub/>
-    <shirtNumberOfNationalTeam/>
-    <position>FW</position>
+    <id>DBPedia_CA_Osasuna19758_Luís_Martins16774+JokeCampOthers_Granada4043_Luís_Martins3894+Kaggle_Gil_Vicente_FC1320_Luis_Martins1230+Transfermarkt_CA_Osasuna211999_Luís_Martins198334</id>
+    <fullName>Luís Martins</fullName>
+    <birthDate>1992-06-10</birthDate>
+    <nationality>PRT</nationality>
+    <height>177</height>
+    <weight>67</weight>
+    <shirtNumberOfClub>3</shirtNumberOfClub>
+    <position>DF</position>
     <preferredFoot>right</preferredFoot>
-    <caps/>
-    <isInNationalTeam/>
-    <clubMembershipValidAsOf>2015-01-01</clubMembershipValidAsOf>
+    <isInNationalTeam>false</isInNationalTeam>
+    <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
   </player>
 </players>
