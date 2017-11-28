@@ -11,6 +11,8 @@
  */
 package de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player;
 
+import java.time.LocalDateTime;
+
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Player;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.Voting;
@@ -45,7 +47,11 @@ public class HeightFuserVoting extends AttributeValueFuser<String, Player, Attri
 	@Override
 	public void fuse(RecordGroup<Player, Attribute> group, Player fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
 		FusedValue<String, Player, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
-		fusedRecord.setHeight(Integer.parseInt(fused.getValue()));
+		try {
+			fusedRecord.setHeight(Integer.parseInt(fused.getValue()));
+		} catch(NumberFormatException e) {
+			fusedRecord.setHeight(null);
+		}
 		fusedRecord.setAttributeProvenance(Player.HEIGHT, fused.getOriginalIds());
 	}
 

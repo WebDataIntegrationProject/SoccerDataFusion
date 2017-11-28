@@ -48,7 +48,11 @@ public class IsInNationalTeamFuserMostRecent extends
 	@Override
 	public void fuse(RecordGroup<Player, Attribute> group, Player fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
 		FusedValue<String, Player, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
-		fusedRecord.setIsInNationalTeam(Boolean.parseBoolean(fused.getValue()));
+		try {
+			fusedRecord.setIsInNationalTeam(Boolean.parseBoolean(fused.getValue()));
+		} catch(NumberFormatException e) {
+			fusedRecord.setIsInNationalTeam(null);
+		}
 		fusedRecord
 				.setAttributeProvenance(Player.ISINNATIONALTEAM, fused.getOriginalIds());
 	}

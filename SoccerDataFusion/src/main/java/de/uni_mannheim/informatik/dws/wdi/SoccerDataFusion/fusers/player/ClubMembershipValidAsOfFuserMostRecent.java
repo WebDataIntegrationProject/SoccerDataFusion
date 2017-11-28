@@ -48,7 +48,11 @@ public class ClubMembershipValidAsOfFuserMostRecent extends
 	@Override
 	public void fuse(RecordGroup<Player, Attribute> group, Player fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
 		FusedValue<String, Player, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
-		fusedRecord.setClubMembershipValidAsOf(LocalDateTime.parse(fused.getValue()));
+		try {
+			fusedRecord.setClubMembershipValidAsOf(LocalDateTime.parse(fused.getValue()));
+		} catch(NumberFormatException e) {
+			fusedRecord.setClubMembershipValidAsOf(null);
+		}
 		fusedRecord
 				.setAttributeProvenance(Player.CLUBMEMBERSHIPVALIDASOF, fused.getOriginalIds());
 	}

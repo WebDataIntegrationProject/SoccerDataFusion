@@ -47,7 +47,11 @@ public class WeightFuserVoting extends
 	@Override
 	public void fuse(RecordGroup<Player, Attribute> group, Player fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
 		FusedValue<String, Player, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
-		fusedRecord.setWeight(Integer.parseInt(fused.getValue()));
+		try {
+			fusedRecord.setWeight(Integer.parseInt(fused.getValue()));
+		} catch(NumberFormatException e) {
+			fusedRecord.setWeight(null);
+		}
 		fusedRecord
 				.setAttributeProvenance(Player.WEIGHT, fused.getOriginalIds());
 	}
