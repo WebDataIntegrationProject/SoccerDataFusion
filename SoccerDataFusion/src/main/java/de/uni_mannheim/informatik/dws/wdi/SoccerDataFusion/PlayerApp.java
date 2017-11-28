@@ -93,11 +93,11 @@ public class PlayerApp
 		
 		
 		//TODO: Set right time!!
-		dbpedia.setDate(LocalDateTime.parse("2012-01-01", formatter));
-		euro2016.setDate(LocalDateTime.parse("2010-01-01", formatter));
-		jokecamp.setDate(LocalDateTime.parse("2008-01-01", formatter));
-		kaggle.setDate(LocalDateTime.parse("2010-01-01", formatter));
-		transfermarket.setDate(LocalDateTime.parse("2008-01-01", formatter));
+		dbpedia.setDate(LocalDateTime.parse("2017-01-01", formatter));
+		euro2016.setDate(LocalDateTime.parse("2016-06-10", formatter));
+		jokecamp.setDate(LocalDateTime.parse("2014-11-30", formatter));
+		kaggle.setDate(LocalDateTime.parse("2016-06-16", formatter));
+		transfermarket.setDate(LocalDateTime.parse("2016-05-01", formatter));
 
 		// load correspondences TODO!!! -> insert right links
 		CorrespondenceSet<Player, Attribute> correspondences = new CorrespondenceSet<>();
