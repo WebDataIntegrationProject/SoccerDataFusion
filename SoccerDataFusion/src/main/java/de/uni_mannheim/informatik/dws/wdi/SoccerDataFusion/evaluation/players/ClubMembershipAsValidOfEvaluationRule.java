@@ -32,7 +32,7 @@ public class ClubMembershipAsValidOfEvaluationRule extends EvaluationRule<Player
 		else if(record1.getClubMembershipValidAsOf()==null ^ record2.getClubMembershipValidAsOf()==null)
 			return false;
 		else
-			return record1.getClubMembershipValidAsOf() == record2.getClubMembershipValidAsOf();
+			return record1.getClubMembershipValidAsOf().equals(record2.getClubMembershipValidAsOf());
 	}
 
 	/* (non-Javadoc)

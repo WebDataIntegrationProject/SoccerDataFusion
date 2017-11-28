@@ -32,7 +32,7 @@ public class BirthdateEvaluationRule extends EvaluationRule<Player, Attribute> {
 		else if(record1.getBirthDate()==null ^ record2.getBirthDate()==null)
 			return false;
 		else
-			return record1.getBirthDate() == record2.getBirthDate();
+			return record1.getBirthDate().equals(record2.getBirthDate());
 	}
 
 	/* (non-Javadoc)
