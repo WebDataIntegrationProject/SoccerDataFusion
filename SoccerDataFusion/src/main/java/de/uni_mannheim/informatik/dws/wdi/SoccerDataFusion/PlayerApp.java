@@ -5,6 +5,8 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeFormatterBuilder;
 import java.time.temporal.ChronoField;
+import java.util.Collection;
+import java.util.LinkedList;
 import java.util.Locale;
 
 import de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet;
@@ -14,6 +16,7 @@ import de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionStrategy;
 import de.uni_mannheim.informatik.dws.winter.model.DataSet;
 import de.uni_mannheim.informatik.dws.winter.model.FusibleDataSet;
 import de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet;
+import de.uni_mannheim.informatik.dws.winter.model.RecordGroup;
 import de.uni_mannheim.informatik.dws.winter.model.RecordGroupFactory;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.players.BirthdateEvaluationRule;
@@ -52,34 +55,33 @@ public class PlayerApp
     public static void main( String[] args ) throws Exception
     {
 		// Load the Data into FusibleDataSet
-//		FusibleDataSet<Player, Attribute> dbpedia = new FusibleHashedDataSet<>();
-//		new PlayerXMLReader().loadFromXML(new File("data/input/dbpedia.xml"), "/clubs/club/players/player", dbpedia);
+		FusibleDataSet<Player, Attribute> dbpedia = new FusibleHashedDataSet<>();
+		new PlayerXMLReader().loadFromXML(new File("data/input/dbpedia.xml"), "/clubs/club/players/player", dbpedia);
 //		dbpedia.printDataSetDensityReport();
 //
-//		FusibleDataSet<Player, Attribute> euro2016 = new FusibleHashedDataSet<>();
-//		new PlayerXMLReader().loadFromXML(new File("data/input/euro2016.xml"), "/clubs/club/players/player", euro2016);
+		FusibleDataSet<Player, Attribute> euro2016 = new FusibleHashedDataSet<>();
+		new PlayerXMLReader().loadFromXML(new File("data/input/euro2016.xml"), "/clubs/club/players/player", euro2016);
 //		euro2016.printDataSetDensityReport();
 
 		FusibleDataSet<Player, Attribute> jokecamp = new FusibleHashedDataSet<>();
 		new PlayerXMLReader().loadFromXML(new File("data/input/jokecamp-others.xml"), "/clubs/club/players/player", jokecamp);
-		jokecamp.printDataSetDensityReport();
+//		jokecamp.printDataSetDensityReport();
 		
 		FusibleDataSet<Player, Attribute> kaggle = new FusibleHashedDataSet<>();
 		new PlayerXMLReader().loadFromXML(new File("data/input/kaggle.xml"), "/clubs/club/players/player", kaggle);
-		kaggle.printDataSetDensityReport();
+//		kaggle.printDataSetDensityReport();
 		
-//		FusibleDataSet<Player, Attribute> transfermarket = new FusibleHashedDataSet<>();
-//		new PlayerXMLReader().loadFromXML(new File("data/input/transfermarket.xml"), "/clubs/club/players/player", transfermarket);
+		FusibleDataSet<Player, Attribute> transfermarket = new FusibleHashedDataSet<>();
+		new PlayerXMLReader().loadFromXML(new File("data/input/transfermarket.xml"), "/clubs/club/players/player", transfermarket);
 //		transfermarket.printDataSetDensityReport();
 
-		// Maintain Provenance 
-		//TODO: Adjust Ratings
+		// Maintain Provenance
 		// Scores (e.g. from rating)
-//		dbpedia.setScore(1.0);
-//		euro2016.setScore(2.0);
-		jokecamp.setScore(3.0);
-		kaggle.setScore(2.0);
-//		transfermarket.setScore(3.0);
+		dbpedia.setScore(1.0);
+		euro2016.setScore(1.5);
+		jokecamp.setScore(2.0);
+		kaggle.setScore(2.5);
+		transfermarket.setScore(3.0);
 
 		// Date (e.g. last update)
 		DateTimeFormatter formatter = new DateTimeFormatterBuilder()
@@ -91,24 +93,52 @@ public class PlayerApp
 		
 		
 		//TODO: Set right time!!
-//		dbpedia.setDate(LocalDateTime.parse("2012-01-01", formatter));
-//		euro2016.setDate(LocalDateTime.parse("2010-01-01", formatter));
+		dbpedia.setDate(LocalDateTime.parse("2012-01-01", formatter));
+		euro2016.setDate(LocalDateTime.parse("2010-01-01", formatter));
 		jokecamp.setDate(LocalDateTime.parse("2008-01-01", formatter));
 		kaggle.setDate(LocalDateTime.parse("2010-01-01", formatter));
-//		transfermarket.setDate(LocalDateTime.parse("2008-01-01", formatter));
+		transfermarket.setDate(LocalDateTime.parse("2008-01-01", formatter));
 
 		// load correspondences TODO!!! -> insert right links
 		CorrespondenceSet<Player, Attribute> correspondences = new CorrespondenceSet<>();
 		// Dummy correspondense
-		correspondences.loadCorrespondences(new File("data/correspondences/dummy-jokecamp_2_kaggle_correspondences_players.csv"), jokecamp, kaggle);
+//		correspondences.loadCorrespondences(new File("data/correspondences/dummy-jokecamp_2_kaggle_correspondences_players.csv"), jokecamp, kaggle);
 
-//		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_kaggle_correspondences_players.csv"), dbpedia, kaggle);
-//		correspondences.loadCorrespondences(new File("data/correspondences/jokecamp_kaggle_players_correspondences.csv"), jokecamp, kaggle);
-//		correspondences.loadCorrespondences(new File("data/correspondences/transfermarket_kaggle_players_correspondences.csv"), transfermarket, kaggle);
-//		correspondences.loadCorrespondences(new File("data/correspondences/jokecamp_dbpedia_correspondences_players.csv"), jokecamp, dbpedia);
-//		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_euro2016_correspondences_players.csv"),dbpedia, euro2016);
-//		correspondences.loadCorrespondences(new File("data/correspondences/transfermarket_jokecamp_correspondences_players.csv"), transfermarket, jokecamp);
+//		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_2_kaggle_correspondences_players.csv"), dbpedia, kaggle);
+		correspondences.loadCorrespondences(new File("data/correspondences/kaggle_2_transfermarket_correspondences_players.csv"), transfermarket, kaggle);
+		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_2_euro2016_correspondences_players.csv"),dbpedia, euro2016);
+//		correspondences.loadCorrespondences(new File("data/correspondences/jokecamp_2_transfermarkt_correspondences_players.csv"), transfermarket, jokecamp);
 
+		correspondences.loadCorrespondences(new File("data/correspondences/jokecamp_2_kaggle_correspondences_players.csv"), kaggle, jokecamp);
+		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_2_jokecamp_correspondences_players.csv"), dbpedia, jokecamp);
+
+		// Remove all groups that include multiple players of one dataset
+		Collection<RecordGroup<Player, Attribute>> recordGroups = correspondences.getRecordGroups();
+		Collection<RecordGroup<Player, Attribute>> recordGroupsClone = new LinkedList<>();
+		recordGroupsClone.addAll(recordGroups);
+		for (RecordGroup<Player, Attribute> recordGroup : recordGroupsClone) {
+			LinkedList<String> provenanceList = new LinkedList<String>();
+			for (Player player : recordGroup.getRecords()) {
+				String provenance = player.getProvenance();
+				if (provenanceList.contains(provenance)) {
+					recordGroups.remove(recordGroup);
+					break;
+				} else {
+					provenanceList.add(provenance);
+				}
+			}
+		}
+		
+		// Print players of 5-player group
+//		for (RecordGroup<Player, Attribute> recordGroup : recordGroups) {
+//			if (recordGroup.getSize() == 5) {
+//				System.out.println("group");
+//				for (Player player : recordGroup.getRecords()) {
+//					System.out.println(player.getIdentifier() + " " + player.getFullName());
+//				}
+//			}
+//		}
+		
 		// write group size distribution
 		correspondences.printGroupSizeDistribution();
 
@@ -131,7 +161,7 @@ public class PlayerApp
 		
 		// create the fusion engine
 		DataFusionEngine<Player, Attribute> engine = new DataFusionEngine<>(strategy);
-
+		
 		// print consistency report
 		engine.printClusterConsistencyReport(correspondences, null);
 		
