@@ -162,6 +162,8 @@ public class PlayerApp
 		// mean + average
 		strategy.addAttributeFuser(Player.HEIGHT,new HeightFuserVoting(),new HeightEvaluationRule());
 		strategy.addAttributeFuser(Player.WEIGHT,new WeightFuserVoting(),new WeightEvaluationRule());
+		//strategy.addAttributeFuser(Player.WEIGHT,new WeightFuserAverage(),new WeightEvaluationRule());
+		//strategy.addAttributeFuser(Player.WEIGHT,new WeightFuserMedian(),new WeightEvaluationRule());
 		//strategy.addAttributeFuser(Player.SHIRTNUMBEROFCLUB,new ShirtNumberOfClubFuserMostRecent(),new ShirtNumberOfClubEvaluationRule());
 		strategy.addAttributeFuser(Player.SHIRTNUMBEROFCLUB, new ShirtNumberFuserCustomMostRecent(), new ShirtNumberOfClubEvaluationRule());
 		strategy.addAttributeFuser(Player.POSITION,new PositionFuserCustomMostRecent(),new PositionEvaluationRule());
