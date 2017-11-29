@@ -35,6 +35,7 @@ import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.players.We
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.BirthDateFuserFavourSources;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.BirthplaceFuserVoting;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.CapsFuserMostRecent;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.ClubMembershipFuserMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.ClubMembershipValidAsOfFuserMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.HeightFuserVoting;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.IsInNationalTeamFuserMostRecent;
@@ -162,7 +163,8 @@ public class PlayerApp
 		strategy.addAttributeFuser(Player.PREFERREDFOOT,new PreferredFootFuserVoting(),new PreferredFootEvaluationRule());
 		strategy.addAttributeFuser(Player.CAPS,new CapsFuserMostRecent(),new CapsEvaluationRule());
 		strategy.addAttributeFuser(Player.ISINNATIONALTEAM,new IsInNationalTeamFuserMostRecent(),new IsInNationalTeamEvaluationRule());
-		strategy.addAttributeFuser(Player.CLUBMEMBERSHIPVALIDASOF,new ClubMembershipValidAsOfFuserMostRecent(),new ClubMembershipAsValidOfEvaluationRule());
+		//strategy.addAttributeFuser(Player.CLUBMEMBERSHIPVALIDASOF,new ClubMembershipValidAsOfFuserMostRecent(),new ClubMembershipAsValidOfEvaluationRule());
+		strategy.addAttributeFuser(Player.CLUBMEMBERSHIPVALIDASOF,new ClubMembershipFuserMostRecent(),new ClubMembershipAsValidOfEvaluationRule());
 		
 		// create the fusion engine
 		DataFusionEngine<Player, Attribute> engine = new DataFusionEngine<>(strategy);
