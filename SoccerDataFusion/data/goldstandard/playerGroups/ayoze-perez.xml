@@ -1,0 +1,28 @@
+<players>
+  <player>
+    <id>JokeCampOthers_Newcastle237_Ayoze_Pérez228</id>
+    <fullName>Ayoze Pérez</fullName>
+    <height>179</height>
+    <shirtNumberOfClub>17</shirtNumberOfClub>
+    <position>FW</position>
+    <clubMembershipValidAsOf>2014-11-29</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>Kaggle_Newcastle_United2008_Ayoze_Perez1871</id>
+    <fullName>Ayoze Perez</fullName>
+    <birthDate>1993-07-23</birthDate>
+    <height>177</height>
+    <weight>66</weight>
+    <preferredFoot>right</preferredFoot>
+    <clubMembershipValidAsOf>2012-08-31</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>Transfermarkt_Newcastle_United65340_Ayoze_Pérez61947</id>
+    <fullName>Ayoze Pérez</fullName>
+    <birthDate>1993-07-23</birthDate>
+    <nationality>ESP</nationality>
+    <height>178</height>
+    <position>FW</position>
+    <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
+  </player>
+</players>

@@ -1,0 +1,20 @@
+<players>
+  <player>
+    <id>Kaggle_FC_Basel1563_Davide_Calla1457</id>
+    <fullName>Davide Calla</fullName>
+    <birthDate>1984-10-06</birthDate>
+    <height>175</height>
+    <weight>78</weight>
+    <preferredFoot>right</preferredFoot>
+    <clubMembershipValidAsOf>2015-09-25</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>Transfermarkt_FC_Basel_1893120056_Davide_Callà113595</id>
+    <fullName>Davide Callà</fullName>
+    <birthDate>1984-10-06</birthDate>
+    <nationality>CHE</nationality>
+    <height>176</height>
+    <position>MF</position>
+    <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
+  </player>
+</players>

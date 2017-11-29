@@ -1,0 +1,47 @@
+<players>
+  <player>
+    <id>DBPedia_Grasshopper_Club_Zürich22017_Kim_Källström18668</id>
+    <fullName>Kim Källström</fullName>
+    <birthDate>1982-08-24</birthDate>
+    <birthplace>Sandviken</birthplace>
+    <nationality>SWE</nationality>
+    <height>185</height>
+    <position>MF</position>
+    <clubMembershipValidAsOf>2015-01-01</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>Euro2016_Grasshoppers733_Kim_Källström533</id>
+    <fullName>Kim Källström</fullName>
+    <birthDate>1982-08-24</birthDate>
+    <position>MF</position>
+    <caps>127</caps>
+    <isInNationalTeam>true</isInNationalTeam>
+    <clubMembershipValidAsOf>2016-06-10</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>Transfermarkt_Grasshopper_Club120163_Kim_Källström113698</id>
+    <fullName>Kim Källström</fullName>
+    <birthDate>1982-08-24</birthDate>
+    <nationality>SWE</nationality>
+    <height>185</height>
+    <position>MF</position>
+    <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>Kaggle_Grasshopper_Club_Zürich3440_Kim_Kaellstroem3189</id>
+    <fullName>Kim Kaellstroem</fullName>
+    <birthDate>1982-08-24</birthDate>
+    <height>185</height>
+    <weight>83</weight>
+    <preferredFoot>right</preferredFoot>
+    <clubMembershipValidAsOf>2011-08-30</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>JokeCampOthers_Spartak_Moscow3806_Kim_Källström3665</id>
+    <fullName>Kim Källström</fullName>
+    <height>185</height>
+    <shirtNumberOfClub>21</shirtNumberOfClub>
+    <position>MF</position>
+    <clubMembershipValidAsOf>2014-11-30</clubMembershipValidAsOf>
+  </player>
+</players>

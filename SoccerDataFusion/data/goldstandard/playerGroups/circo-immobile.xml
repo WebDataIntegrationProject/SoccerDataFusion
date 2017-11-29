@@ -1,0 +1,27 @@
+<players>
+  <player>
+    <id>JokeCampOthers_Borussia_Dortmund662_Ciro_Immobile637</id>
+    <fullName>Ciro Immobile</fullName>
+    <height>181</height>
+    <shirtNumberOfClub>9</shirtNumberOfClub>
+    <clubMembershipValidAsOf>2014-11-22</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>Kaggle_Torino3002_Ciro_Immobile2793</id>
+    <fullName>Ciro Immobile</fullName>
+    <birthDate>1990-02-20</birthDate>
+    <height>185</height>
+    <weight>78</weight>
+    <preferredFoot>right</preferredFoot>
+    <clubMembershipValidAsOf>2015-01-30</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>Transfermarkt_FC_Turin258854_Ciro_Immobile238380</id>
+    <fullName>Ciro Immobile</fullName>
+    <birthDate>1990-02-20</birthDate>
+    <nationality>ITA</nationality>
+    <height>185</height>
+    <position>FW</position>
+    <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
+  </player>
+</players>

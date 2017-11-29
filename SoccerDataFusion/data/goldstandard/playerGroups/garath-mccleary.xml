@@ -1,0 +1,28 @@
+<players>
+  <player>
+    <id>Transfermarkt_FC_Reading78066_Garath_McCleary73992</id>
+    <fullName>Garath McCleary</fullName>
+    <birthDate>1987-05-15</birthDate>
+    <nationality>JAM</nationality>
+    <height>187</height>
+    <position>FW</position>
+    <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>JokeCampOthers_Reading1465_Garath_McCleary1411</id>
+    <fullName>Garath McCleary</fullName>
+    <height>178</height>
+    <shirtNumberOfClub>12</shirtNumberOfClub>
+    <position>MF</position>
+    <clubMembershipValidAsOf>2014-11-29</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>Kaggle_Reading2212_Garath_McCleary2062</id>
+    <fullName>Garath McCleary</fullName>
+    <birthDate>1987-05-15</birthDate>
+    <height>182</height>
+    <weight>76</weight>
+    <preferredFoot>right</preferredFoot>
+    <clubMembershipValidAsOf>2014-10-02</clubMembershipValidAsOf>
+  </player>
+</players>

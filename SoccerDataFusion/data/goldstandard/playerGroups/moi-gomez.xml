@@ -1,0 +1,17 @@
+<players>
+  <player>
+    <id>DBPedia_Sporting_de_Gijón27248_Moi_Gómez23115</id>
+    <fullName>Moi Gómez</fullName>
+    <height>176</height>
+    <position>MF</position>
+    <clubMembershipValidAsOf>2016-01-01</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>JokeCampOthers_Villarreal3799_Moi_Gómez3659</id>
+    <fullName>Moi Gómez</fullName>
+    <height>179</height>
+    <shirtNumberOfClub>19</shirtNumberOfClub>
+    <position>MF</position>
+    <clubMembershipValidAsOf>2014-11-23</clubMembershipValidAsOf>
+  </player>
+</players>

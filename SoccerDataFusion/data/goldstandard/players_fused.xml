@@ -53,4 +53,83 @@
     <isInNationalTeam>true</isInNationalTeam>
     <clubMembershipValidAsOf>2016-06-10</clubMembershipValidAsOf>
   </player>
+  <player>
+    <id>JokeCampOthers_Borussia_Dortmund662_Ciro_Immobile637+Kaggle_Torino3002_Ciro_Immobile2793+Transfermarkt_FC_Turin258854_Ciro_Immobile238380</id>
+    <fullName>Ciro Immobile</fullName>
+    <birthDate>1990-02-20</birthDate>
+    <nationality>ITA</nationality>
+    <height>185</height>
+    <weight>78</weight>
+    <shirtNumberOfClub>9</shirtNumberOfClub>
+    <position>FW</position>
+    <preferredFoot>right</preferredFoot>
+    <isInNationalTeam>false</isInNationalTeam>
+    <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>DBPedia_Sporting_de_Gijón27248_Moi_Gómez23115+JokeCampOthers_Villarreal3799_Moi_Gómez3659</id>
+    <fullName>Moi Gómez</fullName>
+    <height>176</height>
+    <shirtNumberOfClub>19</shirtNumberOfClub>
+    <position>MF</position>
+    <isInNationalTeam>false</isInNationalTeam>
+    <clubMembershipValidAsOf>2016-01-01</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>Kaggle_FC_Basel1563_Davide_Calla1457+Transfermarkt_FC_Basel_1893120056_Davide_Callà113595</id>
+    <fullName>Davide Callà</fullName>
+    <birthDate>1984-10-06</birthDate>
+    <nationality>CHE</nationality>
+    <height>175</height>
+    <weight>78</weight>
+    <position>MF</position>
+    <preferredFoot>right</preferredFoot>
+    <isInNationalTeam>false</isInNationalTeam>
+    <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>JokeCampOthers_Reading1465_Garath_McCleary1411+Kaggle_Reading2212_Garath_McCleary2062+Transfermarkt_FC_Reading78066_Garath_McCleary73992</id>
+    <fullName></fullName>
+    <birthDate>1991-03-21</birthDate>
+    <birthplace>Mâcon</birthplace>
+    <nationality>FRA</nationality>
+    <height>175</height>
+    <weight>67</weight>
+    <shirtNumberOfClub>7</shirtNumberOfClub>
+    <position>FW</position>
+    <caps>26</caps>
+    <preferredFoot>left</preferredFoot>
+    <isInNationalTeam>true</isInNationalTeam>
+    <clubMembershipValidAsOf>2016-06-10</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>DBPedia_Grasshopper_Club_Zürich22017_Kim_Källström18668+Euro2016_Grasshoppers733_Kim_Källström533+JokeCampOthers_Spartak_Moscow3806_Kim_Källström3665+Kaggle_Grasshopper_Club_Zürich3440_Kim_Kaellstroem3189+Transfermarkt_Grasshopper_Club120163_Kim_Källström113698</id>
+    <fullName></fullName>
+    <birthDate>1991-03-21</birthDate>
+    <birthplace>Mâcon</birthplace>
+    <nationality>FRA</nationality>
+    <height>175</height>
+    <weight>67</weight>
+    <shirtNumberOfClub>7</shirtNumberOfClub>
+    <position>FW</position>
+    <caps>26</caps>
+    <preferredFoot>left</preferredFoot>
+    <isInNationalTeam>true</isInNationalTeam>
+    <clubMembershipValidAsOf>2016-06-10</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>JokeCampOthers_Newcastle237_Ayoze_Pérez228+Kaggle_Newcastle_United2008_Ayoze_Perez1871+Transfermarkt_Newcastle_United65340_Ayoze_Pérez61947</id>
+    <fullName></fullName>
+    <birthDate>1991-03-21</birthDate>
+    <birthplace>Mâcon</birthplace>
+    <nationality>FRA</nationality>
+    <height>175</height>
+    <weight>67</weight>
+    <shirtNumberOfClub>7</shirtNumberOfClub>
+    <position>FW</position>
+    <caps>26</caps>
+    <preferredFoot>left</preferredFoot>
+    <isInNationalTeam>true</isInNationalTeam>
+    <clubMembershipValidAsOf>2016-06-10</clubMembershipValidAsOf>
+  </player>
 </players>
