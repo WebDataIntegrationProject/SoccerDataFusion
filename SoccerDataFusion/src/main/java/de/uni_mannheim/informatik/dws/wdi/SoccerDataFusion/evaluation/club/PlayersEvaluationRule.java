@@ -48,7 +48,7 @@ public class PlayersEvaluationRule extends EvaluationRule<Club, Attribute> {
 			players2.add(player.getIdentifier());
 		}
 
-		return players1.containsAll(players2) && players2.containsAll(players1);
+		return players1.containsAll(players2);
 	}
 
 	/* (non-Javadoc)
