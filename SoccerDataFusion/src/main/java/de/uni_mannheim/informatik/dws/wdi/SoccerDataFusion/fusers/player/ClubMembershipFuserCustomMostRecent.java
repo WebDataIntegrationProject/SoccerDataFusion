@@ -15,8 +15,8 @@ import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
 
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.conflictresolution.ClubMembershipMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.conflictresolution.PlayersUnion;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.conflictresolution.ClubMembershipMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Club;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Player;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;

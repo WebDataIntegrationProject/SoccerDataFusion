@@ -17,7 +17,7 @@ import java.util.List;
 
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.conflictresolution.PlayersUnion;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.conflictresolution.ClubMembershipMostRecent;
-import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.conflictresolution.IsInNationalTeamMostRecent;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.conflictresolution.ShirtNumberOfClubMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Club;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Player;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
@@ -35,28 +35,28 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class IsInNationalTeamFuserCustomMostRecent extends AttributeValueFuser<Boolean, Player, Attribute> {
+public class ShirtNumberFuserCustomMostRecent extends AttributeValueFuser<String, Player, Attribute> {
 	
 	
-	public IsInNationalTeamFuserCustomMostRecent() {
-		super(new IsInNationalTeamMostRecent<Boolean, Player, Attribute>());
+	public ShirtNumberFuserCustomMostRecent() {
+		super(new ShirtNumberOfClubMostRecent<String, Player, Attribute>());
 	}
 	
 	@Override
 	public boolean hasValue(Player record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.hasValue(Player.ISINNATIONALTEAM);
+		return record.hasValue(Player.SHIRTNUMBEROFCLUB);
 	}
 	
 	@Override
-	protected Boolean getValue(Player record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.getIsInNationalTeam();
+	protected String getValue(Player record, Correspondence<Attribute, Matchable> correspondence) {
+		return record.getShirtNumberOfClub();
 	}
 
 	@Override
 	public void fuse(RecordGroup<Player, Attribute> group, Player fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
-		FusedValue<Boolean, Player, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
-		fusedRecord.setIsInNationalTeam(fused.getValue());
-		fusedRecord.setAttributeProvenance(Player.ISINNATIONALTEAM, fused.getOriginalIds());
+		FusedValue<String, Player, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
+		fusedRecord.setShirtNumberOfClub(fused.getValue());
+		fusedRecord.setAttributeProvenance(Player.SHIRTNUMBEROFCLUB, fused.getOriginalIds());
 	}
 
 }
