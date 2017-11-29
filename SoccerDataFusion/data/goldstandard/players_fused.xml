@@ -27,4 +27,19 @@
     <isInNationalTeam>false</isInNationalTeam>
     <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
   </player>
+  <player>
+    <id>DBPedia_Atlético_Madrid11951_Antoine_Griezmann10076+Euro2016_Atlético_Madrid216_Antoine_Griezmann166+JokeCampOthers_Atletico890_Antoine_Griezmann856+Kaggle_Atlético_Madrid3167_Antoine_Griezmann2943+Transfermarkt_Atlético_Madrid2773_Antoine_Griezmann2641</id>
+    <fullName>Antoine Griezmann</fullName>
+    <birthDate>1991-03-21</birthDate>
+    <birthplace>Mâcon</birthplace>
+    <nationality>FRA</nationality>
+    <height>175</height>
+    <weight>67</weight>
+    <shirtNumberOfClub>7</shirtNumberOfClub>
+    <position>FW</position>
+    <caps>26</caps>
+    <preferredFoot>left</preferredFoot>
+    <isInNationalTeam>true</isInNationalTeam>
+    <clubMembershipValidAsOf>2016-06-10</clubMembershipValidAsOf>
+  </player>
 </players>
