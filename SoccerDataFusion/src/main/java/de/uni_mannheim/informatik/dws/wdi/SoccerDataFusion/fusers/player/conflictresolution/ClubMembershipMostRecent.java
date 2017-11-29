@@ -1,4 +1,4 @@
-package de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.conflictresolution;
+package de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.conflictresolution;
 
 import java.time.LocalDateTime;
 import java.util.Collection;
@@ -14,10 +14,10 @@ import de.uni_mannheim.informatik.dws.winter.model.FusibleValue;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Player;
 
-public class IsInNationalTeamMostRecent<ValueType, RecordType extends Matchable & Fusible<SchemaElementType>, SchemaElementType extends Matchable>
+public class ClubMembershipMostRecent<ValueType, RecordType extends Matchable & Fusible<SchemaElementType>, SchemaElementType extends Matchable>
 		extends ConflictResolutionFunction<ValueType, RecordType, SchemaElementType> {
 	
-	public IsInNationalTeamMostRecent() {
+	public ClubMembershipMostRecent() {
 		super();
 	}
 	
@@ -25,23 +25,16 @@ public class IsInNationalTeamMostRecent<ValueType, RecordType extends Matchable 
 	public FusedValue<ValueType, RecordType, SchemaElementType> resolveConflict(
 			Collection<FusibleValue<ValueType, RecordType, SchemaElementType>> values) {
 
-		LocalDateTime mostRecentDate = null;
-		Boolean inNationalTeam = false;
-		
+		LocalDateTime mostRecent = null;
+
 		for (FusibleValue<ValueType, RecordType, SchemaElementType> value : values) {
-			if ((Boolean) value.getValue()){
-				inNationalTeam = true;
-				break;
+			LocalDateTime clubMembership = (LocalDateTime) value.getValue();
+			if (mostRecent == null || clubMembership.isAfter(mostRecent)){
+				mostRecent = clubMembership;
 			}
-//			Player player = (Player) value.getRecord();
-//			LocalDateTime clubMembership = player.getClubMembershipValidAsOf();
-//			if (mostRecentDate == null || clubMembership.isAfter(mostRecentDate)){
-//				mostRecentDate = clubMembership;
-//				inNationalTeam = (Boolean) value.getValue();
-//			}
 		}
-		ValueType vtInNationalTeam = (ValueType) inNationalTeam;
-		FusedValue<ValueType, RecordType, SchemaElementType> fused = new FusedValue<>(vtInNationalTeam);
+		ValueType mostRecentDate = (ValueType) mostRecent;
+		FusedValue<ValueType, RecordType, SchemaElementType> fused = new FusedValue<>(mostRecentDate);
 
 		for (FusibleValue<ValueType, RecordType, SchemaElementType> value : values) {
 			fused.addOriginalRecord(value);
