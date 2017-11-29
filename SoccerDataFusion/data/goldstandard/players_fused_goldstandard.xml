@@ -139,4 +139,173 @@
     <isInNationalTeam>false</isInNationalTeam>
     <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
   </player>
+    <player>
+    <id>Kaggle_Dundee_United1869_Blair_Spittal1744+Transfermarkt_Dundee_United_FC154721_Blair_Spittal146090</id>
+    <fullName>Blair Spittal</fullName>
+    <birthDate>1995-12-19</birthDate>
+    <height>183</height>
+    <weight>72</weight>
+    <position>FW</position>
+    <preferredFoot>left</preferredFoot>
+    <isInNationalTeam>false</isInNationalTeam>
+    <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>JokeCampOthers_Mainz2446_Jairo2357+Kaggle_Sevilla_FC2401_Jairo2237+Transfermarkt_1.FSV_Mainz_0586870_Jairo_Samperio82322</id>
+    <fullName >Jairo Samperio</fullName>
+    <birthDate>1993-07-11</birthDate>
+    <nationality>ESP</nationality>
+    <height>172</height>
+    <weight>68</weight>
+    <shirtNumberOfClub>17</shirtNumberOfClub>
+    <position>FW</position>
+    <preferredFoot>right</preferredFoot>
+    <isInNationalTeam>false</isInNationalTeam>
+    <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>Kaggle_Motherwell1021_Lee_Erwin952+Transfermarkt_Leeds_United150462_Lee_Erwin142141</id>
+    <fullName>Lee Erwin</fullName>
+    <birthDate>1994-03-19</birthDate>
+    <height>188</height>
+    <weight>78</weight>
+    <position>FW</position>
+    <preferredFoot>right</preferredFoot>
+    <isInNationalTeam>false</isInNationalTeam>
+    <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>Kaggle_Uniao_da_Madeira576_Danilo_Dias539+Transfermarkt_CF_União_Madeira73018_Danilo_Dias69222</id>
+    <fullName>Danilo Dias</fullName>
+    <birthDate>1985-11-06</birthDate>
+    <nationality>BRA</nationality>
+    <height>173</height>
+    <weight>63</weight>
+    <position>FW</position>
+    <preferredFoot>right</preferredFoot>
+    <isInNationalTeam>false</isInNationalTeam>
+    <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>JokeCampOthers_Juventus1378_Kingsley_Coman1327+Kaggle_Juventus3128_Kingsley_Coman2908+Transfermarkt_FC_Bayern_München138825_Kingsley_Coman131242</id>
+    <fullName>Kingsley Coman</fullName>
+    <birthDate>1996-06-13</birthDate>
+    <height>178</height>
+    <weight>71</weight>
+    <shirtNumberOfClub>11</shirtNumberOfClub>
+    <position>FW</position>
+    <preferredFoot>right</preferredFoot>
+    <isInNationalTeam>false</isInNationalTeam>
+    <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>JokeCampOthers_Konyaspor4501_Dimitar_Rangelov4335+Kaggle_FC_Luzern3243_Dimitar_Rangelov3010</id>
+    <fullName>Dimitar Rangelov</fullName>
+    <birthDate>1983-03-07</birthDate>
+    <height>183</height>
+    <weight>79</weight>
+    <shirtNumberOfClub>9</shirtNumberOfClub>
+    <position>FW</position>
+    <preferredFoot>left</preferredFoot>
+    <caps/>
+    <isInNationalTeam>false</isInNationalTeam>
+    <clubMembershipValidAsOf>2014-11-28</clubMembershipValidAsOf>
+  </player>
+ <player>
+    <id>Kaggle_Real_Betis_Balompié33_Ruben_Castro30+Transfermarkt_Real_Betis_Sevilla223057_Rubén_Castro208174</id>
+    <fullName>Rubén Castro</fullName>
+    <birthDate>1981-06-27</birthDate>
+    <nationality>ESP</nationality>
+    <height>168</height>
+    <weight>72</weight>
+    <position>FW</position>
+    <preferredFoot>right</preferredFoot>
+    <isInNationalTeam>false</isInNationalTeam>
+    <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>Kaggle_FC_Lorient148_Jeremie_Aliadiere136+Transfermarkt_Al-Mu'aidar_Sports_Club47141_Jérémie_Aliadière44700</id>
+    <fullName>Jérémie Aliadière</fullName>
+    <birthDate>1983-03-30</birthDate>
+    <nationality>FRA</nationality>
+    <height>183</height>
+    <weight>69</weight>
+    <position>FW</position>
+    <preferredFoot>right</preferredFoot>
+    <isInNationalTeam>false</isInNationalTeam>
+    <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>Kaggle_Stade_Rennais_FC2292_Jires_Kembo-Ekoko2135+Transfermarkt_Al-Nasr_(Dubai)51560_Jirès_Kembo-Ekoko48905</id>
+    <fullName>Jirès Kembo-Ekoko</fullName>
+    <birthDate>1988-01-08</birthDate>
+    <nationality>FRA</nationality>
+    <height>178</height>
+    <weight>78</weight>
+    <position>FW</position>
+    <preferredFoot>right</preferredFoot>
+    <isInNationalTeam>false</isInNationalTeam>
+    <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>DBPedia_U.S._Città_di_Palermo28427_Ivaylo_Chochev24104+JokeCampOthers_Palermo4392_Ivaylo_Chochev4231</id>
+    <fullName>Ivaylo Chochev</fullName>
+    <birthDate>1993-02-18</birthDate>
+    <birthplace>Pleven</birthplace>
+    <nationality>BGR</nationality>
+    <height>188</height>
+    <shirtNumberOfClub>18</shirtNumberOfClub>
+    <position>MF</position>
+    <isInNationalTeam>false</isInNationalTeam>
+    <clubMembershipValidAsOf>2014-11-30</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>DBPedia_FC_Sion34833_Elsad_Zverotić29328+JokeCampOthers_Fulham2063_Elsad_Zverotic1987</id>
+    <fullName>Elsad Zverotić</fullName>
+    <birthDate>1986-10-31</birthDate>
+    <birthplace>Berane</birthplace>
+    <nationality>MNE</nationality>
+    <height>179</height>
+    <shirtNumberOfClub>13</shirtNumberOfClub>
+    <isInNationalTeam>false</isInNationalTeam>
+    <clubMembershipValidAsOf>2015-01-01</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>DBPedia_SC_Freiburg33175_Amir_Abrashi27970+Euro2016_Freiburg39_Amir_Abrashi28</id>
+    <fullName>Amir Abrashi</fullName>
+    <birthDate>1990-03-27</birthDate>
+    <birthplace>Bischofszell</birthplace>
+    <nationality>CHE</nationality>
+    <height>172</height>
+    <position>MF</position>
+    <caps>17</caps>
+    <isInNationalTeam>true</isInNationalTeam>
+    <clubMembershipValidAsOf>2016-06-10</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>JokeCampOthers_AZ_Alkmaar2615_Celso_Ortiz2519+Kaggle_AZ2860_Celso_Ortiz2663+Transfermarkt_AZ_Alkmaar4853_Celso_Ortiz4617</id>
+    <fullName>Celso Ortiz</fullName>
+    <birthDate>1989-01-26</birthDate>
+    <nationality>PRY</nationality>
+    <height>175</height>
+    <weight>69</weight>
+    <shirtNumberOfClub>6</shirtNumberOfClub>
+    <shirtNumberOfNationalTeam provenance=""/>
+    <position>MF</position>
+    <preferredFoot>right</preferredFoot>
+    <isInNationalTeam>false</isInNationalTeam>
+    <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
+  </player>
+  <player>
+    <id>Kaggle_CA_Osasuna1219_Jose_Ariel_Nunez1137+Transfermarkt_Olimpia_Asunción29488_José_Núñez28015</id>
+    <fullName>José Ariel Núñez</fullName>
+    <birthDate>1988-09-12</birthDate>
+    <nationality>PRY</nationality>
+    <height>172</height>
+    <weight>71</weight>
+    <position>FW</position>
+    <preferredFoot>right</preferredFoot>
+    <isInNationalTeam>false</isInNationalTeam>
+    <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
+  </player>
 </players>
