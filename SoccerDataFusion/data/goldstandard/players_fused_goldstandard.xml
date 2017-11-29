@@ -127,4 +127,16 @@
     <isInNationalTeam>false</isInNationalTeam>
     <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
   </player>
+  <player>
+    <id>Kaggle_SV_Werder_Bremen2242_Markus_Rosenberg2088+Transfermarkt_Malmö_FF53595_Markus_Rosenberg50829</id>
+    <fullName>Markus Rosenberg</fullName>
+    <birthDate>1982-09-27</birthDate>
+    <nationality>SWE</nationality>
+    <height>182</height>
+    <weight>81</weight>
+    <position>FW</position>
+    <preferredFoot>right</preferredFoot>
+    <isInNationalTeam>false</isInNationalTeam>
+    <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
+  </player>
 </players>
