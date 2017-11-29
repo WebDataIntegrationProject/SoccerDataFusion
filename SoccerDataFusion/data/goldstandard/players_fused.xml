@@ -42,4 +42,15 @@
     <isInNationalTeam>true</isInNationalTeam>
     <clubMembershipValidAsOf>2016-06-10</clubMembershipValidAsOf>
   </player>
+  <player>
+    <id>DBPedia_FC_Schalke_0426420_Yevhen_Konoplyanka22419+Euro2016_Sevilla407_Yevhen_Konoplyanka320</id>
+    <fullName>Yevhen Konoplyanka</fullName>
+    <birthDate>1989-09-29</birthDate>
+    <birthplace>Kropyvnytskyi</birthplace>
+    <height>176</height>
+    <position>MF</position>
+    <caps>52</caps>
+    <isInNationalTeam>true</isInNationalTeam>
+    <clubMembershipValidAsOf>2016-06-10</clubMembershipValidAsOf>
+  </player>
 </players>
