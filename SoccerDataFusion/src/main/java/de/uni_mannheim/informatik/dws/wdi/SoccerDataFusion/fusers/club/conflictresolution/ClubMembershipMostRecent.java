@@ -29,7 +29,7 @@ public class ClubMembershipMostRecent<ValueType, RecordType extends Matchable & 
 
 		for (FusibleValue<ValueType, RecordType, SchemaElementType> value : values) {
 			LocalDateTime clubMembership = (LocalDateTime) value.getValue();
-			if (mostRecent == null || clubMembership.isBefore(mostRecent)){
+			if (mostRecent == null || clubMembership.isAfter(mostRecent)){
 				mostRecent = clubMembership;
 			}
 		}
