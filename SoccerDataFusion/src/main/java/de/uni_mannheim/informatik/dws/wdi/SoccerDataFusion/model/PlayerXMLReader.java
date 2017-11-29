@@ -94,9 +94,9 @@ public class PlayerXMLReader extends XMLMatchableReader<Player, Attribute> {
 		
 		// convert string to boolean
 		String isInNationalTeamString = getValueFromChildElement(node, "isInNationalTeam");
-		if (isInNationalTeamString == "TRUE") player.setIsInNationalTeam(true);
-		else if (isInNationalTeamString == "FALSE") player.setIsInNationalTeam(false);
-		else player.setIsInNationalTeam(null);
+		if (isInNationalTeamString == null || isInNationalTeamString.equals("false")) player.setIsInNationalTeam(false);
+		else if (isInNationalTeamString.equals("true")) player.setIsInNationalTeam(true);
+		else player.setIsInNationalTeam(false);
 
 		// convert the date string into a DateTime object
 		try {
@@ -112,7 +112,7 @@ public class PlayerXMLReader extends XMLMatchableReader<Player, Attribute> {
 				player.setBirthday(dt);
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			player.setBirthday(null);
 		}
 		
 		try {
@@ -128,7 +128,7 @@ public class PlayerXMLReader extends XMLMatchableReader<Player, Attribute> {
 				player.setClubMembershipValidAsOf(dt);
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			player.setClubMembershipValidAsOf(null);
 		}
 
 		return player;
