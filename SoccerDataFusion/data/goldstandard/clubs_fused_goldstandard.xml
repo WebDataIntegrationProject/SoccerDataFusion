@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clubs>
+  <club>
+    <id>Kaggle_Napoli2221+Transfermarkt_CSCD_Nápoli173741</id>
+    <name>CSCD Nápoli</name>
+    <players>
+			<player>
+				<id>Transfermarkt_CSCD_Nápoli173742_Máximo_Rivera163662</id>
+			</player>
+			<player>
+				<id>Kaggle_Napoli2222_Cristiano_Lucarelli2070</id>
+			</player>
+			<player>
+				<id>Kaggle_Napoli2229_Lorenzo_Insigne2077</id>
+			</player>
+		</players>
+  </club>
+</clubs>

@@ -1,0 +1,94 @@
+<clubs>
+	<club>
+		<id>Transfermarkt_CSCD_Nápoli173741</id>
+		<name>CSCD Nápoli</name>
+		<players>
+			<player>
+				<id>Transfermarkt_CSCD_Nápoli173742_Máximo_Rivera163662</id>
+				<fullName>Máximo Rivera</fullName>
+				<birthDate>1980-09-11</birthDate>
+				<nationality>ECU</nationality>
+				<position>DF</position>
+				<clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
+			</player>
+		</players>
+	</club>
+	<club>
+		<id>Kaggle_Napoli2221</id>
+		<name>Napoli</name>
+		<players>
+			<player>
+				<id>Kaggle_Napoli2222_Cristiano_Lucarelli2070</id>
+				<fullName>Cristiano Lucarelli</fullName>
+				<birthDate>1975-10-04</birthDate>
+				<height>187</height>
+				<weight>83</weight>
+				<preferredFoot>left</preferredFoot>
+				<clubMembershipValidAsOf>2007-02-22</clubMembershipValidAsOf>
+			</player>
+			<player>
+				<id>Kaggle_Napoli2223_Gonzalo_Higuain2071</id>
+				<fullName>Gonzalo Higuain</fullName>
+				<birthDate>1987-12-10</birthDate>
+				<height>182</height>
+				<weight>82</weight>
+				<preferredFoot>right</preferredFoot>
+				<clubMembershipValidAsOf>2013-09-20</clubMembershipValidAsOf>
+			</player>
+			<player>
+				<id>Kaggle_Napoli2224_Joao_Inacio_Pia2072</id>
+				<fullName>Joao Inacio Pia</fullName>
+				<birthDate>1982-03-22</birthDate>
+				<height>177</height>
+				<weight>68</weight>
+				<preferredFoot>left</preferredFoot>
+				<clubMembershipValidAsOf>2007-08-30</clubMembershipValidAsOf>
+			</player>
+			<player>
+				<id>Kaggle_Napoli2225_Marek_Hamsik2073</id>
+				<fullName>Marek Hamsik</fullName>
+				<birthDate>1987-07-27</birthDate>
+				<height>182</height>
+				<weight>78</weight>
+				<preferredFoot>right</preferredFoot>
+				<clubMembershipValidAsOf>2015-09-25</clubMembershipValidAsOf>
+			</player>
+			<player>
+				<id>Kaggle_Napoli2226_Dries_Mertens2074</id>
+				<fullName>Dries Mertens</fullName>
+				<birthDate>1987-05-06</birthDate>
+				<height>170</height>
+				<weight>60</weight>
+				<preferredFoot>right</preferredFoot>
+				<clubMembershipValidAsOf>2014-11-14</clubMembershipValidAsOf>
+			</player>
+			<player>
+				<id>Kaggle_Napoli2227_Jose_Maria_Callejon2075</id>
+				<fullName>Jose Maria Callejon</fullName>
+				<birthDate>1987-02-11</birthDate>
+				<height>177</height>
+				<weight>73</weight>
+				<preferredFoot>right</preferredFoot>
+				<clubMembershipValidAsOf>2014-05-30</clubMembershipValidAsOf>
+			</player>
+			<player>
+				<id>Kaggle_Napoli2228_Manolo_Gabbiadini2076</id>
+				<fullName>Manolo Gabbiadini</fullName>
+				<birthDate>1991-11-26</birthDate>
+				<height>185</height>
+				<weight>81</weight>
+				<preferredFoot>right</preferredFoot>
+				<clubMembershipValidAsOf>2012-02-22</clubMembershipValidAsOf>
+			</player>
+			<player>
+				<id>Kaggle_Napoli2229_Lorenzo_Insigne2077</id>
+				<fullName>Lorenzo Insigne</fullName>
+				<birthDate>1991-06-04</birthDate>
+				<height>162</height>
+				<weight>58</weight>
+				<preferredFoot>right</preferredFoot>
+				<clubMembershipValidAsOf>2011-08-30</clubMembershipValidAsOf>
+			</player>
+		</players>
+	</club>
+</clubs>
