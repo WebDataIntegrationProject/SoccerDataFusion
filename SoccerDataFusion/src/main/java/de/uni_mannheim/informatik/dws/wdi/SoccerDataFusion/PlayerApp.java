@@ -97,7 +97,7 @@ public class PlayerApp
 		euro2016.setDate(LocalDateTime.parse("2016-06-10", formatter));
 		jokecamp.setDate(LocalDateTime.parse("2014-11-30", formatter));
 		kaggle.setDate(LocalDateTime.parse("2016-06-16", formatter));
-		transfermarket.setDate(LocalDateTime.parse("2016-05-01", formatter));
+		transfermarket.setDate(LocalDateTime.parse("2016-05-01", formatter)); // this is the crawl time stamp (jp)
 
 		// load correspondences TODO!!! -> insert right links
 		CorrespondenceSet<Player, Attribute> correspondences = new CorrespondenceSet<>();
@@ -112,6 +112,11 @@ public class PlayerApp
 		correspondences.loadCorrespondences(new File("data/correspondences/jokecamp_2_kaggle_correspondences_players.csv"), kaggle, jokecamp);
 		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_2_jokecamp_correspondences_players.csv"), dbpedia, jokecamp);
 
+		
+		// get the stats before removing groups > 5
+		correspondences.printGroupSizeDistribution();
+
+		
 		// Remove all groups that include multiple players of one dataset
 		Collection<RecordGroup<Player, Attribute>> recordGroups = correspondences.getRecordGroups();
 		Collection<RecordGroup<Player, Attribute>> recordGroupsClone = new LinkedList<>();
@@ -173,7 +178,7 @@ public class PlayerApp
 
 		// load the gold standard
 		DataSet<Player, Attribute> goldStandard = new FusibleHashedDataSet<>();
-		new PlayerXMLReader().loadFromXML(new File("data/goldstandard/players_fused.xml"), "/players/player", goldStandard);
+		new PlayerXMLReader().loadFromXML(new File("data/goldstandard/players_fused_goldstandard.xml"), "/players/player", goldStandard);
 
 		// evaluate
 		DataFusionEvaluator<Player, Attribute> evaluator = new DataFusionEvaluator<>(
