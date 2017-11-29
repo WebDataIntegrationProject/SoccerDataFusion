@@ -33,7 +33,7 @@ public class IsInNationalTeamEvaluationRule extends EvaluationRule<Player, Attri
 			return true;
 		else if(record1.getIsInNationalTeam()== null ^ record2.getIsInNationalTeam()==null)
 			return false;
-		else if (record1.getIsInNationalTeam() && record2.getIsInNationalTeam())
+		else if (record1.getIsInNationalTeam().equals(record2.getIsInNationalTeam()))
 			return true;
 		else
 			return false;
