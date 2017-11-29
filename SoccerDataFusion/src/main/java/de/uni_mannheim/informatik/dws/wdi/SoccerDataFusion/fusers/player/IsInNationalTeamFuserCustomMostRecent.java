@@ -16,6 +16,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.conflictresolution.ClubMembershipMostRecent;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.conflictresolution.IsInNationalTeamMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.conflictresolution.PlayersUnion;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Club;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Player;
@@ -34,28 +35,28 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class ClubMembershipFuserMostRecent extends AttributeValueFuser<LocalDateTime, Player, Attribute> {
+public class IsInNationalTeamFuserCustomMostRecent extends AttributeValueFuser<Boolean, Player, Attribute> {
 	
 	
-	public ClubMembershipFuserMostRecent() {
-		super(new ClubMembershipMostRecent<LocalDateTime, Player, Attribute>());
+	public IsInNationalTeamFuserCustomMostRecent() {
+		super(new IsInNationalTeamMostRecent<Boolean, Player, Attribute>());
 	}
 	
 	@Override
 	public boolean hasValue(Player record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.hasValue(Player.CLUBMEMBERSHIPVALIDASOF);
+		return record.hasValue(Player.ISINNATIONALTEAM);
 	}
 	
 	@Override
-	protected LocalDateTime getValue(Player record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.getClubMembershipValidAsOf();
+	protected Boolean getValue(Player record, Correspondence<Attribute, Matchable> correspondence) {
+		return record.getIsInNationalTeam();
 	}
 
 	@Override
 	public void fuse(RecordGroup<Player, Attribute> group, Player fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
-		FusedValue<LocalDateTime, Player, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
-		fusedRecord.setClubMembershipValidAsOf(fused.getValue());
-		fusedRecord.setAttributeProvenance(Player.CLUBMEMBERSHIPVALIDASOF, fused.getOriginalIds());
+		FusedValue<Boolean, Player, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
+		fusedRecord.setIsInNationalTeam(fused.getValue());
+		fusedRecord.setAttributeProvenance(Player.ISINNATIONALTEAM, fused.getOriginalIds());
 	}
 
 }
