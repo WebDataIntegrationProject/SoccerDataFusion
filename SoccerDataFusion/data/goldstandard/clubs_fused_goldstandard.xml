@@ -15,4 +15,26 @@
 			</player>
 		</players>
   </club>
+	<club>
+		<id>DBPedia_Troyes_AC28903+Kaggle_ES_Troyes_AC2729+Transfermarkt_ES_Troyes_AC182675</id>
+		<name>ES Troyes AC</name>
+    <country>FRA</country>
+    <nameOfStadium>Stade de l'Aube</nameOfStadium>
+    <cityOfStadium>Troyes</cityOfStadium>
+		<league>Ligue 1</league>
+		<players>
+			<player>
+				<id>DBPedia_Troyes_AC28905_Johann_Obiang24477</id>
+			</player>
+			<player>
+				<id>Kaggle_ES_Troyes_AC2732_Sebastien_Grax2543</id>
+			</player>
+			<player>
+				<id>JokeCampOthers_Evian4667_Fabien_Camus4495+Kaggle_ES_Troyes_AC2731_Fabien_Camus2542+Transfermarkt_ES_Troyes_AC182687_Fabien_Camus171857</id>
+			</player>
+			<player>
+				<id>Transfermarkt_ES_Troyes_AC182688_Dusan_Veskovac171858</id>
+			</player>
+		</players>
+	</club>
 </clubs>
