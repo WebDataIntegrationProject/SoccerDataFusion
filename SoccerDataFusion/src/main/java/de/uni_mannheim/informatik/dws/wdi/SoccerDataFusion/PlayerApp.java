@@ -42,6 +42,7 @@ import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.IsInNat
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.IsInNationalTeamFuserMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.NationalityFuserMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.PlayerNameFuserLongestString;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.PlayerNameFuserSpecialChar;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.PositionFuserCustomMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.PositionFuserMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.player.PreferredFootFuserVoting;
@@ -154,14 +155,18 @@ public class PlayerApp
 		// define the fusion strategy
 		DataFusionStrategy<Player, Attribute> strategy = new DataFusionStrategy<>(new FusiblePlayerFactory());
 		// add attribute fusers
-		strategy.addAttributeFuser(Player.FULLNAME, new PlayerNameFuserLongestString(),new PlayerNameEvaluationRule());
+		//strategy.addAttributeFuser(Player.FULLNAME, new PlayerNameFuserLongestString(),new PlayerNameEvaluationRule());
+		strategy.addAttributeFuser(Player.FULLNAME, new PlayerNameFuserSpecialChar(), new PlayerNameEvaluationRule());
 		//Klammern + special characters
 		strategy.addAttributeFuser(Player.BIRTHPLACE,new BirthplaceFuserVoting(), new BirthplaceEvaluationRule());
 		strategy.addAttributeFuser(Player.BIRTHDATE, new BirthDateFuserFavourSources(),new BirthdateEvaluationRule());
 		strategy.addAttributeFuser(Player.NATIONALITY,new NationalityFuserMostRecent(),new NationalityEvaluationRule());
-		// mean + average
 		strategy.addAttributeFuser(Player.HEIGHT,new HeightFuserVoting(),new HeightEvaluationRule());
+		//strategy.addAttributeFuser(Player.HEIGHT,new HeightFuserAverage(),new HeightEvaluationRule());
+		//strategy.addAttributeFuser(Player.HEIGHT,new HeightFuserMedian(),new HeightEvaluationRule());
 		strategy.addAttributeFuser(Player.WEIGHT,new WeightFuserVoting(),new WeightEvaluationRule());
+		//strategy.addAttributeFuser(Player.WEIGHT,new WeightFuserAverage(),new WeightEvaluationRule());
+		//strategy.addAttributeFuser(Player.WEIGHT,new WeightFuserMedian(),new WeightEvaluationRule());
 		//strategy.addAttributeFuser(Player.SHIRTNUMBEROFCLUB,new ShirtNumberOfClubFuserMostRecent(),new ShirtNumberOfClubEvaluationRule());
 		strategy.addAttributeFuser(Player.SHIRTNUMBEROFCLUB, new ShirtNumberFuserCustomMostRecent(), new ShirtNumberOfClubEvaluationRule());
 		strategy.addAttributeFuser(Player.POSITION,new PositionFuserCustomMostRecent(),new PositionEvaluationRule());
