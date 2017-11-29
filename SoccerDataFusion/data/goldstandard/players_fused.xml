@@ -89,47 +89,42 @@
   </player>
   <player>
     <id>JokeCampOthers_Reading1465_Garath_McCleary1411+Kaggle_Reading2212_Garath_McCleary2062+Transfermarkt_FC_Reading78066_Garath_McCleary73992</id>
-    <fullName></fullName>
-    <birthDate>1991-03-21</birthDate>
-    <birthplace>Mâcon</birthplace>
-    <nationality>FRA</nationality>
-    <height>175</height>
-    <weight>67</weight>
-    <shirtNumberOfClub>7</shirtNumberOfClub>
+    <fullName>Garath McCleary</fullName>
+    <birthDate>1987-05-15</birthDate>
+    <nationality>JAM</nationality>
+    <height>182</height>
+    <weight>76</weight>
     <position>FW</position>
-    <caps>26</caps>
-    <preferredFoot>left</preferredFoot>
-    <isInNationalTeam>true</isInNationalTeam>
-    <clubMembershipValidAsOf>2016-06-10</clubMembershipValidAsOf>
+    <preferredFoot>right</preferredFoot>
+    <isInNationalTeam>false</isInNationalTeam>
+    <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
   </player>
   <player>
     <id>DBPedia_Grasshopper_Club_Zürich22017_Kim_Källström18668+Euro2016_Grasshoppers733_Kim_Källström533+JokeCampOthers_Spartak_Moscow3806_Kim_Källström3665+Kaggle_Grasshopper_Club_Zürich3440_Kim_Kaellstroem3189+Transfermarkt_Grasshopper_Club120163_Kim_Källström113698</id>
-    <fullName></fullName>
-    <birthDate>1991-03-21</birthDate>
-    <birthplace>Mâcon</birthplace>
-    <nationality>FRA</nationality>
-    <height>175</height>
-    <weight>67</weight>
-    <shirtNumberOfClub>7</shirtNumberOfClub>
-    <position>FW</position>
-    <caps>26</caps>
-    <preferredFoot>left</preferredFoot>
+    <fullName>Kim Källström</fullName>
+    <birthDate>1982-08-24</birthDate>
+    <birthplace>Sandviken</birthplace>
+    <nationality>SWE</nationality>
+    <height>185</height>
+    <weight>83</weight>
+    <shirtNumberOfClub>21</shirtNumberOfClub>
+    <position>MF</position>
+    <caps>127</caps>
+    <preferredFoot>right</preferredFoot>
     <isInNationalTeam>true</isInNationalTeam>
-    <clubMembershipValidAsOf>2016-06-10</clubMembershipValidAsOf>
+    <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
   </player>
   <player>
     <id>JokeCampOthers_Newcastle237_Ayoze_Pérez228+Kaggle_Newcastle_United2008_Ayoze_Perez1871+Transfermarkt_Newcastle_United65340_Ayoze_Pérez61947</id>
-    <fullName></fullName>
-    <birthDate>1991-03-21</birthDate>
-    <birthplace>Mâcon</birthplace>
-    <nationality>FRA</nationality>
-    <height>175</height>
-    <weight>67</weight>
-    <shirtNumberOfClub>7</shirtNumberOfClub>
+    <fullName>Ayoze Pérez</fullName>
+    <birthDate>1993-07-23</birthDate>
+    <nationality>ESP</nationality>
+    <height>178</height>
+    <weight>66</weight>
+    <shirtNumberOfClub>17</shirtNumberOfClub>
     <position>FW</position>
-    <caps>26</caps>
-    <preferredFoot>left</preferredFoot>
-    <isInNationalTeam>true</isInNationalTeam>
-    <clubMembershipValidAsOf>2016-06-10</clubMembershipValidAsOf>
+    <preferredFoot>right</preferredFoot>
+    <isInNationalTeam>false</isInNationalTeam>
+    <clubMembershipValidAsOf>2016-05-01</clubMembershipValidAsOf>
   </player>
 </players>
