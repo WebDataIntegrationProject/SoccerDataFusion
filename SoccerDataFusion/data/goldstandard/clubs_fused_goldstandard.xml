@@ -88,6 +88,7 @@
     <country>FRA</country>
     <nameOfStadium>Stade de l'Abbé-Deschamps</nameOfStadium>
     <cityOfStadium>Auxerre</cityOfStadium>
+		<stadiumCapacity>24493</stadiumCapacity>
 		<league>Ligue 2</league>
 		<players>
 			<player>
@@ -122,6 +123,7 @@
 		<name>Gil Vicente FC</name>
     <country>PRT</country>
     <nameOfStadium>Estádio Cidade de Barcelos</nameOfStadium>
+		<stadiumCapacity>12504</stadiumCapacity>
 		<league>LigaPro</league>
 		<players>
 			<player>
@@ -141,6 +143,7 @@
     <country>ESP</country>
     <nameOfStadium>Campo Municipal de Gobela</nameOfStadium>
     <cityOfStadium>Getxo</cityOfStadium>
+		<stadiumCapacity>1221</stadiumCapacity>
 		<league>Segunda División B</league>
 		<players>
 			<player>
@@ -176,7 +179,8 @@
     <country>ITA</country>
     <nameOfStadium>Stadio Atleti Azzurri d'Italia</nameOfStadium>
     <cityOfStadium>Bergamo</cityOfStadium>
-		<league>Ligue 2</league>
+		<stadiumCapacity>26562</stadiumCapacity>
+		<league>Lega Pro</league>
 		<players>
 			<player>
 				<id>DBPedia_U.C._AlbinoLeffe40516_Roberto_Cortellini34033</id>
@@ -195,13 +199,14 @@
     <country>PRT</country>
     <nameOfStadium>Estádio Municipal de Arouca</nameOfStadium>
     <cityOfStadium>Arouca, Portugal</cityOfStadium>
+		<stadiumCapacity>5000</stadiumCapacity>
 		<league>Primeira Liga</league>
 		<players>
 			<player>
 				<id>DBPedia_F.C._Arouca37232_Anderson_Luís_Ribeiro_Pereira31333</id>
 			</player>
 			<player>
-				<id>DBPedia_F.C._Arouca37233_Gegé31334</id>
+				<id>Transfermarkt_FC_Arouca5079_Idrissa_Coulibaly4834</id>
 			</player>
 			<player>
 				<id>Kaggle_FC_Arouca507_Mateus473+Transfermarkt_FC_Arouca5068_Mateus4823</id>
@@ -249,7 +254,7 @@
     <country>FRA</country>
     <nameOfStadium>Stade de l'Aube</nameOfStadium>
     <cityOfStadium>Troyes</cityOfStadium>
-		<league>Ligue 1</league>
+		<league>Ligue 2</league>
 		<players>
 			<player>
 				<id>Kaggle_ES_Troyes_AC2741_Deniz_Hummet2552+Transfermarkt_ES_Troyes_AC182676_Deniz_Hümmet171846</id>
@@ -258,7 +263,7 @@
 				<id>Kaggle_ES_Troyes_AC2739_Karim_Azamoum2550+Transfermarkt_ES_Troyes_AC182677_Karim_Azamoum171847</id>
 			</player>
 			<player>
-				<id>DBPedia_Troyes_AC28904_Chris_Mavinga24476</id>
+				<id>Transfermarkt_ES_Troyes_AC182699_Chris_Mavinga171869</id>
 			</player>
 		</players>
 	</club>
@@ -268,6 +273,7 @@
     <country>FRA</country>
     <nameOfStadium>Stade des Alpes</nameOfStadium>
     <cityOfStadium>Grenoble</cityOfStadium>
+		<stadiumCapacity>20068</stadiumCapacity>
 		<league>Championnat de France Amateur</league>
 		<players>
 			<player>
@@ -283,7 +289,7 @@
 	</club>
 	<club>
 		<id>Kaggle_Académica_de_Coimbra1465+Transfermarkt_Académica_Coimbra209465</id>
-		<name>Académica Coimbra</name>
+		<name>Académica de Coimbra</name>
 		<league>Liga NOS</league>
 		<players>
 			<player>
@@ -300,6 +306,7 @@
     <country>PRT</country>
     <nameOfStadium>Estádio da Mata Real</nameOfStadium>
     <cityOfStadium>Paços de Ferreira</cityOfStadium>
+		<stadiumCapacity>7000</stadiumCapacity>
 		<league>Primeira Liga</league>
 		<players>
 			<player>
@@ -403,13 +410,13 @@
 				<id>Transfermarkt_CD_Real_Sociedad138397_Christian_Altamirano130842</id>
 			</player>
 			<player>
-				<id>JokeCampOthers_Real_Sociedad976_Xabi_Prieto938+Kaggle_Real_Sociedad3358_Xabier_Prieto3114+Transfermarkt_Real_Sociedad_San_Sebastián44691_Xabi_Prieto42365</id>
+				<id>Transfermarkt_CD_Real_Sociedad138412_David_Carranza130857</id>
 			</player>
 		</players>
 	</club>
 	<club>
 		<id>DBPedia_C.S._Marítimo23640+Kaggle_CS_Marítimo1512+Transfermarkt_CS_Marítimo58788</id>
-		<name>CS Marítimo</name>
+		<name>C.S. Marítimo</name>
     <country>PRT</country>
 		<league>Primeira Liga</league>
 		<players>
