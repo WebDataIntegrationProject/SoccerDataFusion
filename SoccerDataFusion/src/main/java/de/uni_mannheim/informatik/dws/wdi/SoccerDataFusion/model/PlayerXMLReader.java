@@ -94,7 +94,8 @@ public class PlayerXMLReader extends XMLMatchableReader<Player, Attribute> {
 		
 		// convert string to boolean
 		String isInNationalTeamString = getValueFromChildElement(node, "isInNationalTeam");
-		if (isInNationalTeamString == null || isInNationalTeamString.equals("false")) player.setIsInNationalTeam(false);
+		if (isInNationalTeamString == null) player.setIsInNationalTeam(null);
+		else if (isInNationalTeamString.equals("false")) player.setIsInNationalTeam(false);
 		else if (isInNationalTeamString.equals("true")) player.setIsInNationalTeam(true);
 		else player.setIsInNationalTeam(false);
 
