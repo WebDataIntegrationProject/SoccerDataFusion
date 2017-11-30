@@ -37,4 +37,391 @@
 			</player>
 		</players>
 	</club>
+	<club>
+		<id>Kaggle_West_Bromwich_Albion1713+Transfermarkt_West_Bromwich_Albion258433</id>
+		<name>West Bromwich Albion</name>
+		<league>Premier League</league>
+		<players>
+			<player>
+				<id>Transfermarkt_West_Bromwich_Albion258435_Boaz_Myhill238030</id>
+			</player>
+			<player>
+				<id>Transfermarkt_West_Bromwich_Albion258434_Darren_Fletcher238029</id>
+			</player>
+			<player>
+				<id>JokeCampOthers_West_Brom2145_Chris_Brunt2066+Kaggle_West_Bromwich_Albion1714_Chris_Brunt1599+Transfermarkt_West_Bromwich_Albion258440_Chris_Brunt238035</id>
+			</player>
+		</players>
+	</club>
+	<club>
+		<id>DBPedia_F.C._Verbroedering_Dender_Eendracht_Hekelgem24998+Kaggle_Motherwell1005+Transfermarkt_Motherwell_FC_U20173689</id>
+		<name>Motherwell FC U20</name>
+		<league>Belgian Third Division</league>
+		<players>
+			<player>
+				<id>Transfermarkt_Motherwell_FC_U20173690_Brett_Long163615</id>
+			</player>
+			<player>
+				<id>Transfermarkt_Motherwell_FC_U20173691_David_Ferguson163616</id>
+			</player>
+			<player>
+				<id>DBPedia_F.C._Verbroedering_Dender_Eendracht_Hekelgem25000_Patrick_Dimbala21220</id>
+			</player>
+		</players>
+	</club>
+	<club>
+		<id>Kaggle_SC_Heerenveen3635+Transfermarkt_SC_Heerenveen4797</id>
+		<name>SC Heerenveen</name>
+		<league>Eredivisie</league>
+		<players>
+			<player>
+				<id>Transfermarkt_SC_Heerenveen4798_Pascal_Huser4564</id>
+			</player>
+			<player>
+				<id>Transfermarkt_SC_Heerenveen4799_Robert_van_Koesveld4565</id>
+			</player>
+		</players>
+	</club>
+	<club>
+		<id>DBPedia_AJ_Auxerre10341+Kaggle_RC_Lens3732+Transfermarkt_RC_Lens131214</id>
+		<name>RC Lens</name>
+    <country>FRA</country>
+    <nameOfStadium>Stade de l'Abbé-Deschamps</nameOfStadium>
+    <cityOfStadium>Auxerre</cityOfStadium>
+		<league>Ligue 2</league>
+		<players>
+			<player>
+				<id>Transfermarkt_RC_Lens131215_Aristote_Madiani124095</id>
+			</player>
+			<player>
+				<id>Transfermarkt_RC_Lens131216_Benjamin_Bourigeaud124096</id>
+			</player>
+			<player>
+				<id>Kaggle_RC_Lens3734_Adamo_Coulibaly3455</id>
+			</player>
+		</players>
+	</club>
+	<club>
+		<id>Kaggle_Uniao_da_Madeira571+Transfermarkt_CF_União_Madeira72994</id>
+		<name>CF União Madeira</name>
+		<league>Liga NOS</league>
+		<players>
+			<player>
+				<id>Transfermarkt_CF_União_Madeira72996_Kisley69200</id>
+			</player>
+			<player>
+				<id>Kaggle_Uniao_da_Madeira573_Edder_Farias536+Transfermarkt_CF_União_Madeira73020_Edder_Farías69224</id>
+			</player>
+			<player>
+				<id>Kaggle_Uniao_da_Madeira572_Miguel_Fidalgo535+Transfermarkt_CF_União_Madeira73006_Miguel_Fidalgo69210</id>
+			</player>
+		</players>
+	</club>
+	<club>
+		<id>DBPedia_Gil_Vicente_F.C.30717+Kaggle_Gil_Vicente_FC1300+Transfermarkt_Gil_Vicente_FC109355</id>
+		<name>Gil Vicente FC</name>
+    <country>PRT</country>
+    <nameOfStadium>Estádio Cidade de Barcelos</nameOfStadium>
+		<league>LigaPro</league>
+		<players>
+			<player>
+				<id>Transfermarkt_Gil_Vicente_FC109356_Pedro_Lemos103473</id>
+			</player>
+			<player>
+				<id>Transfermarkt_Gil_Vicente_FC109357_Pék's103474</id>
+			</player>
+			<player>
+				<id>DBPedia_Gil_Vicente_F.C.30719_Sérgio_Semedo25955</id>
+			</player>
+		</players>
+	</club>
+	<club>
+		<id>DBPedia_Arenas_Club_de_Getxo1893+Kaggle_Inverness_Caledonian_Thistle881+Transfermarkt_Inverness_Caledonian_Thistle_FC_U20195741</id>
+		<name>Inverness Caledonian Thistle FC U20</name>
+    <country>ESP</country>
+    <nameOfStadium>Campo Municipal de Gobela</nameOfStadium>
+    <cityOfStadium>Getxo</cityOfStadium>
+		<league>Segunda División B</league>
+		<players>
+			<player>
+				<id>Transfermarkt_Inverness_Caledonian_Thistle_FC_U20195742_Jason_Brown183725</id>
+			</player>
+			<player>
+				<id>Transfermarkt_Inverness_Caledonian_Thistle_FC_U20195743_Calum_Howarth183726</id>
+			</player>
+			<player>
+				<id>Kaggle_Inverness_Caledonian_Thistle882_Claude_Gnakpa819</id>
+			</player>
+		</players>
+	</club>
+	<club>
+		<id>Kaggle_De_Graafschap2825+Transfermarkt_De_Graafschap_Doetinchem8201</id>
+		<name>De Graafschap Doetinchem</name>
+		<league>Eredivisie</league>
+		<players>
+			<player>
+				<id>Kaggle_De_Graafschap2826_Youssouf_Hersi2631</id>
+			</player>
+			<player>
+				<id>Kaggle_De_Graafschap2827_Yuri_Rose2632</id>
+			</player>
+			<player>
+				<id>Kaggle_De_Graafschap2837_Vincent_Vermeij2642+Transfermarkt_De_Graafschap_Doetinchem8203_Vincent_Vermeij7794</id>
+			</player>
+		</players>
+	</club>
+	<club>
+		<id>DBPedia_U.C._AlbinoLeffe40514+Kaggle_Stade_Brestois_292432+Transfermarkt_Stade_Brest_29184071</id>
+		<name>Stade Brest 29</name>
+    <country>ITA</country>
+    <nameOfStadium>Stadio Atleti Azzurri d'Italia</nameOfStadium>
+    <cityOfStadium>Bergamo</cityOfStadium>
+		<league>Ligue 2</league>
+		<players>
+			<player>
+				<id>DBPedia_U.C._AlbinoLeffe40516_Roberto_Cortellini34033</id>
+			</player>
+			<player>
+				<id>Kaggle_Stade_Brestois_292433_Alexandre_Alphonse2266</id>
+			</player>
+			<player>
+				<id>Transfermarkt_Stade_Brest_29184073_Ali_Keïta173130</id>
+			</player>
+		</players>
+	</club>
+	<club>
+		<id>DBPedia_F.C._Arouca37231+Kaggle_FC_Arouca505+Transfermarkt_FC_Arouca5057</id>
+		<name>FC Arouca</name>
+    <country>PRT</country>
+    <nameOfStadium>Estádio Municipal de Arouca</nameOfStadium>
+    <cityOfStadium>Arouca, Portugal</cityOfStadium>
+		<league>Primeira Liga</league>
+		<players>
+			<player>
+				<id>DBPedia_F.C._Arouca37232_Anderson_Luís_Ribeiro_Pereira31333</id>
+			</player>
+			<player>
+				<id>DBPedia_F.C._Arouca37233_Gegé31334</id>
+			</player>
+			<player>
+				<id>Kaggle_FC_Arouca507_Mateus473+Transfermarkt_FC_Arouca5068_Mateus4823</id>
+			</player>
+		</players>
+	</club>
+	<club>
+		<id>DBPedia_Servette_FC21257+Kaggle_Servette_FC3668+Transfermarkt_Servette_FC51894</id>
+		<name>Servette FC</name>
+    <country>CHE</country>
+    <nameOfStadium>Stade de Genève</nameOfStadium>
+    <cityOfStadium>Geneva</cityOfStadium>
+		<league>Swiss Challenge League</league>
+		<players>
+			<player>
+				<id>Transfermarkt_Servette_FC51895_Karim_Gazzetta49222</id>
+			</player>
+			<player>
+				<id>Transfermarkt_Servette_FC51896_Alexandre_Infante49223</id>
+			</player>
+			<player>
+				<id>DBPedia_Servette_FC21259_Liassine_Cadamuro-Bentaïba18035</id>
+			</player>
+		</players>
+	</club>
+	<club>
+		<id>Kaggle_Hellas_Verona2146+Transfermarkt_Hellas_Verona91571</id>
+		<name>Hellas Verona</name>
+		<league>Serie A</league>
+		<players>
+			<player>
+				<id>Transfermarkt_Hellas_Verona91572_Gilberto86737</id>
+			</player>
+			<player>
+				<id>Transfermarkt_Hellas_Verona91573_Pierluigi_Gollini86738</id>
+			</player>
+			<player>
+				<id>DBPedia_Hellas_Verona_F.C.11129_Giampaolo_Pazzini9404+JokeCampOthers_AC_Milan1236_Giampaolo_Pazzini1189+Kaggle_Hellas_Verona2148_Giampaolo_Pazzini2003+Transfermarkt_Hellas_Verona91579_Giampaolo_Pazzini86744</id>
+			</player>
+		</players>
+	</club>
+	<club>
+		<id>DBPedia_Troyes_AC28903+Kaggle_ES_Troyes_AC2729+Transfermarkt_ES_Troyes_AC182675</id>
+		<name>ES Troyes AC</name>
+    <country>FRA</country>
+    <nameOfStadium>Stade de l'Aube</nameOfStadium>
+    <cityOfStadium>Troyes</cityOfStadium>
+		<league>Ligue 1</league>
+		<players>
+			<player>
+				<id>Kaggle_ES_Troyes_AC2741_Deniz_Hummet2552+Transfermarkt_ES_Troyes_AC182676_Deniz_Hümmet171846</id>
+			</player>
+			<player>
+				<id>Kaggle_ES_Troyes_AC2739_Karim_Azamoum2550+Transfermarkt_ES_Troyes_AC182677_Karim_Azamoum171847</id>
+			</player>
+			<player>
+				<id>DBPedia_Troyes_AC28904_Chris_Mavinga24476</id>
+			</player>
+		</players>
+	</club>
+	<club>
+		<id>DBPedia_Grenoble_Foot_3819359+Kaggle_Grenoble_Foot_381068+Transfermarkt_Grenoble_Foot_38248399</id>
+		<name>Grenoble Foot 38</name>
+    <country>FRA</country>
+    <nameOfStadium>Stade des Alpes</nameOfStadium>
+    <cityOfStadium>Grenoble</cityOfStadium>
+		<league>Championnat de France Amateur</league>
+		<players>
+			<player>
+				<id>DBPedia_Grenoble_Foot_3819360_Cyrille_Courtin16439</id>
+			</player>
+			<player>
+				<id>DBPedia_Grenoble_Foot_3819361_Plamen_Markov16440</id>
+			</player>
+			<player>
+				<id>Transfermarkt_Grenoble_Foot_38248401_Josue_Ahoure230073</id>
+			</player>
+		</players>
+	</club>
+	<club>
+		<id>Kaggle_Académica_de_Coimbra1465+Transfermarkt_Académica_Coimbra209465</id>
+		<name>Académica Coimbra</name>
+		<league>Liga NOS</league>
+		<players>
+			<player>
+				<id>Kaggle_Académica_de_Coimbra1491_Hugo_Seco1389+Transfermarkt_Académica_Coimbra209466_Hugo_Seco196078</id>
+			</player>
+			<player>
+				<id>Transfermarkt_Académica_Coimbra209467_Iago_Santos196079</id>
+			</player>
+		</players>
+	</club>
+	<club>
+		<id>DBPedia_F.C._Paços_de_Ferreira1855+Kaggle_FC_Paços_de_Ferreira3687+Transfermarkt_FC_Paços_de_Ferreira49417</id>
+		<name>FC Paços de Ferreira</name>
+    <country>PRT</country>
+    <nameOfStadium>Estádio da Mata Real</nameOfStadium>
+    <cityOfStadium>Paços de Ferreira</cityOfStadium>
+		<league>Primeira Liga</league>
+		<players>
+			<player>
+				<id>DBPedia_F.C._Paços_de_Ferreira1856_Mário_Felgueiras1530</id>
+			</player>
+			<player>
+				<id>Transfermarkt_FC_Paços_de_Ferreira49419_Paraiba46869</id>
+			</player>
+			<player>
+				<id>Transfermarkt_FC_Paços_de_Ferreira49418_Fábio_Martins46868</id>
+			</player>
+		</players>
+	</club>
+	<club>
+		<id>Kaggle_FC_Ingolstadt_043783+Transfermarkt_FC_Ingolstadt_04261745</id>
+		<name>FC Ingolstadt 04</name>
+		<league>1.Bundesliga</league>
+		<players>
+			<player>
+				<id>Kaggle_FC_Ingolstadt_043784_Dario_Lezcano3497+Transfermarkt_FC_Ingolstadt_04261760_Darío_Lezcano240627</id>
+			</player>
+			<player>
+				<id>Kaggle_FC_Ingolstadt_043785_Moritz_Hartmann3498+Transfermarkt_FC_Ingolstadt_04261751_Moritz_Hartmann240618</id>
+			</player>
+			<player>
+				<id>Transfermarkt_FC_Ingolstadt_04261746_Ramazan_Özcan240613</id>
+			</player>
+		</players>
+	</club>
+	<club>
+		<id>Kaggle_Lecce2709+Transfermarkt_US_Lecce5437</id>
+		<name>US Lecce</name>
+		<league>Lega Pro - Girone C</league>
+		<players>
+			<player>
+				<id>Transfermarkt_US_Lecce5438_Marco_Bleve5173</id>
+			</player>
+			<player>
+				<id>Transfermarkt_US_Lecce5439_Ali_Sowe5174</id>
+			</player>
+			<player>
+				<id>Kaggle_Lecce2711_Javier_Chevanton2524</id>
+			</player>
+		</players>
+	</club>
+	<club>
+		<id>Kaggle_Falkirk613+Transfermarkt_Falkirk_FC_U20233482</id>
+		<name>Falkirk FC U20</name>
+		<players>
+			<player>
+				<id>Transfermarkt_Falkirk_FC_U20233483_Mark_Finlayson217293</id>
+			</player>
+			<player>
+				<id>Transfermarkt_Falkirk_FC_U20233484_Tony_Gallacher217294</id>
+			</player>
+			<player>
+				<id>Kaggle_Falkirk615_Steve_Lovell573</id>
+			</player>
+		</players>
+	</club>
+	<club>
+		<id>Kaggle_Manchester_City3074+Transfermarkt_Manchester_City209744</id>
+		<name>Manchester City</name>
+		<league>Premier League</league>
+		<players>
+			<player>
+				<id>Transfermarkt_Manchester_City209745_Kelechi_Iheanacho196330</id>
+			</player>
+			<player>
+				<id>Transfermarkt_Manchester_City209746_Martín_Demichelis196331</id>
+			</player>
+			<player>
+				<id>Kaggle_Manchester_City3075_Darius_Vassell2859</id>
+			</player>
+		</players>
+	</club>
+	<club>
+		<id>Kaggle_Bayer_04_Leverkusen3192+Transfermarkt_Bayer_04_Leverkusen70742</id>
+		<name>Bayer 04 Leverkusen</name>
+		<league>1.Bundesliga</league>
+		<players>
+			<player>
+				<id>Transfermarkt_Bayer_04_Leverkusen70744_Wendell67076</id>
+			</player>
+			<player>
+				<id>Transfermarkt_Bayer_04_Leverkusen70743_Lukas_Boeder67075</id>
+			</player>
+			<player>
+				<id>JokeCampOthers_Leverkusen489_Stefan_Kießling470+Kaggle_Bayer_04_Leverkusen3194_Stefan_Kiessling2966+Transfermarkt_Bayer_04_Leverkusen70748_Stefan_Kießling67080</id>
+			</player>
+		</players>
+	</club>
+	<club>
+		<id>Kaggle_Real_Sociedad3357+Transfermarkt_CD_Real_Sociedad138396</id>
+		<name>CD Real Sociedad</name>
+		<players>
+			<player>
+				<id>Transfermarkt_CD_Real_Sociedad138398_Marco_Vega130843</id>
+			</player>
+			<player>
+				<id>Transfermarkt_CD_Real_Sociedad138397_Christian_Altamirano130842</id>
+			</player>
+			<player>
+				<id>JokeCampOthers_Real_Sociedad976_Xabi_Prieto938+Kaggle_Real_Sociedad3358_Xabier_Prieto3114+Transfermarkt_Real_Sociedad_San_Sebastián44691_Xabi_Prieto42365</id>
+			</player>
+		</players>
+	</club>
+	<club>
+		<id>DBPedia_C.S._Marítimo23640+Kaggle_CS_Marítimo1512+Transfermarkt_CS_Marítimo58788</id>
+		<name>CS Marítimo</name>
+    <country>PRT</country>
+		<league>Primeira Liga</league>
+		<players>
+			<player>
+				<id>DBPedia_C.S._Marítimo23642_João_Luiz_Ramires_Vieira20069</id>
+			</player>
+			<player>
+				<id>Kaggle_CS_Marítimo1513_Marcinho1409</id>
+			</player>
+			<player>
+				<id>Transfermarkt_CS_Marítimo58789_Patrick55745</id>
+			</player>
+		</players>
+	</club>
 </clubs>

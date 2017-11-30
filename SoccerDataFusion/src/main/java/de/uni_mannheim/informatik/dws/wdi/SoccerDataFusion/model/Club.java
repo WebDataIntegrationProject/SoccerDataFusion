@@ -182,8 +182,8 @@ public class Club extends AbstractRecord<Attribute> implements Serializable {
 
 	@Override
 	public String toString() {
-		return String.format("[Club: %s / %s / %s]", getIdentifier(), getName(),
-				getCountry(), getLeague());
+		return String.format("[Club: %s / %s / %s / %s / %s / %s]", getIdentifier(), getName(),
+				getCountry(), getNameOfStadium(), getCityOfStadium(), getLeague());
 	}
 
 	@Override
