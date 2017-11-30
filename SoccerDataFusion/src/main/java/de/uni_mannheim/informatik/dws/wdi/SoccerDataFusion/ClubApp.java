@@ -30,6 +30,7 @@ import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.club.Playe
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.evaluation.club.StadiumCapacityEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.CityOfStadiumFuserVoting;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.ClubNameFuserLongestString;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.ClubNameFuserSpecialChar;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.CountryFuserFavourSources;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.LeagueFuserMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.NameOfStadiumFuserLongestString;
@@ -49,23 +50,23 @@ public class ClubApp
 		// Load the Data into FusibleDataSet
 		FusibleDataSet<Club, Attribute> dbpedia = new FusibleHashedDataSet<>();
 		new ClubXMLReader().loadFromXML(new File("data/input/dbpedia.xml"), "/clubs/club", dbpedia);
-		dbpedia.printDataSetDensityReport();
+//		dbpedia.printDataSetDensityReport();
 
 		FusibleDataSet<Club, Attribute> euro2016 = new FusibleHashedDataSet<>();
 		new ClubXMLReader().loadFromXML(new File("data/input/euro2016.xml"), "/clubs/club", euro2016);
-		euro2016.printDataSetDensityReport();
+//		euro2016.printDataSetDensityReport();
 
 		FusibleDataSet<Club, Attribute> jokecamp = new FusibleHashedDataSet<>();
 		new ClubXMLReader().loadFromXML(new File("data/input/jokecamp-others.xml"), "/clubs/club", jokecamp);
-		jokecamp.printDataSetDensityReport();
+//		jokecamp.printDataSetDensityReport();
 		
 		FusibleDataSet<Club, Attribute> kaggle = new FusibleHashedDataSet<>();
 		new ClubXMLReader().loadFromXML(new File("data/input/kaggle.xml"), "/clubs/club", kaggle);
-		kaggle.printDataSetDensityReport();
+//		kaggle.printDataSetDensityReport();
 		
 		FusibleDataSet<Club, Attribute> transfermarket = new FusibleHashedDataSet<>();
 		new ClubXMLReader().loadFromXML(new File("data/input/transfermarket.xml"), "/clubs/club", transfermarket);
-		transfermarket.printDataSetDensityReport();
+//		transfermarket.printDataSetDensityReport();
 		
 		// Create a HashMap from player ids to the fused player
 		HashedDataSet<Player, Attribute> fusedPlayers = new HashedDataSet<>();
@@ -137,7 +138,7 @@ public class ClubApp
 		// define the fusion strategy
 		DataFusionStrategy<Club, Attribute> strategy = new DataFusionStrategy<>(new FusibleClubFactory());
 		// add attribute fusers
-		strategy.addAttributeFuser(Club.NAME, new ClubNameFuserLongestString(),new ClubNameEvaluationRule());
+		strategy.addAttributeFuser(Club.NAME, new ClubNameFuserSpecialChar(),new ClubNameEvaluationRule());
 		strategy.addAttributeFuser(Club.COUNTRY,new CountryFuserFavourSources(), new CountryEvaluationRule());
 		strategy.addAttributeFuser(Club.NAMEOFSTADIUM, new NameOfStadiumFuserLongestString(),new NameOfStadiumEvaluationRule());
 		strategy.addAttributeFuser(Club.CITYOFSTADIUM,new CityOfStadiumFuserVoting(),new CityOfStadiumEvaluationRule());
