@@ -200,6 +200,10 @@ public class PlayerApp
 		evaluator.setVerbose(true);
 		double accuracy = evaluator.evaluate(fusedDataSet, goldStandard, null);
 
+		FusibleDataSet<Player, Attribute> out = new FusibleHashedDataSet<>();
+		new PlayerXMLReader().loadFromXML(new File("data/output/players_fused.xml"), "/players/player", out);
+		out.printDataSetDensityReport();
+		
 		System.out.println(String.format("Accuracy: %.2f", accuracy));
     }
 }

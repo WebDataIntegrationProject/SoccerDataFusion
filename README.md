@@ -351,7 +351,7 @@ Attributes densities: \
 
 ## Final solution chosing: Kaggle-DBpedia, Kaggle-Transfermarket, DBpedia-Jokecamp, DBpedia-Euro2016
 
-Group Size Distribtion of 396 groups: \
+Group Size Distribtion of 396 groups before filtering: \
 	Group Size | Frequency  \
 	——————————————————————— \
 	         2 |       160 \
@@ -400,3 +400,16 @@ Group Size Distribtion of 212 groups: \
 	         3 |        40 \
 	         4 |         9 \
 	         5 |         3
+Attribute Consistencies:
+	ShirtNumberOfClub: 1.00
+	Position: 0.70
+	Birthplace: 1.00
+	Height: 0.05
+	IsInNationalTeam: 1.00
+	ClubMembershipValidAsOf: 0.00
+	Birthdate: 0.23
+	PreferredFoot: 1.00
+	Nationality: 0.92
+	Weight: 1.00
+	Caps: 1.00
+	Name: 0.00

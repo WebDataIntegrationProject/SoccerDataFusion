@@ -167,6 +167,10 @@ public class ClubApp
 				strategy, new RecordGroupFactory<Club, Attribute>());
 		evaluator.setVerbose(true);
 		double accuracy = evaluator.evaluate(fusedDataSet, goldStandard, null);
+		
+		FusibleDataSet<Club, Attribute> out = new FusibleHashedDataSet<>();
+		new ClubXMLReader().loadFromXML(new File("data/output/clubs_fused.xml"), "/clubs/club", out);
+		out.printDataSetDensityReport();
 
 		System.out.println(String.format("Accuracy: %.2f", accuracy));
     }

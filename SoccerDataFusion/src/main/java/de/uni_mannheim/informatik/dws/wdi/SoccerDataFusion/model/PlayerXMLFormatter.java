@@ -37,68 +37,96 @@ public class PlayerXMLFormatter extends XMLFormatter<Player> {
 
 		player.appendChild(createTextElement("id", record.getIdentifier(), doc));
 
-		player.appendChild(createTextElementWithProvenance("fullName",
-				record.getFullName(),
-				record.getMergedAttributeProvenance(Player.FULLNAME), doc));
+		if (record.getFullName() != null) {
+			player.appendChild(createTextElementWithProvenance("fullName",
+					record.getFullName(),
+					record.getMergedAttributeProvenance(Player.FULLNAME), doc));			
+		} else {
+//			player.appendChild(createTextElement("fullName", null, doc));
+		}
 		if (record.getBirthDate() != null) {
 			player.appendChild(createTextElementWithProvenance("birthDate",
 					record.getBirthDate().toLocalDate().toString(),
 					record.getMergedAttributeProvenance(Player.BIRTHDATE), doc));
 		} else {
-			player.appendChild(createTextElement("birthDate", null, doc));
+//			player.appendChild(createTextElement("birthDate", null, doc));
 		}
-		player.appendChild(createTextElementWithProvenance("birthplace",
-				record.getBirthplace(),
-				record.getMergedAttributeProvenance(Player.BIRTHPLACE), doc));
-		player.appendChild(createTextElementWithProvenance("nationality",
-				record.getNationality(),
-				record.getMergedAttributeProvenance(Player.NATIONALITY), doc));
+		if (record.getBirthplace() != null) {
+			player.appendChild(createTextElementWithProvenance("birthplace",
+					record.getBirthplace(),
+					record.getMergedAttributeProvenance(Player.BIRTHPLACE), doc));			
+		} else {
+//			player.appendChild(createTextElement("birthplace", null, doc));
+		}
+		if (record.getNationality() != null) {
+			player.appendChild(createTextElementWithProvenance("nationality",
+					record.getNationality(),
+					record.getMergedAttributeProvenance(Player.NATIONALITY), doc));			
+		} else {
+//			player.appendChild(createTextElement("nationality", null, doc));
+		}
 		if (record.getHeight() != null) {
 			player.appendChild(createTextElementWithProvenance("height",
 					record.getHeight().toString(),
 					record.getMergedAttributeProvenance(Player.HEIGHT), doc));
 		} else {
-			player.appendChild(createTextElement("height", null, doc));
+//			player.appendChild(createTextElement("height", null, doc));
 		}
 		if (record.getWeight() != null) {
 			player.appendChild(createTextElementWithProvenance("weight",
 					record.getWeight().toString(),
 					record.getMergedAttributeProvenance(Player.WEIGHT), doc));
 		} else {
-			player.appendChild(createTextElement("weight", null, doc));
+//			player.appendChild(createTextElement("weight", null, doc));
 		}
-		player.appendChild(createTextElementWithProvenance("shirtNumberOfClub",
-				record.getShirtNumberOfClub(),
-				record.getMergedAttributeProvenance(Player.SHIRTNUMBEROFCLUB), doc));
-		player.appendChild(createTextElementWithProvenance("shirtNumberOfNationalTeam",
-				record.getShirtNumberOfNationalTeam(),
-				record.getMergedAttributeProvenance(Player.SHIRTNUMBEROFNATIONALTEAM), doc));
-		player.appendChild(createTextElementWithProvenance("position",
-				record.getPosition(),
-				record.getMergedAttributeProvenance(Player.POSITION), doc));
-		player.appendChild(createTextElementWithProvenance("preferredFoot",
-				record.getPreferredFoot(),
-				record.getMergedAttributeProvenance(Player.PREFERREDFOOT), doc));
+		if (record.getShirtNumberOfClub() != null) {
+			player.appendChild(createTextElementWithProvenance("shirtNumberOfClub",
+					record.getShirtNumberOfClub(),
+					record.getMergedAttributeProvenance(Player.SHIRTNUMBEROFCLUB), doc));			
+		} else {
+//			player.appendChild(createTextElement("shirtNumberOfClub", null, doc));
+		}
+		if (record.getShirtNumberOfNationalTeam() != null) {
+			player.appendChild(createTextElementWithProvenance("shirtNumberOfNationalTeam",
+					record.getShirtNumberOfNationalTeam(),
+					record.getMergedAttributeProvenance(Player.SHIRTNUMBEROFNATIONALTEAM), doc));			
+		} else {
+//			player.appendChild(createTextElement("shirtNumberOfNationalTeam", null, doc));
+		}
+		if (record.getPosition() != null) {
+			player.appendChild(createTextElementWithProvenance("position",
+					record.getPosition(),
+					record.getMergedAttributeProvenance(Player.POSITION), doc));
+		} else {
+//			player.appendChild(createTextElement("position", null, doc));
+		}
+		if (record.getPreferredFoot() != null) {
+			player.appendChild(createTextElementWithProvenance("preferredFoot",
+					record.getPreferredFoot(),
+					record.getMergedAttributeProvenance(Player.PREFERREDFOOT), doc));			
+		} else {
+//			player.appendChild(createTextElement("preferredFoot", null, doc));
+		}
 		if (record.getCaps() != null) {
 			player.appendChild(createTextElementWithProvenance("caps",
 					record.getCaps().toString(),
 					record.getMergedAttributeProvenance(Player.CAPS), doc));
 		} else {
-			player.appendChild(createTextElement("caps", null, doc));
+//			player.appendChild(createTextElement("caps", null, doc));
 		}
 		if (record.getIsInNationalTeam() != null) {
 			player.appendChild(createTextElementWithProvenance("isInNationalTeam",
 					record.getIsInNationalTeam().toString(),
 					record.getMergedAttributeProvenance(Player.ISINNATIONALTEAM), doc));
 		} else {
-			player.appendChild(createTextElement("isInNationalTeam", null, doc));
+//			player.appendChild(createTextElement("isInNationalTeam", null, doc));
 		}
 		if (record.getClubMembershipValidAsOf() != null) {
 			player.appendChild(createTextElementWithProvenance("clubMembershipValidAsOf",
 					record.getClubMembershipValidAsOf().toLocalDate().toString(),
 					record.getMergedAttributeProvenance(Player.CLUBMEMBERSHIPVALIDASOF), doc));
 		} else {
-			player.appendChild(createTextElement("clubMembershipValidAsOf", null, doc));
+//			player.appendChild(createTextElement("clubMembershipValidAsOf", null, doc));
 		}
 		
 		return player;
