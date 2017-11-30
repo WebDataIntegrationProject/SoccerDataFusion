@@ -42,7 +42,7 @@ public class CountryFuserFavourSources extends
 
 	@Override
 	protected String getValue(Club record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.getName();
+		return record.getCountry();
 	}
 
 	@Override
