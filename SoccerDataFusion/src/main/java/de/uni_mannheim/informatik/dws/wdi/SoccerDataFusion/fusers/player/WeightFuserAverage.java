@@ -50,7 +50,7 @@ public class WeightFuserAverage extends
 		FusedValue<Double, Player, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
 		try {
 			fusedRecord.setWeight(fused.getValue().intValue());
-		} catch(NumberFormatException e) {
+		} catch(Exception e) {
 			fusedRecord.setWeight(null);
 		}
 		fusedRecord

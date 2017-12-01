@@ -50,7 +50,7 @@ public class HeightFuserAverage extends
 		FusedValue<Double, Player, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
 		try {
 			fusedRecord.setHeight(fused.getValue().intValue());
-		} catch(NumberFormatException e) {
+		} catch(Exception e) {
 			fusedRecord.setHeight(null);
 		}
 		fusedRecord

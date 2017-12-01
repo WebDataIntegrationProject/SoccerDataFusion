@@ -32,11 +32,11 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class PlayersFuserUnion extends AttributeValueFuser<List<Player>, Club, Attribute> {
+public class PlayersFuserCustomUnion extends AttributeValueFuser<List<Player>, Club, Attribute> {
 	
 	
-	public PlayersFuserUnion() {
-		super(new Union<Player, Club, Attribute>());
+	public PlayersFuserCustomUnion(HashMap<String, Player> fusedPlayersMap) {
+		super(new PlayersUnion<Player, Club, Attribute>(fusedPlayersMap));
 	}
 	
 	@Override

@@ -34,6 +34,7 @@ import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.ClubNameF
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.CountryFuserFavourSources;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.LeagueFuserMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.NameOfStadiumFuserLongestString;
+import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.PlayersFuserCustomUnion;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.PlayersFuserUnion;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.fusers.club.StadiumCapacityFuserVoting;
 import de.uni_mannheim.informatik.dws.wdi.SoccerDataFusion.model.Club;
@@ -138,13 +139,15 @@ public class ClubApp
 		// define the fusion strategy
 		DataFusionStrategy<Club, Attribute> strategy = new DataFusionStrategy<>(new FusibleClubFactory());
 		// add attribute fusers
+//		strategy.addAttributeFuser(Club.NAME, new ClubNameFuserLongestString(),new ClubNameEvaluationRule());
 		strategy.addAttributeFuser(Club.NAME, new ClubNameFuserSpecialChar(),new ClubNameEvaluationRule());
 		strategy.addAttributeFuser(Club.COUNTRY,new CountryFuserFavourSources(), new CountryEvaluationRule());
 		strategy.addAttributeFuser(Club.NAMEOFSTADIUM, new NameOfStadiumFuserLongestString(),new NameOfStadiumEvaluationRule());
 		strategy.addAttributeFuser(Club.CITYOFSTADIUM,new CityOfStadiumFuserVoting(),new CityOfStadiumEvaluationRule());
 		strategy.addAttributeFuser(Club.STADIUMCAPACITY, new StadiumCapacityFuserVoting(), new StadiumCapacityEvaluationRule());
 		strategy.addAttributeFuser(Club.LEAGUE,new LeagueFuserMostRecent(),new LeagueEvaluationRule());
-		strategy.addAttributeFuser(Club.PLAYERS,new PlayersFuserUnion(fusedPlayersMap),new PlayersEvaluationRule());
+//		strategy.addAttributeFuser(Club.PLAYERS,new PlayersFuserUnion(),new PlayersEvaluationRule());
+		strategy.addAttributeFuser(Club.PLAYERS,new PlayersFuserCustomUnion(fusedPlayersMap),new PlayersEvaluationRule());
 	
 		// create the fusion engine
 		DataFusionEngine<Club, Attribute> engine = new DataFusionEngine<>(strategy);
